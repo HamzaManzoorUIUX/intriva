@@ -1,9 +1,16 @@
 .headerHome{
     width: 100%;
     height: 100vh;
-    background-image: url('./assets/img/Mask\ Group\ 6.png');
-    background-size: cover;
-    position: absolute;
+    overflow: hidden;
+    position: relative;
+    .headerHome-video{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+    }
     &::before{
         content: '';
         background-color: rgba($color: #CFA353, $alpha: .68);
