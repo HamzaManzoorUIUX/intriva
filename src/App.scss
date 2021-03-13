@@ -1,0 +1,35 @@
+.headerHome{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/img/Mask\ Group\ 6.png');
+    background-size: cover;
+    position: absolute;
+    &::before{
+        content: '';
+        background-color: rgba($color: #CFA353, $alpha: .68);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+}
+
+.z-10{
+    z-index: 10;
+}
+
+@for $var from 0 to 10 {
+    .z-#{$var}{
+        z-index: #{$var}0;
+    }    
+}
+@for $var from 8 to 100 {
+    .f-#{$var}{
+        font-size: #{$var}px;
+    }
+}
+.font-weight-thin{
+    font-weight: 100 !important;
+}
