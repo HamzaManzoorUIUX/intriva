@@ -1,17 +1,17 @@
 import React from 'react';
 import Header from './Header';
-import MyNavBar from './MyNavBar';
+import MyNavBar from '../../components/MyNavBar';
 import sectionOne from '../../assets/img/Mask Group 6.png'
 import sectionTwo from '../../assets/img/Mask Group 8.png'
-import Footer from './Footer';
+import Footer from '../../components/Footer';
 import Fade from 'react-reveal/Fade';
-import ScrollToTop from '../../components/ScrollToTop';
+import ScrollToTopOnMount from '../../components/ScrollToTop';
 function Home(props) {
     return (
         <div>
-            <ScrollToTop/>
+            <ScrollToTopOnMount/>
             <Header />
-            <MyNavBar />
+            <MyNavBar tab={1} title={'ABOUT INTRIVA'}/>
             <div className='container-fluid homeBack'>
                 <div className="row align-items-center py-5">
                     <Fade right big>

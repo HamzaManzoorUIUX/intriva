@@ -31,23 +31,30 @@ function Header(props) {
                         <img src={Logo} alt="logo" className='logoHome z-10 position-relative' />
                     </div>
                     <div className='p-2'>
-                        <h1 className="header-heading">
-                            we provide
+                        <Fade left big>
+                            <h1 className="header-heading">
+                                we provide
                 </h1>
-                        <h3 className="header-text">
-                            opportunistic capital, timely investing decisions and differentiated solutions
+                        </Fade>
+                        <Fade right big>
+                            <h3 className="header-text">
+                                opportunistic capital, timely investing decisions and differentiated solutions
                 </h3>
+                        </Fade>
                     </div>
-                    <div className="px-3 py-3 bannerImg d-none d-md-block mb-3">
+                    <Fade left big>
+                        <div className="px-3 py-3 bannerImg d-none d-md-block mb-3">
                             <video autoPlay muted loop className='neural-video'>
                                 <source src={Neurons} type='video/mp4' />
                             </video>
                             <img src={Logo} alt="logo" className='logoHome z-10 position-relative' />
                         </div>
+                    </Fade>
                     <div className='h-50'>
-                        
+
                         <ul className="homeList pb-5">
                             <li className="homeList-item">
+                        <Fade right big>
                                 <Link to='/'>
                                     <span>
                                         About
@@ -56,9 +63,11 @@ function Header(props) {
                                         INTRIVA
                                     </b>
                                 </Link>
+                                </Fade>
                             </li>
                             <li className="homeList-item">
-                                <Link to='/'>
+                        <Fade right big>
+                                <Link to='/whoweare'>
                                     <span>
                                         WHO
                                              </span>
@@ -66,8 +75,10 @@ function Header(props) {
                                         We Are
                                     </b>
                                 </Link>
+                                </Fade>
                             </li>
                             <li className="homeList-item">
+                        <Fade right big>
                                 <Link to='/'>
                                     <span>
                                         what
@@ -76,8 +87,10 @@ function Header(props) {
                                         we do
                                     </b>
                                 </Link>
+                                </Fade>
                             </li>
                             <li className="homeList-item">
+                        <Fade right big>
                                 <Link to='/'>
 
                                     <span>
@@ -87,8 +100,10 @@ function Header(props) {
                                         media
                                     </b>
                                 </Link>
+                                </Fade>
                             </li>
                             <li className="homeList-item">
+                        <Fade right big>
                                 <Link to='/'>
                                     <span>
                                         make
@@ -97,9 +112,12 @@ function Header(props) {
                                         contact
                                     </b>
                                 </Link>
+                                </Fade>
                             </li>
                         </ul>
-                        <img src={ScreenSide} className='ScreenSide' alt='img'/>
+                        <Fade bottom big>
+                        <img src={ScreenSide} className='ScreenSide' alt='img' />
+                    </Fade>
                     </div>
 
 

@@ -7,14 +7,14 @@ function NavOpenerBtn({active,setActive}) {
 
             <g id="menu-8" className={active?'active':''} transform="translate(0 -4)">
                 <line id="_3" data-name="3" x2="22" transform="translate(1 19)" fill="none" stroke="currentColor"
-                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                    stroke-width="2" />
+                    strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10"
+                    strokeWidth="2" />
                 <line id="_2" data-name="2" x2="22" transform="translate(1 5)" fill="none" stroke="currentColor"
-                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                    stroke-width="2" />
+                    strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10"
+                    strokeWidth="2" />
                 <line id="_1" data-name="1" x2="15" transform="translate(1 12)" fill="none" stroke="currentColor"
-                    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                    stroke-width="2" />
+                    strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10"
+                    strokeWidth="2" />
             </g>
         </svg>
     </button>

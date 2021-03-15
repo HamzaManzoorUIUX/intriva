@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/img/logo.png'
+import Logo from '../assets/img/logo.png'
 import NavOpenerBtn from './NavOpenerBtn';
 function MyNavBar(props) {
     const [menuOpener, setMenuOpener] = useState(false)
     const [scrollCheck, setScrollCheck] = useState(false)
     const onScroll=(e)=>{
-        if(window.pageYOffset>window.innerHeight)
+        var height=props.tab!==undefined?window.innerHeight:10
+        if(window.pageYOffset>height)
         setScrollCheck(true)
-        else if(window.pageYOffset<window.innerHeight){
+        else if(window.pageYOffset<height){
             setScrollCheck(false)
         }
     }
@@ -35,7 +36,7 @@ function MyNavBar(props) {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/'>
+                                <Link to='/whoweare'>
                                     Who we are
                                 </Link>
                             </li>
@@ -63,7 +64,9 @@ function MyNavBar(props) {
                      
                     </div>
                     <div className={`text-uppercase f-20 col-md-4 pl-3 text-md-right pb-3 pt-2 ${scrollCheck?'position-absolute top-50':' navBorder'}`}>
-                            About INTRIVA
+                            {
+                            props.title
+                            }
                   </div>
             
                 </div>

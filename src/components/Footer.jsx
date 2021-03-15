@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LinkedIn from '../../assets/img/linkedin-white-logo-png-14.png'
-import PRI from '../../assets/img/UN+PRI+logo+copy.png'
+import LinkedIn from '../assets/img/linkedin-white-logo-png-14.png'
+import PRI from '../assets/img/UN+PRI+logo+copy.png'
 import Fade from 'react-reveal/Fade';
 
 function Footer(props) {
