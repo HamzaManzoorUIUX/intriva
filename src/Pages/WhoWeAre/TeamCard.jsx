@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import { BiMinusCircle,BiPlusCircle } from "react-icons/bi";
-import teamImg from "../../assets/img/hunters-race-MYbhN8KaaEc-unsplash.svg";
 
 function TeamCard(props) {
     const [details,setdetails]=useState(false)
+    
     return (
-        <div className='col-md-4 my-3'>
+        <div className='my-3'>
         <div className="team-card">
-            <img src={teamImg} alt="team" className='team-card-img' />
+            <img src={props.data.img} alt="team" className='team-card-img' />
             <div className='team-card-content'>
                 <h5 className='team-card-heading'>
-                    Luis Dominguez Cortés
+                {props.data.heading}
                                 </h5>
                 <div className="team-card-text">
-                    Partner, Portfoio Manager
+                {props.data.detail.slice(0,20)}
                                 </div>
             </div>
             <div className="f-30" onClick={()=>setdetails(!details)}>
@@ -24,9 +24,8 @@ function TeamCard(props) {
                 }
             </div>
         </div>
-
         <div className={`cardDetails ${details?'show':'hide'}`}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius architecto ut maxime quidem dolores temporibus! Voluptatem, molestiae magni vel voluptates nulla dolores quae eos sequi commodi alias dicta repudiandae. Iusto?
+                {props.data.detail}
         </div>
         </div>
     );

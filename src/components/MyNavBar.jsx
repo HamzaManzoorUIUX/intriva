@@ -19,7 +19,7 @@ function MyNavBar(props) {
         return () => {
             window.removeEventListener('scroll', onScroll);
         };
-    }, []);
+    });
     return (
         <>
             <div className='sticky-top py-2 bg-white shadow'>
