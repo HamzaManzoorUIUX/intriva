@@ -17,7 +17,7 @@ useEffect(() => {
     window.addEventListener('load', handleLoad);
 })
   return (
-      loading===true?<div className="sweet-loading z-100 position-fixed w-100 h-100vh bg-dark d-flex justify-content-center align-items-center">
+      loading===true?<div className="sweet-loading z-5000 position-fixed w-100 h-100vh bg-dark d-flex justify-content-center align-items-center">
       <SyncLoader color={"#E9B34E"} loading={loading} css={override} size={50} />
  </div>:<></>
 
