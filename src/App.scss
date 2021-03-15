@@ -379,7 +379,16 @@ footer {
         }
     }
 }
-
+.showCardData{
+    padding      : .5rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid #E9B34E;
+    border-top: 2px solid #E9B34E;
+    display      : none;
+    @media(max-width:767px){
+        display: none !important;
+    }
+}
 .cardDetails {
     padding      : .5rem;
     margin-top: 1rem;
@@ -391,5 +400,10 @@ footer {
         display: block;
     }
   
-
+    @media(min-width:767px){
+        display: none !important;
+    }
+}
+.curser{
+    cursor: pointer;
 }

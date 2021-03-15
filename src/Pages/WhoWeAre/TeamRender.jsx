@@ -1,32 +1,25 @@
-import React from 'react';
-import TeamCard from './TeamCard';
-
-import Fade from 'react-reveal/Fade';
+import React, { useEffect, useState } from 'react';
+import RenderThree from './RenderThree';
 import TeamData from "./TeamData.json";
 function TeamRender(props) {
-const CallTeam=(obj)=>{
-    return <div className="col-md-4">
-    <TeamCard data={obj} />
-    </div>
-}
-
+    const [modelOpen, setModelOpen] = useState(null)
+    const [detail, setDetail] = useState('')
+    const [result, setResult] = useState(null)
+    useEffect(() => {
+        if (result === null) {
+            setResult(new Array(Math.ceil(TeamData.length / 3))
+            .fill()
+            .map(_ => TeamData.splice(0, 3)))
+        }
+    },[result])
     return (
-        <div className='row'>
+        <div>
             {
-                TeamData.map((obj, i) => {
-                    if (i % 3 === 0)
-                        return <Fade left big key={i}>
-                            {CallTeam(obj)}
-                        </Fade>
-                    else if (i % 3 === 1)
-                        return <Fade bottom big key={i}>
-                            {CallTeam(obj)}
-                        </Fade>
-                    else
-                        return <Fade right big key={i}>
-                            {CallTeam(obj)}
-                        </Fade>
-                })
+                result!==null&&result!==undefined?
+                result.map((obj, i) => {
+                    return <RenderThree data={obj} key={i} modelOpen={modelOpen} setModelOpen={setModelOpen} detail={detail} setDetail={setDetail} />
+                }):<></>
+
             }
 
         </div>

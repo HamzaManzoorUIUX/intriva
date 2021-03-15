@@ -25,9 +25,14 @@ function MyNavBar(props) {
             <div className='sticky-top py-2 bg-white shadow'>
                 <div className="px-3 position-relative">
                     <div className="myNavBar">
-                        <Link to='/'>
+                        <Link to='/' className='d-none d-md-block'>
                             <img src={Logo} className='myNavBar-logo' alt="logo" />
                         </Link>
+                        <div className="f-20 d-block d-md-none navBorder pr-3">
+                            {
+                                props.title
+                            }
+                        </div>
                         <NavOpenerBtn active={menuOpener} setActive={setMenuOpener} />
                         <ul className={`myNavBar-menu ${menuOpener ? 'active' : ''}`}>
                             <li>
@@ -63,7 +68,7 @@ function MyNavBar(props) {
                         </ul>
                      
                     </div>
-                    <div className={`text-uppercase f-20 col-md-4 pl-3 text-md-right pb-3 pt-2 ${scrollCheck?'position-absolute top-50':' navBorder'}`}>
+                    <div className={`text-uppercase f-20 col-md-4 pl-3 d-none d-md-block text-md-right pb-3 pt-2 ${scrollCheck?'position-md-absolute top-50 ':' navBorder'}`}>
                             {
                             props.title
                             }
