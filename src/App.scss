@@ -122,40 +122,49 @@
 
     .homeList-item {
 
-        span {
-            color         : white;
-            display       : block;
-            font-size     : 37px;
-            line-height   : 1;
-            text-transform: uppercase;
-            margin-right  : .25rem;
-            font-weight   : 200;
+        a {
+            text-decoration: none;
 
-            @media(max-width: 991px) {
-                font-size: 32px;
-                display  : inline-block;
+            span {
+                color         : white;
+                display       : block;
+                font-size     : 37px;
+                line-height   : 1;
+                text-transform: uppercase;
+                margin-right  : .25rem;
+                font-weight   : 200;
+
+
+                @media(max-width: 991px) {
+                    font-size: 32px;
+                    display  : inline-block;
+                }
+
+                @media(max-width: 767px) {
+                    font-size: 27px;
+                    display  : inline-block;
+                }
             }
 
-            @media(max-width: 767px) {
-                font-size: 27px;
-                display  : inline-block;
-            }
-        }
+            b {
+                display       : block;
+                line-height   : 1;
+                text-transform: uppercase;
+                font-size     : 56px;
+                color         : white;
 
-        b {
-            display       : block;
-            line-height   : 1;
-            text-transform: uppercase;
-            font-size     : 56px;
-            color         : white;
+                &:hover {
+                    text-decoration: underline;
+                }
 
-            @media(max-width: 991px) {
-                font-size: 37px;
-            }
+                @media(max-width: 991px) {
+                    font-size: 37px;
+                }
 
-            @media(max-width: 767px) {
-                font-size: 27px;
-                display  : inline-block;
+                @media(max-width: 767px) {
+                    font-size: 27px;
+                    display  : inline-block;
+                }
             }
         }
 
@@ -189,8 +198,9 @@
     align-items    : center;
 
     .myNavBar-logo {
-        height: 70px;
-        @media(max-width:767PX){
+        height: 55px;
+
+        @media(max-width:767PX) {
             height: 35px;
         }
 
@@ -235,7 +245,8 @@
     min-width       : 160px;
     flex-direction  : column;
     justify-content : flex-end;
-    @media(max-width:767px){
+
+    @media(max-width:767px) {
         right: 0px;
     }
 
@@ -263,49 +274,63 @@
         }
     }
 }
-.navBorder{
-    border-bottom:2px solid #E9B34E;
+
+.navBorder {
+    border-bottom: 2px solid #E9B34E;
 }
-.sectionImg{
+
+.sectionImg {
     max-width: 500px;
-    width: 100%;
+    width    : 100%;
 }
-.upperLine{
-    border-top: 2px solid #E9B34E ;
-    display: inline-block;
-    padding: .5rem 1rem .5rem 0px;
+
+.upperLine {
+    border-top: 2px solid #E9B34E;
+    display   : inline-block;
+    padding   : .5rem 1rem .5rem 0px;
     margin-top: .75rem;
 }
-.homeBack{
+
+.homeBack {
     background-image: url('./assets/img/Group 1432.png');
-    background-size: cover;
+    background-size : cover;
+
     @media(max-width:500px) {
         background-image: none;
     }
 }
-footer{
+
+footer {
     background-color: #161E26;
-    padding-top: 2.5rem;
-    padding-bottom: .5rem;
-    >.myList{
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    li{
-        a{
-            padding: .5rem 1rem;
-            margin: .25rem .5rem;
-            text-decoration: none;
-            color: white;
+    padding-top     : 2.5rem;
+    padding-bottom  : .5rem;
+
+    >.myList {
+        list-style-type: none;
+        display        : flex;
+        justify-content: flex-end;
+
+        li {
+            a {
+                padding        : .5rem 1rem;
+                margin         : .25rem .5rem;
+                text-decoration: none;
+                color          : white;
+            }
         }
     }
-    }
 }
-.myFooter-img{
+
+.myFooter-img {
     margin: 0px 1rem;
     height: 40px;
 }
 
-.z-5000{
-z-index: 5000;
+.z-5000 {
+    z-index: 5000;
+}
+
+.top-50 {
+    top      : 50%;
+    transform: translateY(-50%);
 }
