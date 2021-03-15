@@ -13,7 +13,7 @@ function Header(props) {
             <PreLoader />
             <div className='headerHome pt-4 z-50'>
                 {
-                    vid == 1 ?
+                    vid === 1 ?
                         <video autoPlay muted loop className='headerHome-video'>
                             <source src={Londan} type='video/mp4' />
                         </video> :
@@ -97,7 +97,7 @@ function Header(props) {
                                 </Link>
                             </li>
                         </ul>
-                        <img src={ScreenSide} className='ScreenSide' />
+                        <img src={ScreenSide} className='ScreenSide' alt='img'/>
                     </div>
 
 
