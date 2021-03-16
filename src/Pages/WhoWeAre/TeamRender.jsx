@@ -7,9 +7,10 @@ function TeamRender(props) {
     const [result, setResult] = useState(null)
     useEffect(() => {
         if (result === null) {
-            setResult(new Array(Math.ceil(TeamData.length / 3))
+            const a=TeamData.slice()
+            setResult(new Array(Math.ceil(a.length / 3))
             .fill()
-            .map(_ => TeamData.splice(0, 3)))
+            .map(_ => a.splice(0, 3)))
         }
     },[result])
     return (

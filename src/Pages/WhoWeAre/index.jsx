@@ -6,10 +6,12 @@ import { FaHubspot } from "react-icons/fa";
 
 import Fade from 'react-reveal/Fade';
 import TeamRender from './TeamRender';
+import PreLoader from '../../components/PreLoader';
 
 function WhoWeAre(props) {
     return (
         <div>
+            <PreLoader/>
             <ScrollToTopOnMount />
             <MyNavBar title={'Who We Are'} />
             <div className="container-fluid homeBack pb-5">

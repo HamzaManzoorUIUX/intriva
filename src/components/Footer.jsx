@@ -15,7 +15,7 @@ function Footer(props) {
                    </Link>
                     </li>
                     <li>
-                        <Link to='/'>
+                        <Link to='/whoweare'>
                             Who We Are Docs
                     </Link>
                     </li>

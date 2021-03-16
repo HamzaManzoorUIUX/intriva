@@ -1,9 +1,8 @@
 import React from 'react';
 import { BiMinusCircle, BiPlusCircle } from "react-icons/bi";
 
-function TeamCard({ data, modelOpen, setModelOpen, detail, setDetail }) {
+function TeamCard({ data, modelOpen, setModelOpen,  setDetail }) {
     // const [details,setdetails]=useState(false)
-console.log(data);
     return (
         <div className='col-md-4 my-3'>
             <div className="team-card">

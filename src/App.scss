@@ -166,19 +166,21 @@
                     display  : inline-block;
                 }
             }
+            @media(max-width:767px) {
+                padding   : .5rem;
+                border    : 1px solid white;
+                margin    : .5rem 0;
+                text-align: center;
+                display: block;
+            }
         }
 
-        @media(max-width:767px) {
-            padding   : .5rem;
-            border    : 1px solid white;
-            margin    : .5rem 0;
-            text-align: center;
-        }
     }
 
     @media(max-width:767px) {
         flex-direction: column;
         max-width     : 90%;
+        margin-bottom: 0;
         margin-left   : auto;
         margin-right  : auto;
     }
@@ -190,6 +192,7 @@
     bottom  : 0px;
     z-index : 10;
     height  : 45px;
+  
 }
 
 .myNavBar {
@@ -386,6 +389,7 @@ footer {
     border-bottom: 2px solid #E9B34E;
     border-top: 2px solid #E9B34E;
     display      : none;
+    min-height: 200px;
     @media(max-width:767px){
         display: none !important;
     }

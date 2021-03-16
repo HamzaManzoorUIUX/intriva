@@ -3,7 +3,6 @@ import Frankfurt from "../../assets/videos/Frankfurt Skyline stock video footage
 import Londan from "../../assets/videos/London Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
 import Neurons from "../../assets/videos/Stock Video of Neurons in brain. Loop. 3D animation of neural network. at Adobe Stock - Adobe Stock.MP4";
 import ScreenSide from "../../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
-import PreLoader from '../../components/PreLoader';
 import Logo from "../../assets/img/logo.png";
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
@@ -11,7 +10,6 @@ function Header(props) {
     const vid = parseInt(Math.random() * 2 + 1)
     return (
         <>
-            <PreLoader />
             <div className='headerHome pt-4 z-50'>
                 {
                     vid === 1 ?
@@ -23,7 +21,7 @@ function Header(props) {
                         </video>
                 }
 
-                <div className="z-10 position-relative d-flex justify-content-around justify-content-md-between flex-column h-100">
+                <div className="z-10 position-relative d-flex  justify-content-md-between flex-column h-100 " >
                     <div className="px-3 py-3 bannerImg d-block d-md-none ">
                         <video autoPlay muted loop className='neural-video'>
                             <source src={Neurons} type='video/mp4' />
@@ -52,7 +50,7 @@ function Header(props) {
                     </Fade>
                     <div className='h-50'>
 
-                        <ul className="homeList pb-5">
+                        <ul className="homeList pb-md-5 mt-5 mt-md-0">
                             <li className="homeList-item">
                         <Fade right big>
                                 <Link to='/'>

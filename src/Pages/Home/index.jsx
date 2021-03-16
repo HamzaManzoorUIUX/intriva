@@ -5,10 +5,12 @@ import sectionOne from '../../assets/img/Mask Group 6.png'
 import sectionTwo from '../../assets/img/Mask Group 8.png'
 import Footer from '../../components/Footer';
 import Fade from 'react-reveal/Fade';
+import PreLoader from '../../components/PreLoader';
 import ScrollToTopOnMount from '../../components/ScrollToTop';
 function Home(props) {
     return (
         <div>
+            <PreLoader />
             <ScrollToTopOnMount/>
             <Header />
             <MyNavBar tab={1} title={'ABOUT INTRIVA'}/>
