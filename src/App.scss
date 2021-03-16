@@ -412,3 +412,8 @@ footer {
 .curser{
     cursor: pointer;
 }
+.position-md-absolute{
+    @media(min-width: 767px){
+        position: absolute !important;
+    }
+}

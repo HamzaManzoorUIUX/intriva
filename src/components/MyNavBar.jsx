@@ -46,7 +46,7 @@ function MyNavBar(props) {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/'>
+                                <Link to='/whatwedo'>
                                     What We Do
                                 </Link>
                             </li>

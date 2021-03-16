@@ -14,10 +14,8 @@ function PreLoader(props) {
     setLoading(!loading)
 }
 useEffect(() => {
-    window.addEventListener('load', handleLoad);
-    // return (
-    //   window.removeEventListener('load',handleLoad)
-    // )
+  if(loading)
+    setTimeout(handleLoad,1000)
 })
   return (
       loading===true?<div className="sweet-loading z-5000 position-fixed w-100 h-100vh bg-dark d-flex justify-content-center align-items-center">
