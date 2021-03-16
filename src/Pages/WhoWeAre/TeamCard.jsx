@@ -3,7 +3,7 @@ import { BiMinusCircle, BiPlusCircle } from "react-icons/bi";
 
 function TeamCard({ data, modelOpen, setModelOpen, detail, setDetail }) {
     // const [details,setdetails]=useState(false)
-
+console.log(data);
     return (
         <div className='col-md-4 my-3'>
             <div className="team-card">
@@ -13,10 +13,10 @@ function TeamCard({ data, modelOpen, setModelOpen, detail, setDetail }) {
                         {data.heading}
                     </h5>
                     <div className="team-card-text">
-                        {data.detail.slice(0, 20)}
+                        {data.role}
                     </div>
                 </div>
-                <div className="f-30 curser" onClick={() => { setModelOpen(modelOpen!==data.id?data.id:null); setDetail(data.detail) }}>
+                <div className="f-30 curser ml-auto" onClick={() => { setModelOpen(modelOpen!==data.id?data.id:null); setDetail(data.detail) }}>
                     {
                         modelOpen === data.id ?
                             <BiMinusCircle />

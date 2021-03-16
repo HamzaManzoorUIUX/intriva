@@ -360,13 +360,14 @@ footer {
     display         : flex;
     padding         : .5rem 1rem;
     align-items     : center;
-    justify-content : space-between;
 
     .team-card-img {
-        width        : 100px;
-        height       : 100px;
+        min-width        : 75px;
+        max-width        : 75px;
+        height       : 75px;
         border-radius: 50%;
         overflow     : hidden;
+        margin-right: .75rem;
     }
 
     .team-card-content {
