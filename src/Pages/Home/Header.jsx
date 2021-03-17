@@ -102,7 +102,7 @@ function Header(props) {
                             </li>
                             <li className="homeList-item">
                         <Fade right big>
-                                <Link to='/'>
+                                <Link to='/contact-us'>
                                     <span>
                                         make
                                              </span>

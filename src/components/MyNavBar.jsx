@@ -68,7 +68,7 @@ function MyNavBar(props) {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/'>
+                                <Link to='/contact-us'>
                                     Make Contact
                                 </Link>
                             </li>

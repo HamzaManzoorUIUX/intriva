@@ -7,6 +7,7 @@ import WhoWeAre from './Pages/WhoWeAre';
 import WhatWeDo from './Pages/WhatWeDo';
 import Media from './Pages/Media';
 import Artical from './Pages/Media/Artical';
+import ContactUs from './Pages/ContactUs';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
      <Route exact path='/whatwedo' component={WhatWeDo} />
      <Route exact path='/media' component={Media} />
      <Route exact path='/artical/:id' component={Artical} />
+     <Route exact path='/contact-us' component={ContactUs} />
      <Route  path='*' component={ErrorPage} />
    </Switch>
    </BrowserRouter>
