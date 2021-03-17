@@ -479,3 +479,22 @@ footer {
 .bottom-0{
     bottom: 0px;
 }
+.top-0{
+    top: 0px;
+}
+.right-0{
+    right: 0px;
+}
+.articalContent{
+    min-height: 100vh;
+    position: relative;
+}
+.navTitle{
+    max-width: 500px;
+    width: 100%;
+}
+.navArtical{
+    padding-left: 250px !important;
+    text-align: start !important;
+    display: inline-block !important;
+}

@@ -4,6 +4,6 @@ export default function ScrollToTopOnMount() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+console.log('top');
   return null;
 }
