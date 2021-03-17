@@ -5,34 +5,46 @@ import NavOpenerBtn from './NavOpenerBtn';
 function MyNavBar(props) {
     const [menuOpener, setMenuOpener] = useState(false)
     const [scrollCheck, setScrollCheck] = useState(false)
-    const onScroll=(e)=>{
-        var height=props.tab!==undefined?window.innerHeight:10
-        if(window.pageYOffset>height)
-        setScrollCheck(true)
-        else if(window.pageYOffset<height){
+    const [startScroll, setstartScroll] = useState(false)
+    const onScroll = (e) => {
+        var height = props.tab !== undefined ? window.innerHeight : 10
+        if (window.pageYOffset > height)
+            setScrollCheck(true)
+        else if (window.pageYOffset < height) {
             setScrollCheck(false)
         }
     }
+    const ScrollTop = () => {
+        if (startScroll === false) {
+            window.scrollTo(0, 0)
+            setstartScroll(true)
+        }
+    }
     useEffect(() => {
+        ScrollTop()
         window.addEventListener('scroll', onScroll, { passive: true });
-    
+
         return () => {
             window.removeEventListener('scroll', onScroll);
         };
     });
     return (
         <>
-            <div className='sticky-top py-2 bg-white shadow'>
+            <div className={` ${props.tab !== undefined ? 'sticky-top' : 'fixed-top'} py-2 shadow ${scrollCheck ? 'bg-white' : 'bg-transparent'}`}>
                 <div className="px-3 position-relative">
                     <div className="myNavBar">
                         <Link to='/' className='d-none d-md-block'>
                             <img src={Logo} className='myNavBar-logo' alt="logo" />
                         </Link>
-                        <div className="f-20 d-block d-md-none navBorder pr-3">
-                            {
-                                props.title
-                            }
-                        </div>
+                        {
+                            props.title !== undefined ?
+                                <div className="f-20 d-block d-md-none navBorder pr-3">
+                                    {
+                                        props.title
+                                    }
+                                </div> :
+                                <></>
+                        }
                         <NavOpenerBtn active={menuOpener} setActive={setMenuOpener} />
                         <ul className={`myNavBar-menu ${menuOpener ? 'active' : ''}`}>
                             <li>
@@ -51,7 +63,7 @@ function MyNavBar(props) {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/'>
+                                <Link to='/media'>
                                     In the Media
                                 </Link>
                             </li>
@@ -66,14 +78,18 @@ function MyNavBar(props) {
                                 </Link>
                             </li>
                         </ul>
-                     
+
                     </div>
-                    <div className={`text-uppercase f-20 col-md-4 pl-3 d-none d-md-block text-md-right pb-3 pt-2 ${scrollCheck?'position-md-absolute top-50 ':' navBorder'}`}>
-                            {
-                            props.title
-                            }
-                  </div>
-            
+                    {
+                        props.title !== undefined ?
+                            <div className={`text-uppercase f-20 col-md-4 pl-3 d-none d-md-block text-md-right pb-3 pt-2 ${scrollCheck ? 'position-md-absolute top-50 ' : ' navBorder'}`}>
+                                {
+                                    props.title
+                                }
+                            </div>
+                            :
+                            <></>
+                    }
                 </div>
             </div>
 

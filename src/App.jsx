@@ -5,6 +5,8 @@ import Home from './Pages/Home';
 import ErrorPage from './Pages/ErrorPage';
 import WhoWeAre from './Pages/WhoWeAre';
 import WhatWeDo from './Pages/WhatWeDo';
+import Media from './Pages/Media';
+import Artical from './Pages/Media/Artical';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
      <Route exact path='/' component={Home} />
      <Route exact path='/whoweare' component={WhoWeAre} />
      <Route exact path='/whatwedo' component={WhatWeDo} />
+     <Route exact path='/media' component={Media} />
+     <Route exact path='/artical/:id' component={Artical} />
      <Route  path='*' component={ErrorPage} />
    </Switch>
    </BrowserRouter>

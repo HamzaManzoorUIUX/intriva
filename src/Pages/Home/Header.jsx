@@ -89,7 +89,7 @@ function Header(props) {
                             </li>
                             <li className="homeList-item">
                         <Fade right big>
-                                <Link to='/'>
+                                <Link to='/media'>
 
                                     <span>
                                         in the

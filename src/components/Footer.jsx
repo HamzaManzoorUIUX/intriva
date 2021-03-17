@@ -25,7 +25,7 @@ function Footer(props) {
                     </Link>
                     </li>
                     <li>
-                        <Link to='/'>
+                        <Link to='/media'>
                             In The Media
                     </Link>
                     </li>
