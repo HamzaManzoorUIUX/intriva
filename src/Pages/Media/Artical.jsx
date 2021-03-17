@@ -137,14 +137,19 @@ function Artical(props) {
                         </div>
                         <div className="articalContent">
                             <MyNavBar tab={1} title={data.title} artical={true} />
-                            <div className="container">
+                            <div className="container pt-5">
                                 <div className="d-flex justify-content-between">
                                     <div>
                                         {data.date}
                                     </div>
-                                    <div>
+                                    <div className='f-30'>
                                         <FaFilePdf />
                                     </div>
+                                </div>
+                                <div className='mt-3'>
+                                    {
+                                        data.detail
+                                    }
                                 </div>
                             </div>
                             <div className="bottom-0 position-absolute w-100">
