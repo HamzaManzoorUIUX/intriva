@@ -30,10 +30,11 @@ function MyNavBar(props) {
     });
     return (
         <>
-            <div className={` ${props.tab !== undefined ? 'sticky-top' : 'fixed-top'} py-2 shadow ${scrollCheck ? 'bg-white' : 'bg-transparent'}`}>
+            <div className={` ${props.tab !== undefined ? 'sticky-top' : 'fixed-top'} py-2 ${scrollCheck ? 'bg-white' : 'bg-transparent'}`}>
                 <div className="px-3 position-relative">
                     <div className="myNavBar">
-                        <Link to='/' className='d-none d-md-block'>
+                     <div>
+                     <Link to='/' className={`d-md-block ${scrollCheck ? 'd-none' : ''}`}>
                             <img src={Logo} className='myNavBar-logo' alt="logo" />
                         </Link>
                         {
@@ -43,8 +44,9 @@ function MyNavBar(props) {
                                         props.title
                                     }
                                 </div> :
-                                <></>
+                                <>&nbsp;</>
                         }
+                     </div>
                         <NavOpenerBtn active={menuOpener} setActive={setMenuOpener} />
                         <ul className={`myNavBar-menu ${menuOpener ? 'active' : ''}`}>
                             <li>

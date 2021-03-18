@@ -9,10 +9,12 @@ import Logo from '../../assets/img/logo.png'
 import { FaFilePdf } from 'react-icons/fa'
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Fade from 'react-reveal/Fade';
+import Pdf from "react-to-pdf";
+const ref = React.createRef();
 function Artical(props) {
     const { id } = props.match.params
     const [menuOpener, setMenuOpener] = useState(false)
-    const [lastScrollTop, setlastScrollTop] = useState(false)
+    const [lastScrollTop, setlastScrollTop] = useState(true)
     // const [ticking, setticking] = useState(false)
     const data = media.find(obj => {
         if (obj.id === id) {
@@ -65,31 +67,23 @@ function Artical(props) {
             upHandler={(e) => goTop()}
             downHandler={(e) => goDown()}
         >
-            <div>
+            <div id=''>
 
                 {
                     data === undefined ?
                         <h1 className='text-center pt-5'>
                             No Data against ID
             </h1> :
-                        <div>
+                        <div ref={ref}>
                             <Fade top when={lastScrollTop} big>
-                                <div className={`articalBack position-absolute ${lastScrollTop?'z-6000':'z-0'}`} style={{ background: `url(${data.img})` }}>
+                                <div className={`articalBack position-absolute ${lastScrollTop ? 'z-6000' : 'z-0'}`} style={{ background: `url(${data.img})` }}>
                                     <div className={` position-absolute w-100 left-0 top-0 py-2 shadow }`}>
                                         <div className="px-3 position-relative">
                                             <div className="myNavBar">
                                                 <Link to='/' className='d-none d-md-block'>
                                                     <img src={Logo} className='myNavBar-logo' alt="logo" />
                                                 </Link>
-                                                {/* {
-                            props.title !== undefined ?
-                                <div className="f-20 d-block d-md-none navBorder pr-3">
-                                    {
-                                        data.title
-                                    }
-                                </div> :
-                                <></>
-                        } */}
+                     
                                                 <NavOpenerBtn active={menuOpener} setActive={setMenuOpener} />
                                                 <ul className={`myNavBar-menu ${menuOpener ? 'active' : ''}`}>
                                                     <li>
@@ -125,16 +119,7 @@ function Artical(props) {
                                                 </ul>
 
                                             </div>
-                                            {/* {
-                        data.title !== undefined ?
-                            <div className={`text-uppercase f-20 pl-3 d-none d-md-block text-md-right pb-3 pt-2 ${scrollCheck ? 'position-md-absolute top-50 ' : ' navBorder'} ${props.artical?'navArtical':'navTitle'}`}>
-                                {
-                                    data.title
-                                }
-                            </div>
-                            :
-                            <></>
-                    } */}
+                           
                                         </div>
                                     </div>
 
@@ -156,23 +141,29 @@ function Artical(props) {
                                 </div>
                             </Fade>
                             <div className="articalContent">
-                                <MyNavBar tab={1} title={data.title} artical={true} />
+                                <MyNavBar tab={1} artical={true} />
                                 <div className="container pt-5">
-                                    <div className="d-flex justify-content-between">
+                                    <div className="d-flex pb-3 align-items-center justify-content-between">
                                         <div>
                                             {data.date}
                                         </div>
-                                        <div className='f-30'>
-                                            <FaFilePdf />
-                                        </div>
+                                        <Pdf targetRef={ref} filename={`${data.title}.pdf`}>
+                                            {({ toPdf }) => <button onClick={toPdf} className='btn btn-primary text-light'>
+                                                <FaFilePdf />
+                                            </button>}
+                                        </Pdf>
+
                                     </div>
+                                    <h5>
+                                        {data.title}
+                                    </h5>
                                     <div className='mt-3'>
                                         {
                                             data.detail
                                         }
                                     </div>
                                 </div>
-                                <div className="bottom-0 position-absolute w-100">
+                                <div className=" w-100">
                                     <Footer />
                                 </div>
                             </div>

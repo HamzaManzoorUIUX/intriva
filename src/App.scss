@@ -187,7 +187,7 @@
 }
 
 .ScreenSide {
-    position: absolute;
+    position: fixed;
     left    : 0px;
     bottom  : 0px;
     z-index : 10;
@@ -301,7 +301,7 @@
 
 
     @media(max-width:500px) {
-        background-image: none;
+        background-image: url('./assets/img/Group\ 1435.png');
     }
 }
 
@@ -327,8 +327,10 @@ footer {
 }
 
 .myFooter-img {
-    margin: 0px 1rem;
     height: 40px;
+    @media(min-width:767px){
+        margin: 0px 1rem;
+    }
 }
 
 .z-5000 {
@@ -433,6 +435,11 @@ footer {
     background-size: cover;
     padding-top: 130px;
     position: relative;
+    @media(max-width:767px){
+        background-image: url('./assets/img/Group 1433.png');
+        &::after{
+            background-color: rgba($color: #ffffff, $alpha: .1);
+    }}
     &::after{
         z-index: 1;
         content: '';
@@ -497,6 +504,9 @@ footer {
 .articalContent{
     min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .navTitle{
     max-width: 500px;

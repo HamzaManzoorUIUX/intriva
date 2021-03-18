@@ -16,7 +16,7 @@ function WhatWeDo(props) {
             <div className="whatwedoBack">
                 <div className="container-fluid p-3 z-10 position-relative">
                     <div className="row">
-                        <div className="col-md-5">
+                        <div className="col-md-5 d-none d-md-block">
                             <Fade right big>
                             <img src={Mask6} alt="Mask6" className='w-100 my-3'/>
                             </Fade>

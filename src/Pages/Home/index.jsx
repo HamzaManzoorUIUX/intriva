@@ -1,18 +1,39 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Header from './Header';
 import MyNavBar from '../../components/MyNavBar';
 import sectionOne from '../../assets/img/Mask Group 6.png'
 import sectionTwo from '../../assets/img/Mask Group 8.png'
 import Footer from '../../components/Footer';
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Fade from 'react-reveal/Fade';
 // import PreLoader from '../../components/PreLoader';
 import ScrollToTopOnMount from '../../components/ScrollToTop';
 function Home(props) {
+    const [lastScrollTop, setlastScrollTop] = useState(true)
+
+    const goDown = () => {
+        if (window.pageYOffset >= 0) {
+            setlastScrollTop(false)
+        }
+    }
+    const goTop = () => {
+        if (window.pageYOffset <= 0) {
+            setlastScrollTop(true)
+        }
+    }
     return (
+        <ReactScrollWheelHandler
+        upHandler={(e) => goTop()}
+        downHandler={(e) => goDown()}
+    >
         <div>
             {/* <PreLoader /> */}
             <ScrollToTopOnMount/>
+            <Fade top  when={lastScrollTop} big>
+            <div className={`position-absolute ${lastScrollTop ? 'z-6000' : 'z-0'}`}>
             <Header />
+            </div>
+            </Fade>
             <MyNavBar tab={1} title={'ABOUT INTRIVA'}/>
             <div className='container-fluid homeBack'>
                 <div className="row align-items-center py-5">
@@ -98,6 +119,7 @@ function Home(props) {
                 </div>
                 <Footer />
             </div>
+            </ReactScrollWheelHandler>
     );
 }
 

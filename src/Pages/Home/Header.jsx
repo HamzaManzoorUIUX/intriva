@@ -2,7 +2,6 @@ import React from 'react';
 import Frankfurt from "../../assets/videos/Frankfurt Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
 import Londan from "../../assets/videos/London Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
 import Neurons from "../../assets/videos/Stock Video of Neurons in brain. Loop. 3D animation of neural network. at Adobe Stock - Adobe Stock.MP4";
-import ScreenSide from "../../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
 import Logo from "../../assets/img/logo.png";
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
@@ -113,9 +112,7 @@ function Header(props) {
                                 </Fade>
                             </li>
                         </ul>
-                        <Fade bottom big>
-                        <img src={ScreenSide} className='ScreenSide' alt='img' />
-                    </Fade>
+                     
                     </div>
 
 
