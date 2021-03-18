@@ -26,7 +26,8 @@ function Home(props) {
         upHandler={(e) => goTop()}
         downHandler={(e) => goDown()}
     >
-        <div>
+        <div className='position-relative'>
+            
             {/* <PreLoader /> */}
             <ScrollToTopOnMount/>
             <Fade top  when={lastScrollTop} big>
