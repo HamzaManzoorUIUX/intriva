@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from 'react-reveal';
 import TeamCard from './TeamCard';
 
 function RenderThree({ data, modelOpen, setModelOpen, detail, setDetail }) {
@@ -15,11 +16,13 @@ function RenderThree({ data, modelOpen, setModelOpen, detail, setDetail }) {
                     })
                 }
             </div>
+            <Fade right>
             <div className={`showCardData ${ids.indexOf(modelOpen) >= 0 ? 'd-block' : 'd-none'}`}>
                 {
                     detail
                 }
             </div>
+            </Fade>
         </div>
     );
 }

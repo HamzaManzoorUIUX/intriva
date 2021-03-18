@@ -368,7 +368,12 @@ footer {
     display         : flex;
     padding         : .5rem 1rem;
     align-items     : center;
-
+&.active{
+    border          : 2px solid #E9B34E;
+    .team-card-img{
+        filter: drop-shadow(2px 4px 6px black);
+    }
+}
     .team-card-img {
         min-width        : 75px;
         max-width        : 75px;
@@ -376,6 +381,7 @@ footer {
         border-radius: 50%;
         overflow     : hidden;
         margin-right: .75rem;
+        filter: grayscale(1);
     }
 
     .team-card-content {
@@ -384,7 +390,7 @@ footer {
         }
 
         .team-card-text {
-            color: rgba($color: #000000, $alpha: .5);
+            color: rgba($color: #000000, $alpha: .8);
         }
     }
 }
@@ -566,4 +572,7 @@ footer {
        }
    }
     }
+}
+.font-timeNew{
+    font-family: 'Times New Roman', Times, serif !important;
 }

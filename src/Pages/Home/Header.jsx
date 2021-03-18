@@ -21,7 +21,7 @@ function Header(props) {
                         </video>
                 }
 
-                <div className="z-10 position-relative d-flex  justify-content-md-between flex-column h-100 " >
+                <div className="z-10 position-relative d-flex flex-column h-100 " >
                     <div className="px-3 py-3 bannerImg d-block d-md-none ">
                         <video autoPlay muted loop className='neural-video'>
                             <source src={Neurons} type='video/mp4' />
@@ -48,9 +48,9 @@ function Header(props) {
                             <img src={Logo} alt="logo" className='logoHome z-10 position-relative' />
                         </div>
                     </Fade>
-                    <div className='h-50'>
+                    <div className='h-50 d-flex align-items-md-end'>
 
-                        <ul className="homeList pb-md-5 mt-5 mt-md-0">
+                        <ul className="homeList pt-md-5 mt-5 mt-md-0">
                             <li className="homeList-item">
                         <Fade right big>
                                 <Link to='/'>
