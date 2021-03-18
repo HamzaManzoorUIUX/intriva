@@ -576,3 +576,18 @@ footer {
 .font-timeNew{
     font-family: 'Times New Roman', Times, serif !important;
 }
+    .slick-next{
+        right: 25px !important;
+        color: #000000 !important;
+        &:hover{
+            color: #000000 !important;
+        }
+    }
+    .slick-prev{
+        left: 25px !important;
+        color: #000000 !important;
+        z-index: 1;
+        &:hover{
+            color: #000000 !important;
+        }
+    }
