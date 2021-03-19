@@ -44,7 +44,7 @@ function Home(props) {
                             <img src={sectionOne} alt="sectionOne" className='sectionImg' />
                         </div>
                     </Fade>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-lg-5 col-xl-4">
                         <Fade left big>
                             <div>
                                 <h4 className='text-primary '>

@@ -30,7 +30,7 @@ function MyNavBar(props) {
     });
     return (
         <>
-            <div className={` ${props.tab !== undefined ? 'sticky-top' : 'fixed-top'} py-2 ${scrollCheck ? 'bg-white' : 'bg-transparent'}`}>
+            <div className={` ${props.tab !== undefined ? 'sticky-top' : 'fixed-top'} py-2 bg-transparent`}>
                 <div className="px-3 position-relative">
                     <div className="myNavBar">
                      <div>

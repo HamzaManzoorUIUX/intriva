@@ -130,11 +130,9 @@ function Artical(props) {
                                     <h5>
                                         {data.title}
                                     </h5>
-                                    <div className='mt-3'>
-                                        {
-                                            data.detail
-                                        }
-                                    </div>
+                                    <form>
+                                    <div className='mt-3' dangerouslySetInnerHTML={{_html:'First &middot; Second'}}/>
+                                    </form>
                                 </div>
                                 <div className=" w-100">
                                     <Footer />
