@@ -9,7 +9,8 @@ import Fade from 'react-reveal/Fade';
 // import PreLoader from '../../components/PreLoader';
 import ScrollToTopOnMount from '../../components/ScrollToTop';
 function Home(props) {
-    const [lastScrollTop, setlastScrollTop] = useState(true)
+    const { section } = props.match.params
+    const [lastScrollTop, setlastScrollTop] = useState(section!==undefined?false:true)
 
     const goDown = () => {
         if (window.pageYOffset >= 0) {
@@ -32,10 +33,10 @@ function Home(props) {
             <ScrollToTopOnMount/>
             <Fade top  when={lastScrollTop} big>
             <div className={`position-absolute w-100 ${lastScrollTop ? 'z-6000' : 'z-0'}`}>
-            <Header />
+            <Header goDown={goDown}/>
             </div>
             </Fade>
-            <MyNavBar tab={1} title={'ABOUT INTRIVA'}/>
+            <MyNavBar tab={1} title={'ABOUT INTRIVA'} />
             <div className='container-fluid homeBack'>
                 <div className="row align-items-center py-5">
                     <Fade right big>

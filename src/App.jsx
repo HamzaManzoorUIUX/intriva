@@ -14,6 +14,7 @@ function App() {
    <BrowserRouter>
    <Switch>
      <Route exact path='/' component={Home} />
+     <Route exact path='/aboutintriva/:section' component={Home} />
      <Route exact path='/whoweare' component={WhoWeAre} />
      <Route exact path='/whatwedo' component={WhatWeDo} />
      <Route exact path='/media' component={Media} />

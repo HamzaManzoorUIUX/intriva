@@ -7,10 +7,10 @@ function MyNavBar(props) {
     const [scrollCheck, setScrollCheck] = useState(false)
     const [startScroll, setstartScroll] = useState(false)
     const onScroll = (e) => {
-        var height = props.tab !== undefined ? window.innerHeight : 10
-        if (window.pageYOffset > height)
+        // var height = props.tab !== undefined ? window.innerHeight : 10
+        if (window.pageYOffset > 10)
             setScrollCheck(true)
-        else if (window.pageYOffset < height) {
+        else if (window.pageYOffset < 10) {
             setScrollCheck(false)
         }
     }
@@ -50,7 +50,7 @@ function MyNavBar(props) {
                         <NavOpenerBtn active={menuOpener} setActive={setMenuOpener} />
                         <ul className={`myNavBar-menu ${menuOpener ? 'active' : ''}`}>
                             <li>
-                                <Link to='/'>
+                                <Link to='/aboutintriva/:true'>
                                     About INTRIVA
                                 </Link>
                             </li>

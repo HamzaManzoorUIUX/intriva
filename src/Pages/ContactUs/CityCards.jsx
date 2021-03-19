@@ -50,7 +50,7 @@ function CityCards(props) {
                                 <div className="info">
 
                                     <h1>
-                                        LONDAN
+                                        LONDON
                             </h1>
                                     <div>
                                         1234 Atlantic Street
@@ -108,7 +108,7 @@ function CityCards(props) {
                                 <div className="info">
 
                                     <h1>
-                                        LONDAN
+                                        LONDON
                             </h1>
                                     <div>
                                         1234 Atlantic Street

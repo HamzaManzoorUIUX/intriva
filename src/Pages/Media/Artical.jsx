@@ -23,34 +23,7 @@ function Artical(props) {
         else
             return null
     })
-    // const onScroll = (e) => {
-    //     console.log(window.pageYOffset );
-    //     var height = window.innerHeight
-    //     console.log(height);
-    //     var st = window.pageYOffset  // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-    //     if (st > lastScrollTop) {
-    //         if (window.pageYOffset < height) {
-    //             window.scrollTo(0, height);
-    //             console.log('down');
-    //             setticking(true)
-    //         }
-    //     } else {
-    //         if (window.pageYOffset<height) {
-    //             window.scrollTo(0, 0);
-    //             console.log('up');
-    //             setticking(false)
-    //         }
-    //     }
-    //     setlastScrollTop(st <= 0 ? 0 : st); // For Mobile or negative scrolling
-
-    // }
-    // useEffect(() => {
-    //     window.addEventListener('wheel', onScroll);
-
-    //     return () => {
-    //         window.removeEventListener('wheel', onScroll);
-    //     };
-    // });
+  
     const goDown = () => {
         if (window.pageYOffset >= 0) {
             setlastScrollTop(false)

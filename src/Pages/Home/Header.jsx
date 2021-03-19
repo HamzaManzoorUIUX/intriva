@@ -51,68 +51,68 @@ function Header(props) {
 
                         <ul className="homeList pt-md-5 mt-5 mt-md-0">
                             <li className="homeList-item">
-                        <Fade right big>
-                                <Link to='/'>
-                                    <span>
-                                        About
+                                <Fade right big>
+                                    <div onClick={props.goDown} className='homeList-a'>
+                                        <span>
+                                            About
                                              </span>
-                                    <b>
-                                        INTRIVA
+                                        <b>
+                                            INTRIVA
                                     </b>
-                                </Link>
+                                    </div>
                                 </Fade>
                             </li>
                             <li className="homeList-item">
-                        <Fade right big>
-                                <Link to='/whoweare'>
-                                    <span>
-                                        WHO
+                                <Fade right big>
+                                    <Link to='/whoweare'>
+                                        <span>
+                                            WHO
                                              </span>
-                                    <b>
-                                        We Are
+                                        <b>
+                                            We Are
                                     </b>
-                                </Link>
+                                    </Link>
                                 </Fade>
                             </li>
                             <li className="homeList-item">
-                        <Fade right big>
-                                <Link to='/whatwedo'>
-                                    <span>
-                                        what
+                                <Fade right big>
+                                    <Link to='/whatwedo'>
+                                        <span>
+                                            what
                                              </span>
-                                    <b>
-                                        we do
+                                        <b>
+                                            we do
                                     </b>
-                                </Link>
+                                    </Link>
                                 </Fade>
                             </li>
                             <li className="homeList-item">
-                        <Fade right big>
-                                <Link to='/media'>
+                                <Fade right big>
+                                    <Link to='/media'>
 
-                                    <span>
-                                        in the
+                                        <span>
+                                            in the
                                              </span>
-                                    <b>
-                                        media
+                                        <b>
+                                            media
                                     </b>
-                                </Link>
+                                    </Link>
                                 </Fade>
                             </li>
                             <li className="homeList-item">
-                        <Fade right big>
-                                <Link to='/contact-us'>
-                                    <span>
-                                        make
+                                <Fade right big>
+                                    <Link to='/contact-us'>
+                                        <span>
+                                            make
                                              </span>
-                                    <b>
-                                        contact
+                                        <b>
+                                            contact
                                     </b>
-                                </Link>
+                                    </Link>
                                 </Fade>
                             </li>
                         </ul>
-                     
+
                     </div>
 
 
