@@ -31,7 +31,7 @@ function Home(props) {
             {/* <PreLoader /> */}
             <ScrollToTopOnMount/>
             <Fade top  when={lastScrollTop} big>
-            <div className={`position-absolute ${lastScrollTop ? 'z-6000' : 'z-0'}`}>
+            <div className={`position-absolute w-100 ${lastScrollTop ? 'z-6000' : 'z-0'}`}>
             <Header />
             </div>
             </Fade>
