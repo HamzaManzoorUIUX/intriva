@@ -10,6 +10,7 @@ import { FaFilePdf } from 'react-icons/fa'
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Fade from 'react-reveal/Fade';
 import Pdf from "react-to-pdf";
+import parse from "html-react-parser";
 const ref = React.createRef();
 function Artical(props) {
     const { id } = props.match.params
@@ -49,14 +50,13 @@ function Artical(props) {
             </h1> :
                         <div ref={ref}>
                             <Fade top when={lastScrollTop} big>
-                                <div className={`articalBack position-absolute ${lastScrollTop ? 'z-6000' : 'z-0'}`} style={{ background: `url(${data.img})` }}>
-                                    <div className={` position-absolute w-100 left-0 top-0 py-2 shadow }`}>
+                                <div className={`articalBack position-absolute ${lastScrollTop ? 'z-6000' : 'z-0'}`} style={{ background: data.img!==undefined?`url('${data.img}')`:'white' }}>
+                                    <div className={`z-10 position-absolute w-100 left-0 top-0 py-2 }`}>
                                         <div className="px-3 position-relative">
                                             <div className="myNavBar">
                                                 <Link to='/' className='d-none d-md-block'>
                                                     <img src={Logo} className='myNavBar-logo' alt="logo" />
                                                 </Link>
-                     
                                                 <NavOpenerBtn active={menuOpener} setActive={setMenuOpener} />
                                                 <ul className={`myNavBar-menu ${menuOpener ? 'active' : ''}`}>
                                                     <li>
@@ -108,7 +108,7 @@ function Artical(props) {
                                             </span>
                                         </div>
                                     </div>
-                                    <div className="scrollDownBtn">
+                                    <div className="scrollDownBtn" onClick={goDown}>
                                         <CgScrollV />
                                     </div>
                                 </div>
@@ -127,12 +127,11 @@ function Artical(props) {
                                         </Pdf>
 
                                     </div>
-                                    <h5>
-                                        {data.title}
-                                    </h5>
-                                    <form>
-                                    <div className='mt-3' dangerouslySetInnerHTML={{_html:'First &middot; Second'}}/>
-                                    </form>
+                                 <div className='pt-3 pb-5'>
+                                 {
+                                 parse(data.detail)
+                                 }
+                                 </div>
                                 </div>
                                 <div className=" w-100">
                                     <Footer />
