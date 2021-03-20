@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import MyNavBar from '../../components/MyNavBar';
-import sectionOne from '../../assets/img/Mask Group 6.png'
-import sectionTwo from '../../assets/img/Mask Group 8.png'
+import sectionOne from '../../assets/img/Group 1431.png'
+import sectionTwo from '../../assets/img/Group 1432.png'
 import Footer from '../../components/Footer';
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Fade from 'react-reveal/Fade';
@@ -41,7 +41,7 @@ function Home(props) {
                     <div className='container-fluid '>
                         <div className="row align-items-center py-5">
                             <Fade cascade big>
-                                <div className="col-md-6 d-none d-md-block pl-0">
+                                <div className="col-md-6 d-none d-md-block pl-0 overflow-auto">
                                     <img src={sectionOne} alt="sectionOne" className='sectionImg' />
                                 </div>
                             </Fade>
