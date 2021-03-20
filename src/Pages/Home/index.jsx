@@ -6,8 +6,8 @@ import sectionTwo from '../../assets/img/Mask Group 8.png'
 import Footer from '../../components/Footer';
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Fade from 'react-reveal/Fade';
-// import PreLoader from '../../components/PreLoader';
 import ScrollToTopOnMount from '../../components/ScrollToTop';
+
 function Home(props) {
     const { section } = props.match.params
     const [lastScrollTop, setlastScrollTop] = useState(section !== undefined ? false : true)
@@ -38,15 +38,15 @@ function Home(props) {
                 </Fade>
                 <MyNavBar tab={1} title={'ABOUT INTRIVA'} />
                 <div className="homeBack">
-                    <div className='container '>
+                    <div className='container-fluid '>
                         <div className="row align-items-center py-5">
-                            <Fade right big>
+                            <Fade cascade big>
                                 <div className="col-md-6 d-none d-md-block pl-0">
                                     <img src={sectionOne} alt="sectionOne" className='sectionImg' />
                                 </div>
                             </Fade>
-                            <div className="col-md-6">
-                                <Fade left big>
+                            <div className="col-md-6 col-lg-5 col-xl-4">
+                                <Fade cascade big>
                                     <div>
                                         <h4 className='text-primary '>
                                             <span className="upperLine">
@@ -58,7 +58,7 @@ function Home(props) {
                   </div>
                                     </div>
                                 </Fade>
-                                <Fade left big>
+                                <Fade cascade big>
                                     <div>
                                         <h4 className='text-primary '>
                                             <span className="upperLine">
@@ -70,7 +70,7 @@ function Home(props) {
                   </div>
                                     </div>
                                 </Fade>
-                                <Fade left big>
+                                <Fade cascade big>
                                     <div>
                                         <h4 className='text-primary '>
                                             <span className="upperLine">
@@ -82,7 +82,7 @@ function Home(props) {
                   </div>
                                     </div>
                                 </Fade>
-                                <Fade left big>
+                                <Fade cascade  big>
                                     <div>
                                         <h4 className='text-primary '>
                                             <span className="upperLine">
@@ -97,8 +97,8 @@ function Home(props) {
                             </div>
                         </div>
                         <div className="row align-items-center py-5">
-                            <div className="col-md-6  pl-md-5">
-                                <Fade right big>
+                            <div className="col-md-6  pl-md-5 col-lg-5 col-xl-4 offset-lg-1 offset-xl-2">
+                                <Fade cascade big>
                                     <h4>
                                         Culture
                    </h4>
@@ -114,7 +114,7 @@ function Home(props) {
                                 </Fade>
                             </div>
                             <div className="col-md-6 text-right pr-0 d-none d-md-block">
-                                <Fade left big>
+                                <Fade cascade big>
                                     <img src={sectionTwo} alt="sectionTwos" className='sectionImg' />
                                 </Fade>
                             </div>

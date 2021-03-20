@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/img/logo.png'
 import NavOpenerBtn from './NavOpenerBtn';
+
 function MyNavBar(props) {
     const [menuOpener, setMenuOpener] = useState(false)
     const [scrollCheck, setScrollCheck] = useState(false)
@@ -84,7 +85,7 @@ function MyNavBar(props) {
                     </div>
                     {
                         props.title !== undefined ?
-                            <div className={`text-uppercase f-20 pl-3 d-none d-md-inline-block text-md-right pb-3 pt-2 font-timeNew ${scrollCheck ? 'position-md-absolute top-50 ' : ' navBorder'} ${props.artical?'navArtical':'navTitle'}`}>
+                            <div className={`text-uppercase f-20 pl-3 d-none d-md-inline-block text-md-right pb-3 pt-2 font-timeNew navBorder ${scrollCheck ? 'position-md-absolute top-50 ' : ''} ${props.artical?'navArtical':'navTitle'}`}>
                                 {
                                     props.title
                                 }
