@@ -8,20 +8,21 @@ import NavOpenerBtn from '../../components/NavOpenerBtn';
 import Logo from '../../assets/img/logo.png'
 import { FaFilePdf } from 'react-icons/fa'
 import Pdf from "react-to-pdf";
-import ReactPageScroller from "react-page-scroller";
+// import ReactPageScroller from "react-page-scroller";
 import parse from "html-react-parser"; 
 const ref = React.createRef();
 function Artical(props) {
     const { id } = props.match.params
     const [menuOpener, setMenuOpener] = useState(false)
-    const [currentPage, setcurrentPage] = useState(0)
-    const handlePageChange = number => {
-        setcurrentPage(number)
-    };
+    // const [currentPage, setcurrentPage] = useState(0)
+    // const handlePageChange = number => {
+        // setcurrentPage(number)
+    // };
 
-    const handleBeforePageChange = number => {
-        console.log(number);
-    };
+    // const handleBeforePageChange = number => {
+    //     console.log(number);
+    //     console.log(currentPage);
+    // };
     const data = media.find(obj => {
         if (obj.id === id) {
             return obj
@@ -41,11 +42,11 @@ function Artical(props) {
                             No Data against ID
             </h1> :
                         <div ref={ref}>
-                            <ReactPageScroller
+                            {/* <ReactPageScroller
                                 pageOnChange={handlePageChange}
                                 onBeforePageScroll={handleBeforePageChange}
                                 customPageNumber={currentPage}
-                            >
+                            > */}
                             <div className={`articalBack`} style={{ background: data.img !== undefined ? `url('${data.img}')` : 'white' }}>
                                 <div className={`z-10 position-absolute w-100 left-0 top-0 py-2 }`}>
                                     <div className="px-3 position-relative">
@@ -104,7 +105,7 @@ function Artical(props) {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="scrollDownBtn" onClick={() => handlePageChange(1)}>
+                                <div className="scrollDownBtn" >
                                     <CgScrollV />
                                 </div>
                             </div>
@@ -132,7 +133,7 @@ function Artical(props) {
                                     <Footer />
                                 </div>
                             </div>
-                        </ReactPageScroller>
+                        {/* </ReactPageScroller> */}
                         </div>}
             </div>
     );

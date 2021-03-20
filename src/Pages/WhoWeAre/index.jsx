@@ -14,7 +14,7 @@ function WhoWeAre(props) {
             {/* <PreLoader/> */}
             <MyNavBar title={'Who We Are'} />
             <ScrollToTopOnMount />
-            <div className="container-fluid homeBack pb-5">
+            <div className="container-fluid teamBack pb-5">
                 <Fade left big>
                 <section className='px-3 px-md-5 py-5'>
                     <p>

@@ -6,9 +6,9 @@ import { media } from "./media";
 function Media(props) {
     return (
         <div>
-            <MyNavBar/>
-            <div className="Nav-pt-5">
-                <div className="container-fluid p-3">
+            <MyNavBar title='In the Media'/>
+            <div className="position-relative pt-5">
+                <div className="container-fluid">
                     <div className="row">
                         {
                             media.map((obj,i)=>{

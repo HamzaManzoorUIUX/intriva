@@ -16,7 +16,7 @@ function RenderThree({ data, modelOpen, setModelOpen, detail, setDetail }) {
                     })
                 }
             </div>
-            <Fade right>
+            <Fade>
             <div className={`showCardData ${ids.indexOf(modelOpen) >= 0 ? 'd-block' : 'd-none'}`}>
                 {
                     detail

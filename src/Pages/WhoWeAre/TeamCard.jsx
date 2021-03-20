@@ -25,7 +25,7 @@ function TeamCard({ data, modelOpen, setModelOpen,  setDetail }) {
                     }
                 </div>
             </div>
-            <Fade right>
+            <Fade>
             <div className={`cardDetails ${modelOpen === data.id ? 'show' : 'hide'}`}>
                 {data.detail}
             </div>

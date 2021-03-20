@@ -33,7 +33,7 @@ function MyNavBar(props) {
     return (
         props.number!==0?
         <>
-            <div className={` ${props.tab !== undefined ? props.position!==undefined?'fixed-top':'sticky-top':'sticky-top'} py-2 bg-transparent`}>
+            <div className={` ${props.tab !== undefined && props.position!==undefined?'fixed-top':'fixed-top'} py-2 bg-transparent`}>
                 <div className="px-3 position-relative">
                     <div className="myNavBar">
                      <div>

@@ -26,6 +26,14 @@
     }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
 @for $var from 0 to 11 {
@@ -297,15 +305,24 @@
     margin-top: .75rem;
 }
 
+.teamBack {
+    background-image: url('./assets/img/Group 14331.png');
+    background-size : cover;
+    height          : 100%;
+    position        : relative;
+    padding-top     : 70px;
+
+}
+
 .homeBack {
     background-image: url('./assets/img/Group 14331.png');
     background-size : cover;
     padding-top     : 70px;
-    height: 100%;
-display: flex;
-justify-content: space-between;
-flex-direction: column;
-position: relative;
+    height          : 100%;
+    position        : relative;
+    display         : flex;
+    justify-content : space-between;
+    flex-direction  : column;
 
     @media(max-width:500px) {
         background-image: url('./assets/img/Group\ 1435.png');
@@ -317,10 +334,7 @@ footer {
     padding-top     : 2.5rem;
     padding-bottom  : .5rem;
 
-    >.myList {
-        list-style-type: none;
-        display        : flex;
-        justify-content: flex-end;
+    .myList {
 
         li {
             a {
@@ -328,6 +342,10 @@ footer {
                 margin         : .25rem .5rem;
                 text-decoration: none;
                 color          : white;
+                @media(max-width:500px){
+                margin         : 0px;
+
+                }
             }
         }
     }
@@ -348,9 +366,11 @@ footer {
 .z-6000 {
     z-index: 6000;
 }
+
 .z-6050 {
     z-index: 6050;
 }
+
 .z-7000 {
     z-index: 7000;
 }
@@ -554,12 +574,12 @@ footer {
 }
 
 .articalContent {
-    height     : 100vh;
+    height         : 100vh;
     position       : relative;
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
-    overflow: auto;
+    overflow       : auto;
 }
 
 .navTitle {
@@ -677,4 +697,14 @@ footer {
 .articalLogog {
     max-width: 350px;
     width    : 100%;
+}
+
+.myCardImg {
+    width : 100%;
+    height: 300px;
+
+}
+.footerLogo{
+    max-width: 250px;
+    width: 100%;
 }
