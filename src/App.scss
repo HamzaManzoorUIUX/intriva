@@ -305,6 +305,7 @@
 display: flex;
 justify-content: space-between;
 flex-direction: column;
+position: relative;
 
     @media(max-width:500px) {
         background-image: url('./assets/img/Group\ 1435.png');

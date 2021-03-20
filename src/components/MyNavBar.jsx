@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/img/logo.png'
 import NavOpenerBtn from './NavOpenerBtn';
+import ScreenSide from "../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
 
 function MyNavBar(props) {
     const [menuOpener, setMenuOpener] = useState(false)
     const [scrollCheck, setScrollCheck] = useState(false)
     const [startScroll, setstartScroll] = useState(false)
+    console.log(window.pageXOffset);
     const onScroll = (e) => {
-        // var height = props.tab !== undefined ? window.innerHeight : 10
         if (window.pageYOffset > 10)
             setScrollCheck(true)
         else if (window.pageYOffset < 10) {
@@ -29,8 +30,8 @@ function MyNavBar(props) {
             window.removeEventListener('scroll', onScroll);
         };
     });
-    console.log(props.number);
     return (
+        props.number!==0?
         <>
             <div className={` ${props.tab !== undefined ? props.position!==undefined?'fixed-top':'sticky-top':'sticky-top'} py-2 bg-transparent`}>
                 <div className="px-3 position-relative">
@@ -86,7 +87,7 @@ function MyNavBar(props) {
                     </div>
                     {
                         props.title !== undefined ?
-                            <div className={`text-uppercase f-20 pl-3 d-none d-md-inline-block text-md-right pb-3 pt-2 font-timeNew navBorder ${scrollCheck||props.number===2 ? 'position-md-absolute top-50 ' : ''} ${props.artical?'navArtical':'navTitle'}`}>
+                            <div className={`text-uppercase f-20 pl-3 d-none d-md-inline-block text-md-right pb-3 pt-2 font-timeNew navBorder ${scrollCheck||(props.number!==1&&props.number!==undefined) ? 'position-md-absolute top-50 ' : ''} ${props.artical?'navArtical':'navTitle'}`}>
                                 {
                                     props.title
                                 }
@@ -96,7 +97,9 @@ function MyNavBar(props) {
                     }
                 </div>
             </div>
-
+        <img src={ScreenSide} className={`ScreenSide ${props.number===2?'d-none':''}`} alt='img' />
+        </>:<>
+        <img src={ScreenSide} className={`ScreenSide ${props.number===2?'d-none':''}`} alt='img' />
         </>
     );
 }

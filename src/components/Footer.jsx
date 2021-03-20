@@ -2,15 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LinkedIn from '../assets/img/linkedin-white-logo-png-14.png'
 import PRI from '../assets/img/UN+PRI+logo+copy.png'
-import ScreenSide from "../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
 import Fade from 'react-reveal/Fade';
 
 function Footer(props) {
     return (<>
-        <Fade bottom big>
-        <img src={ScreenSide} className='ScreenSide' alt='img' />
-    </Fade>
-        <footer className='container-fluid'>
+       
+        <footer className='container-fluid z-7000'>
           
             <Fade right big>
                 <ul className='myList flex-column flex-md-row p-0'>

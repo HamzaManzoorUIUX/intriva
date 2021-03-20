@@ -51,7 +51,7 @@ function Header(props) {
                         <ul className="homeList pt-md-5 mt-5 mt-md-0">
                             <li className="homeList-item">
                                 <Fade right big>
-                                    <div onClick={props.goDown} className='homeList-a'>
+                                    <div onClick={()=>props.handlePageChange(1)} className='homeList-a'>
                                         <span>
                                             About
                                              </span>

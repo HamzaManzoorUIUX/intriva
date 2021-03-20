@@ -6,13 +6,14 @@ import sectionTwo from '../../assets/img/Group 1432.png'
 import Footer from '../../components/Footer';
 // import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Fade from 'react-reveal/Fade';
-import ScrollToTopOnMount from '../../components/ScrollToTop';
+// import ScrollToTopOnMount from '../../components/ScrollToTop';
 import ReactPageScroller from "react-page-scroller";
+import PreLoader from "../../components/PreLoader";
 
 
 function Home(props) {
     const { section } = props.match.params
-    const [currentPage, setcurrentPage] = useState(section !== undefined ? 2 : null)
+    const [currentPage, setcurrentPage] = useState(section !== undefined ? 2 : 0)
     const handlePageChange = number => {
         setcurrentPage(number)
     };
@@ -21,13 +22,14 @@ function Home(props) {
         console.log(number);
     };
     return (<>
+    <PreLoader/>
         <MyNavBar tab={1} title={'ABOUT INTRIVA'} position={'fixed'} number={currentPage}/>
         <ReactPageScroller
             pageOnChange={handlePageChange}
             onBeforePageScroll={handleBeforePageChange}
             customPageNumber={currentPage}
         >
-            <Header />
+            <Header handlePageChange={handlePageChange}/>
             <div className="homeBack">
                 <div className='container-fluid '>
                     <div className="row align-items-center py-5">
@@ -73,8 +75,8 @@ function Home(props) {
                   </div>
                                 </div>
                             </Fade>
-                            <Fade cascade big>
-                                <div>
+                            <Fade cascade big >
+                                <div className='d-none d-md-block'>
                                     <h4 className='text-primary '>
                                         <span className="upperLine">
                                             Intriva employs
@@ -116,6 +118,7 @@ function Home(props) {
                     </div>
                 </div>
             <Footer />
+
             </div>
         </ReactPageScroller>
     </>
