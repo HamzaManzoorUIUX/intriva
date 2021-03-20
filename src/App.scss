@@ -310,7 +310,11 @@ h6 {
     background-size : cover;
     height          : 100%;
     position        : relative;
-    padding-top     : 70px;
+    padding-top     : 120px;
+    @media(max-width:767px){
+        
+        padding-top     : 70px;
+    }
 
 }
 
@@ -574,12 +578,10 @@ footer {
 }
 
 .articalContent {
-    height         : 100vh;
     position       : relative;
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
-    overflow       : auto;
 }
 
 .navTitle {
