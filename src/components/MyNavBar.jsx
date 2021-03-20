@@ -29,9 +29,10 @@ function MyNavBar(props) {
             window.removeEventListener('scroll', onScroll);
         };
     });
+    console.log(props.number);
     return (
         <>
-            <div className={` ${props.tab !== undefined ? 'sticky-top' : 'fixed-top'} py-2 bg-transparent`}>
+            <div className={` ${props.tab !== undefined ? props.position!==undefined?'fixed-top':'sticky-top':'sticky-top'} py-2 bg-transparent`}>
                 <div className="px-3 position-relative">
                     <div className="myNavBar">
                      <div>
@@ -85,7 +86,7 @@ function MyNavBar(props) {
                     </div>
                     {
                         props.title !== undefined ?
-                            <div className={`text-uppercase f-20 pl-3 d-none d-md-inline-block text-md-right pb-3 pt-2 font-timeNew navBorder ${scrollCheck ? 'position-md-absolute top-50 ' : ''} ${props.artical?'navArtical':'navTitle'}`}>
+                            <div className={`text-uppercase f-20 pl-3 d-none d-md-inline-block text-md-right pb-3 pt-2 font-timeNew navBorder ${scrollCheck||props.number===2 ? 'position-md-absolute top-50 ' : ''} ${props.artical?'navArtical':'navTitle'}`}>
                                 {
                                     props.title
                                 }

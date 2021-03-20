@@ -8,7 +8,6 @@ import Fade from 'react-reveal/Fade';
 function Header(props) {
     const vid = parseInt(Math.random() * 2 + 1)
     return (
-        <>
             <div className='headerHome pt-4 z-50'>
                 {
                     vid === 1 ?
@@ -118,7 +117,6 @@ function Header(props) {
 
                 </div>
             </div>
-        </>
     );
 }
 
