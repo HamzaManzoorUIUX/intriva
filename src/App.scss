@@ -632,7 +632,7 @@ footer {
 }
 
 .contactHead {
-    height             : 850px;
+    height             : 450px;
     width              : 100%;
     background-image   : url('./assets/img/contactus.png');
     background-size    : cover;
@@ -644,12 +644,12 @@ footer {
     align-items        : center;
 
     @media(max-width:1200px) {
-        height: 600px;
+        height: 420px;
     }
 
-    @media(max-width:767px) {
-        height: 100vh;
-    }
+    // @media(max-width:767px) {
+    //     height: 100vh;
+    // }
 
     .path-img {
         position: absolute;
