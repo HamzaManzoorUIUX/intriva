@@ -17,26 +17,26 @@ function WhatWeDo(props) {
                 <div className="container-fluid p-3 z-10 position-relative">
                     <div className="row">
                         <div className="col-md-5 d-none d-md-block">
-                            <Fade right big>
+                            <Fade  big>
                             <img src={Mask6} alt="Mask6" className='w-100 my-3'/>
                             </Fade>
-                            <Fade right big>
+                            <Fade  big>
                             <img src={Mask} alt="Mask" className='w-100 my-3'/>
                             </Fade>
                         </div>
                         <div className="col-md-7">
-                            <Fade left big>
-                            <p>
+                            <Fade  big>
+                            <p className='mt-3'>
                                 Intriva Invests In Real Estate, Equity, Credit And Other Financial Assets Across Western Europe.
                         </p>
                         </Fade>
-                            <Fade left big>
+                            <Fade  big>
                             <p>
                                 As A Value Investor, We Only Deploy Capital When There Is Both A Margin Of Safety And Significant Upside.
                         </p>
                         </Fade>
-                            <Fade left big>
-                            <div className="my-4 f-40">
+                            <Fade  big>
+                            <div className="my-4 f-40 font-timeNew">
                                 Capital Preservation
                         </div>
                             <div>
@@ -45,7 +45,7 @@ function WhatWeDo(props) {
                     </Fade>
                             <div className="col-md-8">
                            
-                            <Fade left big>
+                            <Fade  big>
                                 <div className='my-3'>
                                     <h4 className='text-primary '>
                                         <span className="upperLine">
@@ -59,7 +59,7 @@ function WhatWeDo(props) {
 
                                 </div>
                                 </Fade>
-                            <Fade left big>
+                            <Fade  big>
                                 <div className='my-3'>
                                     <h4 className='text-primary '>
                                         <span className="upperLine">
@@ -72,7 +72,7 @@ function WhatWeDo(props) {
 
                                 </div>
                                 </Fade>
-                            <Fade left big>
+                            <Fade  big>
                                 <div className='my-3'>
                                     <h4 className='text-primary '>
                                         <span className="upperLine">
@@ -85,7 +85,7 @@ function WhatWeDo(props) {
 
                                 </div>
                                 </Fade>
-                            <Fade left big>
+                            <Fade  big>
                                 <div className='my-3'>
                                     <h4 className='text-primary '>
                                         <span className="upperLine">
@@ -102,7 +102,7 @@ function WhatWeDo(props) {
                                 </div>
                                 </Fade>
                             </div>
-                            <Fade left big>
+                            <Fade  big>
                       <div>
                       <div className="my-4 f-40">
                       Operational Transformation And Driving Upside

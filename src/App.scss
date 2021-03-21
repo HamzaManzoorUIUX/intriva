@@ -676,6 +676,9 @@ footer {
 .font-timeNew {
     font-family: 'Times New Roman', Times, serif !important;
 }
+.font-Roboto{
+    font-family: Roboto,-apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
 
 .slick-next {
     right: 25px !important;
@@ -709,4 +712,12 @@ footer {
 .footerLogo{
     max-width: 250px;
     width: 100%;
+}
+.scrollable {
+    width: 100%;
+    overflow-x: scroll;
+    text-align: end;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }

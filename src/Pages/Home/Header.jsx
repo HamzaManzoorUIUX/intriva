@@ -28,12 +28,12 @@ function Header(props) {
                     </div>
                     <div className='p-2'>
                         <Fade left big>
-                            <h1 className="header-heading">
+                            <h1 className="header-heading font-Roboto">
                                 we provide
                 </h1>
                         </Fade>
                         <Fade right big>
-                            <h3 className="header-text">
+                            <h3 className="header-text font-Roboto" >
                                 opportunistic capital, timely investing decisions and differentiated solutions
                 </h3>
                         </Fade>
@@ -46,7 +46,7 @@ function Header(props) {
                             <img src={Logo} alt="logo" className='logoHome z-10 position-relative' />
                         </div>
                     </Fade>
-                    <div className='h-50 d-flex align-items-md-end'>
+                    <div className='h-75 d-flex align-items-md-center'>
 
                         <ul className="homeList pt-md-5 mt-5 mt-md-0">
                             <li className="homeList-item">

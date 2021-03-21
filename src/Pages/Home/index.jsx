@@ -4,12 +4,11 @@ import MyNavBar from '../../components/MyNavBar';
 import sectionOne from '../../assets/img/Group 1431.png'
 import sectionTwo from '../../assets/img/Group 1432.png'
 import Footer from '../../components/Footer';
-// import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import Fade from 'react-reveal/Fade';
 // import ScrollToTopOnMount from '../../components/ScrollToTop';
 import ReactPageScroller from "react-page-scroller";
 import PreLoader from "../../components/PreLoader";
-
+import DragScrollProvider from 'drag-scroll-provider'
 
 function Home(props) {
     const { section } = props.match.params
@@ -22,20 +21,26 @@ function Home(props) {
         console.log(number);
     };
     return (<>
-    <PreLoader/>
-        <MyNavBar tab={1} title={'ABOUT INTRIVA'} position={'fixed'} number={currentPage}/>
+        <PreLoader />
+        <MyNavBar tab={1} title={'ABOUT INTRIVA'} position={'fixed'} number={currentPage} />
         <ReactPageScroller
             pageOnChange={handlePageChange}
             onBeforePageScroll={handleBeforePageChange}
             customPageNumber={currentPage}
         >
-            <Header handlePageChange={handlePageChange}/>
+            <Header handlePageChange={handlePageChange} />
             <div className="homeBack">
                 <div className='container-fluid '>
-                    <div className="row align-items-center py-5">
+                    <div className="row py-5">
                         <Fade cascade big>
-                            <div className="col-md-6 d-none d-md-block pl-0 overflow-auto">
-                                <img src={sectionOne} alt="sectionOne" className='sectionImg' />
+                            <div className="col-md-6 d-none d-md-block pl-0 mt-3">
+                                <DragScrollProvider>
+                                    {({ onMouseDown, ref }) => (
+                                        <div className="scrollable" ref={ref} onMouseDown={onMouseDown}>
+                                            <img src={sectionOne} alt="sectionOne" className='sectionImg' />
+                                        </div>
+                                    )}
+                                </DragScrollProvider>
                             </div>
                         </Fade>
                         <div className="col-md-6 col-lg-5 col-xl-4">
@@ -93,7 +98,7 @@ function Home(props) {
             </div>
             <div className="homeBack">
                 <div className='container-fluid '>
-                    <div className="row align-items-center py-5">
+                    <div className="row py-5">
                         <div className="col-md-6  pl-md-5 col-lg-5 col-xl-4 offset-lg-1 offset-xl-2">
                             <Fade cascade big>
                                 <h4>
@@ -117,7 +122,7 @@ function Home(props) {
                         </div>
                     </div>
                 </div>
-            <Footer />
+                <Footer />
 
             </div>
         </ReactPageScroller>

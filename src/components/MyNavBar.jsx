@@ -87,7 +87,7 @@ function MyNavBar(props) {
                     </div>
                     {
                         props.title !== undefined ?
-                            <div className={`text-uppercase f-20 pl-3 d-none d-md-inline-block text-md-right pb-3 pt-2 font-timeNew navBorder ${scrollCheck||(props.number!==1&&props.number!==undefined) ? 'position-md-absolute top-50 ' : ''} ${props.artical?'navArtical':'navTitle'}`}>
+                            <div className={`text-uppercase f-20 pl-3 d-none d-md-inline-block text-md-right pt-4 font-timeNew navBorder ${scrollCheck||(props.number!==1&&props.number!==undefined) ? 'position-md-absolute top-50 ' : ''} ${props.artical?'navArtical':'navTitle'}`}>
                                 {
                                     props.title
                                 }
