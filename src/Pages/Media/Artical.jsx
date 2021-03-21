@@ -48,51 +48,6 @@ function Artical(props) {
                                 customPageNumber={currentPage}
                             > */}
                             <div className={`articalBack`} style={{ background: data.img !== undefined ? `url('${data.img}')` : 'white' }}>
-                                <div className={`z-10 position-absolute w-100 left-0 top-0 py-2 }`}>
-                                    <div className="px-3 position-relative">
-                                        <div className="myNavBar">
-                                            <Link to='/' className='d-none d-md-block'>
-                                                <img src={Logo} className='myNavBar-logo' alt="logo" />
-                                            </Link>
-                                            <NavOpenerBtn active={menuOpener} setActive={setMenuOpener} />
-                                            <ul className={`myNavBar-menu ${menuOpener ? 'active' : ''}`}>
-                                                <li>
-                                                    <Link to='/'>
-                                                        About INTRIVA
-                                </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to='/whoweare'>
-                                                        Who we are
-                                </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to='/whatwedo'>
-                                                        What We Do
-                                </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to='/media'>
-                                                        In the Media
-                                </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to='/'>
-                                                        Make Contact
-                                </Link>
-                                                </li>
-                                                <li>
-                                                    <Link to='/'>
-                                                        For INTRIVA
-                                </Link>
-                                                </li>
-                                            </ul>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
                                 <div className='content'>
                                     <h1 className="text-center">
                                         {data.title}
