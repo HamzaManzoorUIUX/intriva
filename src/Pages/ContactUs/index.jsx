@@ -5,13 +5,15 @@ import path from '../../assets/img/Subtraction 1.png'
 import MyMap from './MyMap'
 import Footer from '../../components/Footer'
 import CityCards from './CityCards';
+import StickyFooter from '../../components/StickyFooter';
 
 
 function ContactUs(props) {
     return (
         <div>
             <MyNavBar title='Make Contact' />
-            <div className="contactHead">
+           <div>
+           <div className="contactHead">
                 <div className="content f-20">
                     <div className="row">
                         <div className="col-6">
@@ -35,7 +37,11 @@ function ContactUs(props) {
             
    <CityCards/>
            
+            <div className="mb-min">
             <MyMap isMarkerShown/>
+            </div>
+            <StickyFooter/>
+           </div>
             <Footer/>
         </div>
     );

@@ -2,13 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/img/logo.png'
 import NavOpenerBtn from './NavOpenerBtn';
-import ScreenSide from "../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
 
 function MyNavBar(props) {
     const [menuOpener, setMenuOpener] = useState(false)
     const [scrollCheck, setScrollCheck] = useState(false)
     const [startScroll, setstartScroll] = useState(false)
-    console.log(window.pageXOffset);
     const onScroll = (e) => {
         if (window.pageYOffset > 10)
             setScrollCheck(true)
@@ -99,9 +97,7 @@ function MyNavBar(props) {
                     }
                 </div>
             </div>
-        <img src={ScreenSide} className={`ScreenSide ${props.number===2?'d-none':''}`} alt='img' />
         </>:<>
-        <img src={ScreenSide} className={`ScreenSide ${props.number===2?'d-none':''}`} alt='img' />
         </>
     );
 }

@@ -6,6 +6,7 @@ import { FaHubspot } from "react-icons/fa";
 
 import Fade from 'react-reveal/Fade';
 import TeamRender from './TeamRender';
+import StickyFooter from '../../components/StickyFooter';
 // import PreLoader from '../../components/PreLoader';
 
 function WhoWeAre(props) {
@@ -14,6 +15,7 @@ function WhoWeAre(props) {
             {/* <PreLoader/> */}
             <MyNavBar title={'Who We Are'} />
             <ScrollToTopOnMount />
+            <div>
             <div className="container-fluid teamBack pb-5">
                 <Fade left big>
                 <section className='px-3 px-md-5 py-5'>
@@ -41,6 +43,8 @@ function WhoWeAre(props) {
                     <TeamRender/>
 
                 </section>
+                </div>
+           <StickyFooter/>
             </div>
             <Footer />
         </div>

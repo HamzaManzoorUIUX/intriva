@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import MyNavBar from '../../components/MyNavBar';
+import StickyFooter from '../../components/StickyFooter';
 import Card from './Card';
 import { media } from "./media";
 function Media(props) {
@@ -17,6 +18,7 @@ function Media(props) {
                         }
                     </div>
                 </div>
+          <StickyFooter/>
             </div>
             <Footer/>
         </div>

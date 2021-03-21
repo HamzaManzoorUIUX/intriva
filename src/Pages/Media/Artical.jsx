@@ -69,7 +69,6 @@ function Artical(props) {
                                             <a href={data.pdf} className='btn btn-primary text-light'>
                                                 <FaFilePdf />
                                             </a>
-
                                     </div>
                                     <div className='pt-3 pb-5'>
                                         {

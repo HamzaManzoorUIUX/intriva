@@ -199,9 +199,9 @@ h6 {
 }
 
 .ScreenSide {
-    position: fixed;
+    position: sticky;
     left    : 0px;
-    bottom  : 0px;
+    bottom  : calc(0px);
     z-index : 6050;
     height  : 45px;
 
@@ -212,20 +212,23 @@ h6 {
     justify-content: space-between;
     align-items    : center;
 
-    
+
 }
+
 .myNavBar-logo {
-        height: 55px;
+    height: 55px;
 
-        @media(max-width:767PX) {
-            height: 35px;
-        }
-
+    @media(max-width:767PX) {
+        height: 35px;
     }
-.hidden{
+
+}
+
+.hidden {
     visibility: hidden;
 }
-    #_3,
+
+#_3,
 #_1,
 #_2 {
     transition: all 0.5s;
@@ -264,16 +267,18 @@ h6 {
     min-width       : 160px;
     flex-direction  : column;
     justify-content : flex-end;
-&::before{
-    position: absolute;
-    content: '';
-    right: -10px;
-    bottom: 0px;
-    background-color: #E9B34E;
-    width: 10px;
-    height: 100%;
-    animation: hamza .5s linear 0s 1 forwards;
-}
+
+    &::before {
+        position        : absolute;
+        content         : '';
+        right           : -10px;
+        bottom          : 0px;
+        background-color: #E9B34E;
+        width           : 10px;
+        height          : 100%;
+        animation       : hamza .5s linear 0s 1 forwards;
+    }
+
     @media(max-width:767px) {
         right: 0px;
     }
@@ -313,7 +318,7 @@ h6 {
                 width           : 100%;
                 bottom          : 0px;
                 left            : 0px;
-                animation: navAnimation .5s linear 0s 1 forwards ;
+                animation       : navAnimation .5s linear 0s 1 forwards;
             }
         }
     }
@@ -757,22 +762,30 @@ footer {
         display: none;
     }
 }
-@keyframes navAnimation{
-    0%{
+
+@keyframes navAnimation {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 100%;
     }
 }
-@keyframes hamza{
-    0%{
+
+@keyframes hamza {
+    0% {
         height: 0%;
     }
-    100%{
+
+    100% {
         height: 100%;
     }
 }
-.smoothAnimation{
+
+.smoothAnimation {
     transition: all .5s ease-in;
+}
+.mb-min{
+    margin-bottom: -45px;
 }
