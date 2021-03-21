@@ -8,6 +8,7 @@ import Fade from 'react-reveal/Fade';
 // import ScrollToTopOnMount from '../../components/ScrollToTop';
 import ReactPageScroller from "react-page-scroller";
 import PreLoader from "../../components/PreLoader";
+import ScreenSide from "../../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
 import DragScrollProvider from 'drag-scroll-provider'
 
 function Home(props) {
@@ -95,6 +96,9 @@ function Home(props) {
                         </div>
                     </div>
                 </div>
+                <Fade top big>
+            <img src={ScreenSide} width='252px' alt='img' />
+                </Fade>
             </div>
             <div className="homeBack">
                 <div className='container-fluid '>
@@ -122,7 +126,12 @@ function Home(props) {
                         </div>
                     </div>
                 </div>
+            <div>
+                <Fade top big>
+            <img src={ScreenSide} width='252px' alt='img' />
+                </Fade>
                 <Footer />
+            </div>
 
             </div>
         </ReactPageScroller>
