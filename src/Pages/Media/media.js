@@ -2,14 +2,15 @@ export const media = [
     {
         "id": "1",
         "catagory": "Press Release",
+        "pdf":"../../assets/img/pdf/Intriva Capital - Costa del Sol hotel project financing_20210318.pdf",
         "title": "Intriva Capital secures debt financing for refurbishment of iconic hotel on Spain’s Costa del Sol",
         "date": "18th March 2021",
         "detail": `
         <h2 class="text-center">
         Intriva Capital secures debt financing for refurbishment of iconic hotel on Spain’s Costa del Sol
-    </h2>
+        </h2>
     <h5 class='text-center'>
-        The financing confirms the strength and potential of the project, which will see the hotel positioned as a
+    The financing confirms the strength and potential of the project, which will see the hotel positioned as a
         luxury 200-bedroom resort
     </h5>
     <img src='../../assets/img/media/Intriva Capital - Costa del Sol hotel project financing_20210318.jpg' class='w-100' alt='../../assets/img/media/Intriva Capital - Costa del Sol hotel project financing_20210318'/>
@@ -47,55 +48,56 @@ export const media = [
     </p>
 
     <div class="my-3 text-center font-weight-bold">
-        - ENDS -
+    - ENDS -
     </div>
-
+    
     <h4>
-        About Intriva Capital
+    About Intriva Capital
     </h4>
     <p>
-        Intriva is an independent alternative asset manager investing in mid-market companies and real estate assets
+    Intriva is an independent alternative asset manager investing in mid-market companies and real estate assets
         throughout Western Europe. As a value investor, the firm only deploys capital when there is both a margin of
         safety and significant upside. Intriva invests across the capital structure and will often take a leading role
         in complex situations to create value or manage risk. The firm manages discretionary capital on behalf of
         leading institutional investors and has offices in London, Frankfurt and Madrid.
-    </p>
+        </p>
 
     <h4>
-        Media contacts
+    Media contacts
     </h4>
 
     <div class="mt-3">
-        <div>
-            Carl Leijonhufvud
-
-        </div>
-        <a href="CLeijonhufvud@headlandconsultancy.com">
-            CLeijonhufvud@headlandconsultancy.com
-        </a>
-        <div>
-            +44 (0) 20 3805 4827 / +44 (0) 7901 853 494
-        </div>
+    <div>
+    Carl Leijonhufvud
+    
     </div>
-
-
+    <a href="CLeijonhufvud@headlandconsultancy.com">
+    CLeijonhufvud@headlandconsultancy.com
+    </a>
+    <div>
+    +44 (0) 20 3805 4827 / +44 (0) 7901 853 494
+    </div>
+    </div>
+    
+    
     <div class="mt-3">
-        <div>
-            Viktor Tsvetanov
-        </div>
+    <div>
+    Viktor Tsvetanov
+    </div>
         <a href="VTsvetanov@headlandconsultancy.com">
-            VTsvetanov@headlandconsultancy.com
+        VTsvetanov@headlandconsultancy.com
         </a>
         <div>
-            +44 (0)20 3435 7469 / +44 (0) 78 8466 7775
+        +44 (0)20 3435 7469 / +44 (0) 78 8466 7775
         </div>
-    </div>
+        </div>
         `,
         "img": '../../assets/img/media/Intriva Capital - Costa del Sol hotel project financing_20210318.jpg'
     },
     {
         "id": "2",
         "catagory": "Press Release",
+        "pdf":"../../assets/img/pdf/Intriva Capital acquires stake in MoneyPlus Group_20210224.pdf",
         "title": "Intriva Capital acquires stake in MoneyPlus Group",
         "date": "24th February 2021",
         "detail": `
@@ -170,6 +172,7 @@ export const media = [
         "id": "3",
         "catagory": "Press Release",
         "title": "Intriva Capital acquires UK consumer credit company Lending Works",
+        "pdf":"../../assets/img/pdf/Intriva Capital acquires UK consumer credit company Lending Works_20200703.pdf",
         "date": "3rd July 2020",
         "detail": ` <div class='d-flex justify-content-end'>
         <img src='../../assets/img/media/Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png' class='articalLogog' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png'/>
@@ -282,6 +285,7 @@ export const media = [
         "id": "4",
         "catagory": "Press Release",
         "title": "Intriva Capital agrees joint venture with Node to support European expansion plans",
+        "pdf":"../../assets/img/pdf/Intriva Capital agrees joint venture with Node to support European expansion plans_20200922.pdf",
         "date": "22nd September 2020",
         "detail": `
         <h2 class="text-center">
@@ -396,6 +400,7 @@ export const media = [
         "id": "5",
         "catagory": "Press Release",
         "title": "Lending Works completes sale to Intriva Capital and establishes new institutional investment platform",
+        "pdf":"../../assets/img/pdf/Intriva Capital completes on the acquisition of UK consumer credit company Lending Works_20201216.pdf",
         "date": "16 December 2020",
         "detail": `
         <div class='d-flex justify-content-end'>
@@ -489,6 +494,7 @@ export const media = [
         "id": "6",
         "catagory": "CASE STUUDY",
         "title": "RealDeals: Organic Growth: Intriva Capital ",
+        "pdf":"../../assets/img/pdf/Real Deals Article_20210311.pdf",
         "date": "11th March 2021",
         "detail": `
         <a href="https://realdeals.eu.com/article/organic-growth-aksia-group-anacap-intriva-capital-and-golding-capital-partners"

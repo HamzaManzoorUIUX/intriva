@@ -4,7 +4,9 @@ import { useHistory } from 'react-router';
 function Card({data}) {
     const history=useHistory()
     return (
-        <div className='col-12 col-md-6 col-lg-4 colxl-3 my-3 curser navBorder' onClick={()=>history.push(`/artical/${data.id}`)}>
+        <div className='col-12 col-md-6 col-lg-4 colxl-3 my-3 curser ' onClick={()=>history.push(`/artical/${data.id}`)}>
+           <div className='navBorder h-100'>
+
             <img src={data.img} alt={data.id} className='w-100 myCardImg'/>
             <div className="py-2">
                 <div className="d-flex justify-content-between font-weight-bold">
@@ -19,13 +21,14 @@ function Card({data}) {
                         }
                     </div>
                 </div>
-                <div className="pt-3">
+                <div className="">
                     {
                         data.title
                     }
                 </div>
             </div>
         </div>
+                    </div>
     );
 }
 

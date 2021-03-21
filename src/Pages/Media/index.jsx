@@ -8,7 +8,7 @@ function Media(props) {
         <div>
             <MyNavBar title='In the Media'/>
             <div className="position-relative pt-5">
-                <div className="container-fluid">
+                <div className="container pt-5 mt-md-5">
                     <div className="row">
                         {
                             media.map((obj,i)=>{
