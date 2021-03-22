@@ -32,13 +32,13 @@ function Home(props) {
             <Header handlePageChange={handlePageChange} />
             <div className="homeBack">
                 <div className='container-fluid '>
-                    <div className="row py-5">
+                    <div className="row py-5 mt-3">
                         <Fade cascade big>
-                            <div className="col-md-6 d-none d-md-block pl-0 mt-3">
+                            <div className="col-md-6 d-none d-md-block pl-0 mt-1">
                                 <DragScrollProvider>
                                     {({ onMouseDown, ref }) => (
                                         <div className="scrollable d-flex" ref={ref} onMouseDown={onMouseDown}>
-                                            <img src={sectionTwo} alt="sectionOne" className='sectionImg' />
+                                            <img src={sectionOne} alt="sectionOne" className='sectionImg' />
                                         </div>
                                     )}
                                 </DragScrollProvider>
@@ -48,7 +48,7 @@ function Home(props) {
                             <Fade cascade big>
                                 <div>
                                     <h4 className='text-primary mb-0'>
-                                        <span className="upperLine-2 font-Roboto">
+                                        <span className="font-Roboto">
                                             Founded in 2017
                       </span>
                                     </h4>
@@ -100,7 +100,7 @@ function Home(props) {
             <img src={ScreenSide} width='252px' alt='img' />
                 </Fade>
             </div>
-            <div className="homeBack">
+            <div className="homeBack-2">
                 <div className='container '>
                     <div className="row py-5">
                         <div className="col-md-6 col-lg-5 col-xl-4 ">
@@ -119,11 +119,11 @@ function Home(props) {
                                 </div>
                             </Fade>
                         </div>
-                        <div className="col-md-6 text-right pr-0 d-none d-md-block">
+                        <div className="col-md-6 text-right pr-0 d-none d-md-block pt-1">
                         <DragScrollProvider>
                                     {({ onMouseDown, ref }) => (
                                         <div className="scrollable-2" ref={ref} onMouseDown={onMouseDown}>
-                                            <img src={sectionOne} alt="sectionTwo" className='sectionImg' />
+                                            <img src={sectionTwo} alt="sectionTwo" className='sectionImg' />
                                         </div>
                                     )}
                                 </DragScrollProvider>

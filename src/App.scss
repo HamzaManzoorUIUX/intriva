@@ -395,6 +395,20 @@ h6 {
         background-image: url('./assets/img/Group\ 1435.png');
     }
 }
+.homeBack-2 {
+    background-image: url('./assets/img/homepage-2.png');
+    background-size : cover;
+    padding-top     : 70px;
+    height          : 100%;
+    position        : relative;
+    display         : flex;
+    justify-content : space-between;
+    flex-direction  : column;
+
+    @media(max-width:500px) {
+        background-image: url('./assets/img/Group\ 1435.png');
+    }
+}
 
 footer {
     background-color: #161E26;
@@ -784,6 +798,15 @@ footer {
     width     : 100%;
     overflow-x: scroll;
     direction: rtl;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.scrollable-2 {
+    width     : 100%;
+    overflow-x: scroll;
+    direction: ltr;
 
     &::-webkit-scrollbar {
         display: none;
