@@ -19,7 +19,7 @@ function Home(props) {
     };
 
     const handleBeforePageChange = number => {
-        console.log(number);
+        number=1
     };
     return (<>
         <PreLoader />
@@ -38,7 +38,7 @@ function Home(props) {
                                 <DragScrollProvider>
                                     {({ onMouseDown, ref }) => (
                                         <div className="scrollable" ref={ref} onMouseDown={onMouseDown}>
-                                            <img src={sectionOne} alt="sectionOne" className='sectionImg' />
+                                            <img src={sectionTwo} alt="sectionOne" className='sectionImg' />
                                         </div>
                                     )}
                                 </DragScrollProvider>
@@ -47,48 +47,48 @@ function Home(props) {
                         <div className="col-md-6 col-lg-5 col-xl-4">
                             <Fade cascade big>
                                 <div>
-                                    <h4 className='text-primary '>
-                                        <span className="upperLine-2">
+                                    <h4 className='text-primary mb-0'>
+                                        <span className="upperLine-2 font-Roboto">
                                             Founded in 2017
                       </span>
                                     </h4>
-                                    <div>
+                                    <div className='max-text f-14'>
                                         Founded in 2017 , Intriva is a privately held alternative alternative asset managent firmspecialising in asset-backed debt and equity special situations across Western Europe
                   </div>
                                 </div>
                             </Fade>
                             <Fade cascade big>
                                 <div>
-                                    <h4 className='text-primary '>
-                                        <span className="upperLine">
+                                    <h4 className='text-primary mb-0'>
+                                        <span className="upperLine font-Roboto">
                                             Intriva provides
                       </span>
                                     </h4>
-                                    <div>
+                                    <div className='max-text f-14'>
                                         Intriva provides an attractive risk adjusted return profile to our investors, and bespoke capitalsolutions to our partners throughout Western Europe.
                   </div>
                                 </div>
                             </Fade>
                             <Fade cascade big>
                                 <div>
-                                    <h4 className='text-primary '>
-                                        <span className="upperLine">
+                                    <h4 className='text-primary  mb-0'>
+                                        <span className="upperLine font-Roboto">
                                             Intriva invests
                       </span>
                                     </h4>
-                                    <div>
+                                    <div className='max-text f-14'>
                                         Intriva invests throughout the capital structure in both single name positions, and also supportsthematic growth opportunities with large scale roll out strategies.
                   </div>
                                 </div>
                             </Fade>
                             <Fade cascade big >
                                 <div className='d-none d-md-block'>
-                                    <h4 className='text-primary '>
-                                        <span className="upperLine">
+                                    <h4 className='text-primary mb-0 '>
+                                        <span className="upperLine font-Roboto">
                                             Intriva employs
                       </span>
                                     </h4>
-                                    <div>
+                                    <div className='max-text f-14'>
                                         As of December 31, 2020, Intriva employs a staff of 16 people, including 11 investmentprofessionals, in its London headquarters and affiliated offices in Frankfurt and Madrid.
                   </div>
                                 </div>
@@ -108,7 +108,7 @@ function Home(props) {
                                 <h4>
                                     Culture
                    </h4>
-                                <div>
+                                <div className='max-text f-14'>
                                     <p>
                                         We take pride in our collaborative culture, which harnesses camaraderie and the balance of skills and experience which our team members collectively bring to bear.
                        </p>
@@ -122,15 +122,15 @@ function Home(props) {
                         <div className="col-md-6 text-right pr-0 d-none d-md-block">
                         <DragScrollProvider>
                                     {({ onMouseDown, ref }) => (
-                                        <div className="scrollable" ref={ref} onMouseDown={onMouseDown}>
-                                            <img src={sectionTwo} alt="sectionTwos" className='sectionImg' />
+                                        <div className="scrollable-2" ref={ref} onMouseDown={onMouseDown}>
+                                            <img src={sectionOne} alt="sectionTwo" className='sectionImg' />
                                         </div>
                                     )}
                                 </DragScrollProvider>
                         </div>
                     </div>
                 </div>
-            <div>
+            <div className='d-block d-lg-none d-xl-block'>
                 <Fade top big>
             <img src={ScreenSide} width='252px' alt='img' />
                 </Fade>

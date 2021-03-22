@@ -26,10 +26,8 @@ function Artical(props) {
             return null
     })
 
-
-
     return (
-        <div id=''>
+        <div>
 
                 {
                     data === undefined ?
@@ -37,11 +35,7 @@ function Artical(props) {
                             No Data against ID
             </h1> :
                         <div >
-                            {/* <ReactPageScroller
-                                pageOnChange={handlePageChange}
-                                onBeforePageScroll={handleBeforePageChange}
-                                customPageNumber={currentPage}
-                            > */}
+                        
                             <div className={`articalBack`} style={{ background: data.img !== undefined ? `url('${data.img}')` : 'white' }}>
                                 <div className='content'>
                                     <h1 className="text-center">
@@ -55,7 +49,7 @@ function Artical(props) {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="scrollDownBtn" >
+                                <div className="scrollDownBtn" onClick={()=>window.scrollTo(0,window.innerHeight)}>
                                     <CgScrollV />
                                 </div>
                             </div>
@@ -80,7 +74,6 @@ function Artical(props) {
                                     <Footer />
                                 </div>
                             </div>
-                        {/* </ReactPageScroller> */}
                         </div>}
             </div>
     );

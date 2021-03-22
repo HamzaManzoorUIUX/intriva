@@ -93,8 +93,11 @@ h6 {
     text-align : end;
     font-weight: 100;
 
-    @media(max-width:991px) {
+    @media(max-width:1200px) {
         font-size: 72px;
+    }
+    @media(max-width:991px) {
+        font-size: 62px;
     }
 
     @media(max-width:767px) {
@@ -110,8 +113,12 @@ h6 {
     font-weight: 300;
     color      : white;
 
-    @media(max-width:991px) {
+    @media(max-width:1200px) {
         font-size: 36px;
+    }
+
+    @media(max-width:991px) {
+        font-size: 28px;
     }
 
     @media(max-width:767px) {
@@ -120,7 +127,14 @@ h6 {
     }
 
 }
-
+.headerBlueBar{
+    max-height: 100px;
+    height: 100%;
+    min-height: 90px;
+    .headerblueImg{
+        height: 100%;
+    }
+}
 .homeList {
     width          : 100%;
     list-style-type: none;
@@ -146,13 +160,17 @@ h6 {
                 font-weight   : 200;
 
 
+                @media(max-width: 1200px) {
+                    font-size: 28px;
+                    display  : inline-block;
+                }
                 @media(max-width: 991px) {
-                    font-size: 32px;
+                    font-size: 24px;
                     display  : inline-block;
                 }
 
                 @media(max-width: 767px) {
-                    font-size: 27px;
+                    font-size: 24px;
                     display  : inline-block;
                 }
             }
@@ -168,8 +186,11 @@ h6 {
                     text-decoration: underline;
                 }
 
-                @media(max-width: 991px) {
+                @media(max-width: 1200px) {
                     font-size: 37px;
+                }
+                @media(max-width: 991px) {
+                    font-size: 32px;
                 }
 
                 @media(max-width: 767px) {
@@ -272,7 +293,7 @@ h6 {
         position        : absolute;
         content         : '';
         right           : -10px;
-        bottom          : 0px;
+        top          : 0px;
         background-color: #E9B34E;
         width           : 10px;
         height          : 100%;
@@ -794,4 +815,8 @@ footer {
 }
 .mb-min{
     margin-bottom: -45px;
+}
+.max-text{
+    max-width: 780px;
+    width: 100%;
 }

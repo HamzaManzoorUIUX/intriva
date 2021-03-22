@@ -2,8 +2,8 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import MyNavBar from '../../components/MyNavBar';
 import ScrollToTopOnMount from '../../components/ScrollToTop';
-import Mask6 from "../../assets/img/Mask Group 6.png";
-import Mask from "../../assets/img/Mask Group.png";
+import Mask6 from "../../assets/img/abc.png";
+import Mask from "../../assets/img/def.png";
 import Fade from 'react-reveal/Fade';
 import StickyFooter from '../../components/StickyFooter';
 // import PreLoader from '../../components/PreLoader';
@@ -27,12 +27,12 @@ function WhatWeDo(props) {
                         </div>
                         <div className="col-md-7">
                             <Fade big>
-                                <p className='mt-3'>
+                                <p className='mt-3 max-text'>
                                     Intriva Invests In Real Estate, Equity, Credit And Other Financial Assets Across Western Europe.
                         </p>
                             </Fade>
                             <Fade big>
-                                <p>
+                                <p className='max-text'>
                                     As A Value Investor, We Only Deploy Capital When There Is Both A Margin Of Safety And Significant Upside.
                         </p>
                             </Fade>
@@ -40,7 +40,7 @@ function WhatWeDo(props) {
                                 <div className="my-4 f-40 font-timeNew">
                                     Capital Preservation
                         </div>
-                                <div>
+                                <div className='max-text'>
                                     We Have A Rigorous Focus On Capital Protection. We Spend Significant Amounts Of Time Looking At How We Can Positively Affect The Distribution Of Returns On Our Investments. We Often Invest In Companies That Offer Significant Opportunities To De-Risk The Investment Quickly, For Example:
                     </div>
                             </Fade>
@@ -48,7 +48,7 @@ function WhatWeDo(props) {
 
                                 <Fade big>
                                     <div className='my-3'>
-                                        <h4 className='text-primary '>
+                                        <h4 className='text-primary text-uppercase '>
                                             <span className="upperLine">
                                                 By deploying
                       </span>
@@ -62,7 +62,7 @@ function WhatWeDo(props) {
                                 </Fade>
                                 <Fade big>
                                     <div className='my-3'>
-                                        <h4 className='text-primary '>
+                                        <h4 className='text-primary text-uppercase '>
                                             <span className="upperLine">
                                                 investing
                       </span>
@@ -75,7 +75,7 @@ function WhatWeDo(props) {
                                 </Fade>
                                 <Fade big>
                                     <div className='my-3'>
-                                        <h4 className='text-primary '>
+                                        <h4 className='text-primary text-uppercase '>
                                             <span className="upperLine">
                                                 Through investing
                       </span>
@@ -88,9 +88,9 @@ function WhatWeDo(props) {
                                 </Fade>
                                 <Fade big>
                                     <div className='my-3'>
-                                        <h4 className='text-primary '>
+                                        <h4 className='text-primary text-uppercase'>
                                             <span className="upperLine">
-                                                asset-backed
+                                                Asset-backed
                       </span>
                                         </h4>
                                         <div>
@@ -105,13 +105,13 @@ function WhatWeDo(props) {
                             </div>
                             <Fade big>
                                 <div>
-                                    <div className="my-4 f-40">
+                                    <h3 className="my-4 f-40">
                                         Operational Transformation And Driving Upside
-                        </div>
-                                    <p>
+                        </h3>
+                                    <p className='max-text'>
                                         A Key Determinant Of Our Returns And The Attractiveness Of An Investment Opportunity To Us Is The Potential We Identify To Proactively Transform The Business Or Asset Through Strategic Repositioning, Operational Improvement, High-Returning Capital Investment And Accretive Buy-And-Build Strategies.
                         </p>
-                                    <p>
+                                    <p className='max-text'>
                                         The Resources Dedicated To Each Investment Together With The Experience Of Our Team Allows Us To Identify And Execute On Value Creation Opportunities.
 
                         </p>

@@ -39,14 +39,12 @@ function Header(props) {
                 </h3>
                         </Fade>
                     </div>
-                    <Fade left big>
-                        <div className="px-3 py-3 bannerImg d-none d-md-block mb-3">
+                        <div className="px-3 py-2 headerBlueBar bannerImg d-none d-md-block mb-3">
                             <video autoPlay muted loop className='neural-video'>
                                 <source src={Neurons} type='video/mp4' />
                             </video>
-                            <img src={Logo} alt="logo" className='logoHome z-10 position-relative' />
+                            <img src={Logo} alt="logo" className='headerblueImg z-10 position-relative' />
                         </div>
-                    </Fade>
                     <div className='h-75 d-flex align-items-md-center'>
 
                         <ul className="homeList pt-md-5 mt-5 mt-md-0">
