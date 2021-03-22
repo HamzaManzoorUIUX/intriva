@@ -37,7 +37,7 @@ function Home(props) {
                             <div className="col-md-6 d-none d-md-block pl-0 mt-3">
                                 <DragScrollProvider>
                                     {({ onMouseDown, ref }) => (
-                                        <div className="scrollable" ref={ref} onMouseDown={onMouseDown}>
+                                        <div className="scrollable d-flex" ref={ref} onMouseDown={onMouseDown}>
                                             <img src={sectionTwo} alt="sectionOne" className='sectionImg' />
                                         </div>
                                     )}
