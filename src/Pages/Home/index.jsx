@@ -101,9 +101,9 @@ function Home(props) {
                 </Fade>
             </div>
             <div className="homeBack">
-                <div className='container-fluid '>
+                <div className='container '>
                     <div className="row py-5">
-                        <div className="col-md-6  pl-md-5 col-lg-5 col-xl-4 offset-lg-1 offset-xl-2">
+                        <div className="col-md-6 col-lg-5 col-xl-4 ">
                             <Fade cascade big>
                                 <h4>
                                     Culture
@@ -120,9 +120,13 @@ function Home(props) {
                             </Fade>
                         </div>
                         <div className="col-md-6 text-right pr-0 d-none d-md-block">
-                            <Fade cascade big>
-                                <img src={sectionTwo} alt="sectionTwos" className='sectionImg' />
-                            </Fade>
+                        <DragScrollProvider>
+                                    {({ onMouseDown, ref }) => (
+                                        <div className="scrollable" ref={ref} onMouseDown={onMouseDown}>
+                                            <img src={sectionTwo} alt="sectionTwos" className='sectionImg' />
+                                        </div>
+                                    )}
+                                </DragScrollProvider>
                         </div>
                     </div>
                 </div>
