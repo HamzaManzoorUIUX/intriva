@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Frankfurt from "../../assets/videos/Frankfurt Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
 import Londan from "../../assets/videos/London Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
 import Neurons from "../../assets/videos/Stock Video of Neurons in brain. Loop. 3D animation of neural network. at Adobe Stock - Adobe Stock.MP4";
@@ -7,34 +7,36 @@ import Logo from "../../assets/img/logo.png";
 import { Link } from 'react-router-dom';
 import ScreenSide from "../../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
 import Fade from 'react-reveal/Fade';
+
 function Header(props) {
-    const videos = () => {
+    const refVideo = useRef()
+    const videos = (e) => {
         const vid = parseInt(Math.random() * 3 + 1)
+        // const {current}=refVideo
         if (vid === 1) {
-            return <video autoPlay muted loop className='headerHome-video'>
+            return <video autoPlay ref={refVideo} muted className='headerHome-video'>
                 <source src={Londan} type='video/mp4' />
             </video>
-
         }
         else if (vid === 2) {
-            return <video autoPlay muted loop className='headerHome-video'>
+            return <video autoPlay ref={refVideo} muted className='headerHome-video'>
                 <source src={Frankfurt} type='video/mp4' />
             </video>
 
+
         }
         else {
-            return <video autoPlay muted loop className='headerHome-video'>
+            return <video autoPlay ref={refVideo} muted className='headerHome-video'>
                 <source src={Madrid} type='video/mp4' />
             </video>
         }
     }
+
     return (
         <div className='headerHome pt-4 z-50'>
             {
                 videos()
-
             }
-
             <div className="z-10 position-relative d-flex flex-column h-100 " >
                 <div className="px-3 py-3 bannerImg d-block d-md-none ">
                     <video autoPlay muted loop className='neural-video'>
@@ -54,7 +56,7 @@ function Header(props) {
                 </h3>
                     </Fade>
                 </div>
-                <div className="px-3 py-2 headerBlueBar bannerImg d-none d-md-block mb-3">
+                <div className="px-3 py-2  align-items-center headerBlueBar bannerImg d-none d-md-flex mb-3">
                     <video autoPlay muted loop className='neural-video'>
                         <source src={Neurons} type='video/mp4' />
                     </video>
