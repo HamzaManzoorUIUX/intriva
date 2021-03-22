@@ -339,6 +339,12 @@ h6 {
     padding   : .5rem 1rem .5rem 0px;
     margin-top: .75rem;
 }
+.upperLine-2 {
+    border-top: 2px solid #E9B34E;
+    display   : inline-block;
+    padding   : .5rem 1rem .5rem 0px;
+    margin-top: .2rem;
+}
 
 .teamBack {
     background-image: url('./assets/img/Group 14331.png');
@@ -756,7 +762,7 @@ footer {
 .scrollable {
     width     : 100%;
     overflow-x: scroll;
-    text-align: end;
+    direction: rtl;
 
     &::-webkit-scrollbar {
         display: none;

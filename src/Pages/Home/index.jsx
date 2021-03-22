@@ -48,7 +48,7 @@ function Home(props) {
                             <Fade cascade big>
                                 <div>
                                     <h4 className='text-primary '>
-                                        <span className="upperLine">
+                                        <span className="upperLine-2">
                                             Founded in 2017
                       </span>
                                     </h4>
