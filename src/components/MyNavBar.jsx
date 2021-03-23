@@ -4,9 +4,10 @@ import Logo from '../assets/img/logo.png'
 import NavOpenerBtn from './NavOpenerBtn';
 
 function MyNavBar(props) {
-    const [menuOpener, setMenuOpener] = useState(false)
+    const [menuOpener, setMenuOpener] = useState(null)
     const [scrollCheck, setScrollCheck] = useState(false)
     const [startScroll, setstartScroll] = useState(false)
+
     const onScroll = (e) => {
         if (window.pageYOffset > 10)
             setScrollCheck(true)
@@ -14,6 +15,7 @@ function MyNavBar(props) {
             setScrollCheck(false)
         }
     }
+
     const ScrollTop = () => {
         if (startScroll === false) {
             window.scrollTo(0, 0)
@@ -21,6 +23,7 @@ function MyNavBar(props) {
         }
     }
     useEffect(() => {
+      
         ScrollTop()
         window.addEventListener('scroll', onScroll, { passive: true });
 
@@ -49,7 +52,7 @@ function MyNavBar(props) {
                         }
                      </div>
                         <NavOpenerBtn active={menuOpener} setActive={setMenuOpener} />
-                        <ul className={`myNavBar-menu ${menuOpener ? 'active' : 'nonActive'}`}>
+                        <ul className={`myNavBar-menu ${menuOpener===null ?'':menuOpener? 'active' :'nonActive'}`}>
                             <li>
                                 <Link to='/aboutintriva/:true'>
                                     About Intriva

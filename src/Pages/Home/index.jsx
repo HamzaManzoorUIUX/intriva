@@ -10,6 +10,7 @@ import ReactPageScroller from "react-page-scroller";
 import PreLoader from "../../components/PreLoader";
 import ScreenSide from "../../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
 import DragScrollProvider from 'drag-scroll-provider'
+import TeamData from "../WhoWeAre/TeamData.json";
 
 function Home(props) {
     const { section } = props.match.params
@@ -53,7 +54,7 @@ function Home(props) {
                       </span>
                                     </h4>
                                     <div className='max-text f-14'>
-                                        Founded in 2017 , Intriva is a privately held alternative alternative asset managent firmspecialising in asset-backed debt and equity special situations across Western Europe
+                                    Founded in 2017, Intriva is an independent alternative asset management firm investing in mid-market companies and real estate throughout Western Europe. 
                   </div>
                                 </div>
                             </Fade>
@@ -65,7 +66,7 @@ function Home(props) {
                       </span>
                                     </h4>
                                     <div className='max-text f-14'>
-                                        Intriva provides an attractive risk adjusted return profile to our investors, and bespoke capitalsolutions to our partners throughout Western Europe.
+                                    Intriva employs {TeamData.length} people, including 11 investment professionals, in its London headquarters and affiliated offices in Frankfurt and Madrid.
                   </div>
                                 </div>
                             </Fade>
@@ -77,22 +78,11 @@ function Home(props) {
                       </span>
                                     </h4>
                                     <div className='max-text f-14'>
-                                        Intriva invests throughout the capital structure in both single name positions, and also supportsthematic growth opportunities with large scale roll out strategies.
+                                    Intriva provides an attractive risk adjusted return profile to our investors, and bespoke capitalsolutions to our partners throughout Western Europe.
                   </div>
                                 </div>
                             </Fade>
-                            <Fade cascade big >
-                                <div className='d-none d-md-block'>
-                                    <h4 className='text-primary mb-0 '>
-                                        <span className="upperLine font-Roboto">
-                                            Intriva employs
-                      </span>
-                                    </h4>
-                                    <div className='max-text f-14'>
-                                        As of December 31, 2020, Intriva employs a staff of 16 people, including 11 investmentprofessionals, in its London headquarters and affiliated offices in Frankfurt and Madrid.
-                  </div>
-                                </div>
-                            </Fade>
+                   
                         </div>
                     </div>
                 </div>
@@ -110,11 +100,10 @@ function Home(props) {
                    </h4>
                                 <div className='max-text f-14'>
                                     <p>
-                                        We take pride in our collaborative culture, which harnesses camaraderie and the balance of skills and experience which our team members collectively bring to bear.
+                                    We take pride in our collaborative culture, which harnesses camaraderie and the balance of skills and experience which our team members collectively bring to bear. 
                        </p>
                                     <p>
-
-                                        As a young firm, we are entrepreneurial and hungry to delivery exceptional returns for our investors.  We are creative about our investments and how they are structured.  We work hard and pursue opportunities with tenacity and thoroughness.
+                                    As a young firm, we are entrepreneurial and hungry to deliver exceptional returns for our investors. We are creative about our investments and how they are structured.  We work hard and pursue opportunities with tenacity and thoroughness.   
                        </p>
                                 </div>
                             </Fade>

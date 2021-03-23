@@ -29,20 +29,15 @@ function WhatWeDo(props) {
                          <div className="max-text">
                          <Fade big>
                                 <p className='mt-3 '>
-                                    Intriva Invests In Real Estate, Equity, Credit And Other Financial Assets Across Western Europe.
-                        </p>
-                            </Fade>
-                            <Fade big>
-                                <p className=''>
-                                    As A Value Investor, We Only Deploy Capital When There Is Both A Margin Of Safety And Significant Upside.
-                        </p>
+                                Intriva invests in real estate, equity, credit and other financial assets across Western Europe. As a value investor, we only deploy capital when there is both a margin of safety and significant upside. 
+                                     </p>
                             </Fade>
                             <Fade big>
                                 <div className="my-4 f-40 font-timeNew">
                                     Capital Preservation
                         </div>
                                 <div className=''>
-                                    We Have A Rigorous Focus On Capital Protection. We Spend Significant Amounts Of Time Looking At How We Can Positively Affect The Distribution Of Returns On Our Investments. We Often Invest In Companies That Offer Significant Opportunities To De-Risk The Investment Quickly, For Example:
+                                We have a rigorous focus on capital protection. We spend a considerable amount of time looking at how we can positively affect the distribution of returns on our investments. Often, we invest in companies that offer significant opportunities to de-risk the investment quickly, for example:
                     </div>
                             </Fade>
                             <div className="col-md-8">
@@ -55,8 +50,7 @@ function WhatWeDo(props) {
                       </span>
                                         </h4>
                                         <div>
-                                            By deploying our extensive operating expertise
-                                            to bring about early operational wins
+                                    By deploying our extensive operating expertise to bring about early operational wins
                                 </div>
 
                                     </div>
@@ -69,8 +63,8 @@ function WhatWeDo(props) {
                       </span>
                                         </h4>
                                         <div>
-                                            By investing at low entry multiples and/or with value accretive buy-and-build plans
-                                </div>
+                                        By investing at low entry multiples and/or with value accretive buy-and-build plans
+                                          </div>
 
                                     </div>
                                 </Fade>
@@ -82,7 +76,8 @@ function WhatWeDo(props) {
                       </span>
                                         </h4>
                                         <div>
-                                            Through investing in companies with significant asset backing, for example with long-termvisible cash flow streams or tangible assets
+                                            
+                                    Through investing in companies with high tangible asset backing, including with long-term visible cash flow streams 
                                 </div>
 
                                     </div>
@@ -95,10 +90,8 @@ function WhatWeDo(props) {
                       </span>
                                         </h4>
                                         <div>
-                                            By investing in asset-backed opportunities at a
-                                            discount to intrinsic value with a strong focus
-                                            on downside protection and upside participatio
-
+                                        By investing in asset-backed opportunities at a discount to intrinsic value with a strong focus on downside protection and upside participation
+                                            
                                 </div>
 
                                     </div>
@@ -110,10 +103,10 @@ function WhatWeDo(props) {
                                         Operational Transformation And Driving Upside
                         </h3>
                                     <p className=''>
-                                        A Key Determinant Of Our Returns And The Attractiveness Of An Investment Opportunity To Us Is The Potential We Identify To Proactively Transform The Business Or Asset Through Strategic Repositioning, Operational Improvement, High-Returning Capital Investment And Accretive Buy-And-Build Strategies.
+                                    A key determinant of our returns and the attractiveness of an investment opportunity to us is the potential we identify to proactively transform the business or asset through strategic repositioning, operational improvement, high-returning capital investment and accretive buy-and-build strategies.
                         </p>
                                     <p className=''>
-                                        The Resources Dedicated To Each Investment Together With The Experience Of Our Team Allows Us To Identify And Execute On Value Creation Opportunities.
+                                    The resources dedicated to each investment together with the experience of our team allows us to identify and execute value creation opportunities. 
 
                         </p>
                                 </div>

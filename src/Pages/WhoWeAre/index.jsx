@@ -19,15 +19,13 @@ function WhoWeAre(props) {
             <div className="teamBack pb-5">
                 <div className="container">
                     
-                <Fade left big>
+                <Fade big>
                 <section className='px-3 px-md-5 py-5'>
                     <p>
-                        We Operate As A Single Team, Leveraging Our Multi- Disciplinary Skills And Collaborating  Across Sectors, Regions And  Disciplines To Invest With A Single
-                        Strategic Purpose.
+                    As a young firm, we are entrepreneurial and hungry to deliver exceptional returns for our investors. We are creative about our investments and how they are structured.  We work hard and pursue opportunities with tenacity and thoroughness.   
             </p>
                     <p>
-                        We Are Managers Of People’s Savings And Take Our Responsibilities Seriously, Striving  For The Highest Standards In Everything We Do. We Push
-                        Ourselves To Find The Best  Opportunities, Engaging In Critical Thinking And Seeking And Sharing Insights To Reach The Best Decisions.
+                    We are managers of people’s savings and take our responsibilities seriously, striving for the highest standards in everything we do. We push ourselves to find the best opportunities, engaging in critical thinking and seeking and sharing insights to reach the best decisions.
             </p>
                 </section>
                 </Fade>
