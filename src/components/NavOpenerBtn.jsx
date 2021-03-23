@@ -2,7 +2,7 @@ import React from 'react';
 
 function NavOpenerBtn({active,setActive}) {
     return (
-        <button className='btn btn-primary btn-myRound text-light p-3' onClick={()=>setActive(!active)}>
+        <button className={`btn btn-primary btn-myRound text-light p-3 ${active?'active':'nonActive'}`} onClick={()=>setActive(!active)}>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16">
 
             <g id="menu-8" className={active?'active':''} transform="translate(0 -4)">
