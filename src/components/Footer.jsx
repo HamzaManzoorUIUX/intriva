@@ -13,7 +13,7 @@ function Footer(props) {
                 <ul className='myList d-flex list-unstyled justify-context-start justify-content-md-end flex-row p-0 flex-wrap'>
                     <li>
                         <Link to='/'>
-                            ABOUT INTRIVA
+                        About Intriva
                    </Link>
                     </li>
                     <li>

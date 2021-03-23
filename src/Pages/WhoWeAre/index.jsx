@@ -16,7 +16,9 @@ function WhoWeAre(props) {
             <MyNavBar title={'Who We Are'} />
             <ScrollToTopOnMount />
             <div>
-            <div className="container-fluid teamBack pb-5">
+            <div className="teamBack pb-5">
+                <div className="container">
+                    
                 <Fade left big>
                 <section className='px-3 px-md-5 py-5'>
                     <p>
@@ -43,6 +45,7 @@ function WhoWeAre(props) {
                     <TeamRender/>
 
                 </section>
+                </div>
                 </div>
            <StickyFooter/>
             </div>

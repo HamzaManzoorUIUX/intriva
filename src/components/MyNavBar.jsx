@@ -52,12 +52,12 @@ function MyNavBar(props) {
                         <ul className={`myNavBar-menu ${menuOpener ? 'active' : ''}`}>
                             <li>
                                 <Link to='/aboutintriva/:true'>
-                                    About INTRIVA
+                                    About Intriva
                                 </Link>
                             </li>
                             <li>
                                 <Link to='/whoweare'>
-                                    Who we are
+                                Who We Are
                                 </Link>
                             </li>
                             <li>
@@ -77,7 +77,7 @@ function MyNavBar(props) {
                             </li>
                             <li>
                                 <Link to='/'>
-                                    For INTRIVA
+                                    For Investors
                                 </Link>
                             </li>
                         </ul>

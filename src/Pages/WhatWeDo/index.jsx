@@ -26,13 +26,14 @@ function WhatWeDo(props) {
                             </Fade>
                         </div>
                         <div className="col-md-7">
-                            <Fade big>
-                                <p className='mt-3 max-text'>
+                         <div className="max-text">
+                         <Fade big>
+                                <p className='mt-3 '>
                                     Intriva Invests In Real Estate, Equity, Credit And Other Financial Assets Across Western Europe.
                         </p>
                             </Fade>
                             <Fade big>
-                                <p className='max-text'>
+                                <p className=''>
                                     As A Value Investor, We Only Deploy Capital When There Is Both A Margin Of Safety And Significant Upside.
                         </p>
                             </Fade>
@@ -40,7 +41,7 @@ function WhatWeDo(props) {
                                 <div className="my-4 f-40 font-timeNew">
                                     Capital Preservation
                         </div>
-                                <div className='max-text'>
+                                <div className=''>
                                     We Have A Rigorous Focus On Capital Protection. We Spend Significant Amounts Of Time Looking At How We Can Positively Affect The Distribution Of Returns On Our Investments. We Often Invest In Companies That Offer Significant Opportunities To De-Risk The Investment Quickly, For Example:
                     </div>
                             </Fade>
@@ -105,19 +106,21 @@ function WhatWeDo(props) {
                             </div>
                             <Fade big>
                                 <div>
-                                    <h3 className="my-4 f-40">
+                                    <h3 className="my-4 f-40 ">
                                         Operational Transformation And Driving Upside
                         </h3>
-                                    <p className='max-text'>
+                                    <p className=''>
                                         A Key Determinant Of Our Returns And The Attractiveness Of An Investment Opportunity To Us Is The Potential We Identify To Proactively Transform The Business Or Asset Through Strategic Repositioning, Operational Improvement, High-Returning Capital Investment And Accretive Buy-And-Build Strategies.
                         </p>
-                                    <p className='max-text'>
+                                    <p className=''>
                                         The Resources Dedicated To Each Investment Together With The Experience Of Our Team Allows Us To Identify And Execute On Value Creation Opportunities.
 
                         </p>
                                 </div>
                             </Fade>
-                        </div>
+                        
+                         </div>
+                         </div>
                     </div>
                 </div>
                 <StickyFooter />

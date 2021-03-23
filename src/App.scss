@@ -877,8 +877,18 @@ footer {
 }
 
 .max-text {
-    max-width: 780px;
+    max-width: 670px;
     width    : 100%;
+    @media(max-width:1200px){
+        max-width: 600px;
+    }
+    @media(max-width:981px){
+        max-width: 440px;
+    }
+    @media(max-width:767px){
+        max-width: 540px;
+        margin: auto;
+    }
 }
 
 .myNavBar-menu {
