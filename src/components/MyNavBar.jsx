@@ -49,7 +49,7 @@ function MyNavBar(props) {
                         }
                      </div>
                         <NavOpenerBtn active={menuOpener} setActive={setMenuOpener} />
-                        <ul className={`myNavBar-menu ${menuOpener ? 'active' : ''}`}>
+                        <ul className={`myNavBar-menu ${menuOpener ? 'active' : 'nonActive'}`}>
                             <li>
                                 <Link to='/aboutintriva/:true'>
                                     About Intriva
