@@ -153,6 +153,25 @@ h6 {
         .homeList-a {
             text-decoration: none;
             cursor         : pointer;
+            display        : block;
+            position       : relative;
+
+            @media(min-width:768px) {
+                padding-bottom: .5rem;
+
+                &:hover {
+                    &::before {
+                        content         : '';
+                        height          : 5px;
+                        width           : 100%;
+                        bottom          : 0px;
+                        left            : 0px;
+                        background-color: white;
+                        position        : absolute;
+                        animation: navAnimation .2s linear 0s 1 forwards;
+                    }
+                }
+            }
 
             span {
                 color         : white;
@@ -187,9 +206,7 @@ h6 {
                 font-size     : 56px;
                 color         : white;
 
-                &:hover {
-                    text-decoration: underline;
-                }
+
 
                 @media(max-width: 1200px) {
                     font-size: 37px;
@@ -276,8 +293,9 @@ h6 {
 
 .btn-myRound {
     border-radius: 50%;
-    position: relative;
-    &::after{
+    position     : relative;
+
+    &::after {
         position        : absolute;
         content         : '';
         background-color: #e3a021;
@@ -285,48 +303,50 @@ h6 {
         height          : 0px;
         bottom          : -100%;
         left            : 50%;
-        transform: translateX(-50%);
+        transform       : translateX(-50%);
         // animation: hamza .1s linear 1.2s 1 forwards;
     }
-    &.active{
-        &::after{
+
+    &.active {
+        &::after {
             animation: hamza .1s linear 0s 1 forwards;
         }
     }
-    &.nonActive{
-        &::after{
+
+    &.nonActive {
+        &::after {
             animation: hamza .1s linear 2s 1 reverse;
         }
     }
 }
 
 .myNavBar-menu {
-    list-style-type    : none;
-    position           : absolute;
-    top                : 64px;
-    right              : 44px;
-    padding-top        : .5rem;
-    padding-bottom     : .5rem;
-    padding-left       : 0px;
-    backdrop-filter    : blur(9px);
-    background-color   : rgba($color: #ffffff, $alpha: .5);
-    filter             : blur(9%);
-    z-index            : 10;
-    width              : 0px;
-    flex-direction     : column;
-    justify-content    : flex-end;
-    overflow           : hidden;
-    max-height         : 260px;
+    list-style-type : none;
+    position        : absolute;
+    top             : 64px;
+    right           : 44px;
+    padding-top     : .5rem;
+    padding-bottom  : .5rem;
+    padding-left    : 0px;
+    backdrop-filter : blur(9px);
+    background-color: rgba($color: #ffffff, $alpha: .5);
+    filter          : blur(9%);
+    z-index         : 10;
+    width           : 0px;
+    flex-direction  : column;
+    justify-content : flex-end;
+    overflow        : hidden;
+    max-height      : 260px;
 
     &::before {
-        position              : absolute;
-        content               : '';
-        right                 : 0px;
-        top                   : 0px;
-        background-color      : #E9B34E;
-        width                 : 3px;
-        height                : 100%;
-        z-index               : 2;
+        position        : absolute;
+        content         : '';
+        right           : 0px;
+        top             : 0px;
+        background-color: #E9B34E;
+        width           : 3px;
+        height          : 100%;
+        z-index         : 2;
 
     }
 
@@ -340,8 +360,8 @@ h6 {
     }
 
     &.nonActive {
-        width: 160px;
-        height: 260px;
+        width    : 160px;
+        height   : 260px;
         animation: navmenuHide .5s linear .7s 1 forwards;
     }
 
@@ -377,7 +397,7 @@ h6 {
                 background-color: #E9B34E;
                 width           : 100%;
                 bottom          : 0px;
-                right            : 0px;
+                right           : 0px;
                 animation       : navAnimation .5s linear 0s 1 forwards;
             }
         }
@@ -949,6 +969,7 @@ footer {
         right: 0px;
     }
 }
+
 @keyframes navAnimationrightHide {
     0% {
         right: 0px;
@@ -986,7 +1007,7 @@ footer {
 }
 
 .myNavBar-menu {
-    &.active{
+    &.active {
         @for $var from 1 to 7 {
             >li:nth-child(#{$var}) {
                 animation                : navAnimationright;
@@ -998,7 +1019,8 @@ footer {
             }
         }
     }
-    &.nonActive{
+
+    &.nonActive {
         @for $var from 1 to 7 {
             >li:nth-child(#{$var}) {
                 animation                : navAnimationrightHide;
