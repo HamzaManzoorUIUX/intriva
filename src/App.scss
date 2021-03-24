@@ -243,12 +243,24 @@ h6 {
 }
 
 .ScreenSide {
-    position: sticky;
+    position: fixed;
     left    : 0px;
     bottom  : calc(0px);
     z-index : 6050;
     height  : 45px;
 
+    @media(max-width:767px) {
+        position: sticky;
+    }
+    
+    &.active{
+        @media(max-width:767px) {
+            position: fixed;
+            &.mt-fotPic{
+             bottom: 45px;   
+            }
+        }   
+    }
 }
 
 .myNavBar {
@@ -295,7 +307,9 @@ h6 {
     border-radius  : 50%;
     position       : relative;
     height         : 60px;
-    width          : 60px;
+    min-width          : 60px;
+    max-width          : 60px;
+    width          : 100%;
     display        : flex;
     justify-content: center;
     align-items    : center;
@@ -356,9 +370,9 @@ h6 {
 
     }
 
-    @media(max-width:767px) {
-        right: 0px;
-    }
+    // @media(max-width:767px) {
+    //     right: 0px;
+    // }
 
     &.active {
         display  : flex;
@@ -479,8 +493,7 @@ h6 {
 
 footer {
     background-color: #161E26;
-    padding-top     : 2.5rem;
-    padding-bottom  : .5rem;
+    height          : 45px;
 
     .myList {
 
@@ -777,9 +790,10 @@ footer {
 }
 
 .cityCard {
-    position: relative;
-text-align: center;
-color: black;
+    position  : relative;
+    text-align: center;
+    color     : black;
+
     .content {
         position        : absolute;
         top             : 0px;
@@ -1040,14 +1054,18 @@ color: black;
         }
     }
 }
-.hamburger-box{
+
+.hamburger-box {
     transform: scale(0.8);
-    .hamburger-inner{
+
+    .hamburger-inner {
         background-color: currentColor !important;
-        &::after,&::before{
+
+        &::after,
+        &::before {
             background-color: currentColor !important;
 
         }
-        
+
     }
 }

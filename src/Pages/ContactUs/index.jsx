@@ -37,9 +37,9 @@ function ContactUs(props) {
             
    <CityCards/>
            
-            <div className="mb-min">
-            {/* <MyMap isMarkerShown/> */}
-            </div>
+            {/* <div className="mb-min">
+             <MyMap isMarkerShown/> 
+            </div> */}
             <StickyFooter/>
            </div>
             <Footer/>

@@ -5,20 +5,19 @@ import sectionOne from '../../assets/img/Group 1431.png'
 import sectionTwo from '../../assets/img/Group 1432.png'
 import Footer from '../../components/Footer';
 import Fade from 'react-reveal/Fade';
-// import ScrollToTopOnMount from '../../components/ScrollToTop';
 import ReactPageScroller from "react-page-scroller";
 import PreLoader from "../../components/PreLoader";
-import ScreenSide from "../../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
 import DragScrollProvider from 'drag-scroll-provider'
 import TeamData from "../WhoWeAre/TeamData.json";
+import StickyFooter from '../../components/StickyFooter';
 
 function Home(props) {
     const { section } = props.match.params
-    const [currentPage, setcurrentPage] = useState(section !== undefined ? 2 : 0)
+    const [currentPage, setcurrentPage] = useState(section !== undefined ? 1 : 0)
     const handlePageChange = number => {
         setcurrentPage(number)
     };
-
+console.log(currentPage);
     const handleBeforePageChange = number => {
         number=1
     };
@@ -86,9 +85,7 @@ function Home(props) {
                         </div>
                     </div>
                 </div>
-                <Fade top big>
-            <img src={ScreenSide} width='252px' alt='img' />
-                </Fade>
+              
             </div>
             <div className="homeBack-2">
                 <div className='container '>
@@ -120,14 +117,14 @@ function Home(props) {
                     </div>
                 </div>
             <div className='d-block d-lg-none d-xl-block'>
-                <Fade top big>
-            <img src={ScreenSide} width='252px' alt='img' />
-                </Fade>
+          
                 <Footer />
             </div>
 
             </div>
+
         </ReactPageScroller>
+        <StickyFooter home={true} currentPage={currentPage}/>
     </>
     );
 }

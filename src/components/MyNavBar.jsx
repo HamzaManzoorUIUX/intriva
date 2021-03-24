@@ -35,8 +35,8 @@ const menuDefault=()=>{
             <div className={` ${props.tab !== undefined && props.position!==undefined?'fixed-top':'fixed-top'} py-2 bg-transparent`}>
                 <div className=" position-relative container">
                     <div className="myNavBar">
-                     <div className='d-flex align-items-center'>
-                     <Link to='/' className={`d-md-block ${scrollCheck ? 'd-none' : ''}`}>
+                     <div className='d-flex align-items-center flex-wrap'>
+                     <Link to='/' className={`d-md-block w-100 ${scrollCheck ? 'd-none' : ''}`}>
                             <img src={Logo} className='myNavBar-logo' alt="logo" />
                         </Link>
                         {
