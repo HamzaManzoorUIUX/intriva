@@ -157,7 +157,7 @@ h6 {
             position       : relative;
 
             @media(min-width:768px) {
-                padding-bottom: .5rem;
+                // padding-bottom: .5rem;
 
                 &:hover {
                     &::before {
@@ -225,7 +225,7 @@ h6 {
             @media(max-width:767px) {
                 padding   : .5rem;
                 border    : 1px solid white;
-                margin    : .5rem 0;
+                // margin    : .5rem 0;
                 text-align: center;
                 display   : block;
             }
@@ -1091,4 +1091,7 @@ footer {
     @media(max-width:767px) {
         margin-bottom: -50px;
     }
+}
+.pointer-event-none{
+    pointer-events: none;
 }
