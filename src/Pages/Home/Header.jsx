@@ -5,7 +5,6 @@ import Neurons from "../../assets/videos/Stock Video of Neurons in brain. Loop. 
 import Madrid from "../../assets/videos/9,570 BEST Madrid STOCK VIDEOS & FOOTAGE - Adobe Stock.MP4";
 import Logo from "../../assets/img/logo.png";
 import { Link } from 'react-router-dom';
-import ScreenSide from "../../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
 import Fade from 'react-reveal/Fade';
 
 function Header(props) {
@@ -129,9 +128,7 @@ function Header(props) {
                     </ul>
 
                 </div>
-                <Fade top big>
-                    <img src={ScreenSide} width='252px' alt='img' />
-                </Fade>
+    
 
             </div>
 
