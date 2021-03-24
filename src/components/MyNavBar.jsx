@@ -6,7 +6,7 @@ import NavOpenerBtn from './NavOpenerBtn';
 function MyNavBar(props) {
     const [menuOpener, setMenuOpener] = useState(null)
     const [scrollCheck, setScrollCheck] = useState(false)
-    const [startScroll, setstartScroll] = useState(false)
+    // const [startScroll, setstartScroll] = useState(false)
 
     const onScroll = (e) => {
         if (window.pageYOffset > 10)
@@ -15,16 +15,14 @@ function MyNavBar(props) {
             setScrollCheck(false)
         }
     }
-
-    const ScrollTop = () => {
-        if (startScroll === false) {
-            window.scrollTo(0, 0)
-            setstartScroll(true)
-        }
-    }
+const menuDefault=()=>{
+    if(props.number===0)
+    setMenuOpener(null)
+}
+ 
     useEffect(() => {
+        menuDefault()
       
-        ScrollTop()
         window.addEventListener('scroll', onScroll, { passive: true });
 
         return () => {
