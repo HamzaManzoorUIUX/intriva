@@ -11,21 +11,21 @@ function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
         <BiArrowFromLeft className={className}
-        style={style}
-        onClick={onClick}/>
+            style={style}
+            onClick={onClick} />
     );
-  }
-  
-  function SamplePrevArrow(props) {
+}
+
+function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
-      <BiArrowFromRight
-        className={className}
-        style={style}
-        onClick={onClick}
-      />
+        <BiArrowFromRight
+            className={className}
+            style={style}
+            onClick={onClick}
+        />
     );
-  }
+}
 
 function CityCards(props) {
     var settings = {
@@ -44,25 +44,27 @@ function CityCards(props) {
             <div className="container-fluid d-none d-md-block">
                 <div className="row">
                     <div className="col-md-4 px-0">
-                        <div className="cityCard">
-                            <img src={Londan} alt="Londan" className='w-100' />
-                            <div className="content">
-                                <div className="info">
+                        <a href="https://goo.gl/maps/W1VvBnGENeF615c28" rel="noreferrer" target='_blank'>
+                            <div className="cityCard">
+                                <img src={Londan} alt="Londan" className='w-100' />
+                                <div className="content">
+                                    <div className="info">
 
-                                    <h1>
-                                        LONDON
+                                        <h1 >
+                                            LONDON
                             </h1>
-                                    <div>
-                                        1234 Atlantic Street
-                                        7TH Floor
-                                        Stamford, yc 038362
+                                        <div >
+                                            1234 Atlantic Street
+                                            7TH Floor
+                                            Stamford, yc 038362
                             </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </a>  </div>
                     <div className="col-md-4 px-0">
-                        <div className="cityCard">
+                    <a href="https://goo.gl/maps/XazsXMj4C69s7rXs8" rel="noreferrer" target='_blank'>
+                        <div className="cityCard text-center">
                             <img src={Frankfurt} alt="Frankfurt" className='w-100' />
                             <div className="content">
                                 <div className="info">
@@ -78,8 +80,10 @@ function CityCards(props) {
                                 </div>
                             </div>
                         </div>
+               </a>
                     </div>
                     <div className="col-md-4 px-0">
+                        <a href="https://goo.gl/maps/4KFaHQazh3xURTdQ8" rel="noreferrer" target='_blank'>
                         <div className="cityCard">
                             <img src={Madrid} alt="Madrid" className='w-100' />
                             <div className="content">
@@ -96,12 +100,13 @@ function CityCards(props) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                   </a> </div>
                 </div>
             </div>
             <div className="d-block d-md-none">
                 <Slider {...settings}>
                     <div className="px-0">
+                        <a href="https://goo.gl/maps/W1VvBnGENeF615c28" rel="noreferrer" target='_blank'>
                         <div className="cityCard">
                             <img src={Londan} alt="Londan" className='w-100' />
                             <div className="content">
@@ -118,8 +123,9 @@ function CityCards(props) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+               </a>     </div>
                     <div className="px-0">
+                    <a href="https://goo.gl/maps/XazsXMj4C69s7rXs8" rel="noreferrer" target='_blank'>
                         <div className="cityCard">
                             <img src={Frankfurt} alt="Frankfurt" className='w-100' />
                             <div className="content">
@@ -136,8 +142,9 @@ function CityCards(props) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+               </a>     </div>
                     <div className="px-0">
+                    <a href="https://goo.gl/maps/4KFaHQazh3xURTdQ8" rel="noreferrer" target='_blank'>
                         <div className="cityCard">
                             <img src={Madrid} alt="Madrid" className='w-100' />
                             <div className="content">
@@ -154,7 +161,7 @@ function CityCards(props) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+               </a>     </div>
                 </Slider>
             </div>
         </>

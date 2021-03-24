@@ -2,7 +2,7 @@ import React from 'react';
 import MyNavBar from '../../components/MyNavBar';
 import path from '../../assets/img/Subtraction 1.png'
 
-import MyMap from './MyMap'
+// import MyMap from './MyMap'
 import Footer from '../../components/Footer'
 import CityCards from './CityCards';
 import StickyFooter from '../../components/StickyFooter';
@@ -38,7 +38,7 @@ function ContactUs(props) {
    <CityCards/>
            
             <div className="mb-min">
-            <MyMap isMarkerShown/>
+            {/* <MyMap isMarkerShown/> */}
             </div>
             <StickyFooter/>
            </div>
