@@ -79,9 +79,9 @@ function MyNavBar(props) {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='/'>
+                                <a href='https://icx.efrontcloud.com/IntrivaJSY' rel="noreferrer" target='_blank'>
                                     For Investors
-                                </Link>
+                                </a>
                             </li>
                         </ul>
 
