@@ -168,7 +168,7 @@ h6 {
                         left            : 0px;
                         background-color: white;
                         position        : absolute;
-                        animation: navAnimation .2s linear 0s 1 forwards;
+                        animation       : navAnimation .2s linear 0s 1 forwards;
                     }
                 }
             }
@@ -292,8 +292,14 @@ h6 {
 }
 
 .btn-myRound {
-    border-radius: 50%;
-    position     : relative;
+    border-radius  : 50%;
+    position       : relative;
+    height         : 60px;
+    width          : 60px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    padding        : 0px;
 
     &::after {
         position        : absolute;
@@ -1031,5 +1037,16 @@ footer {
                 animation-delay          : calc(#{$var*.1s}) !important;
             }
         }
+    }
+}
+.hamburger-box{
+    transform: scale(0.8);
+    .hamburger-inner{
+        background-color: currentColor !important;
+        &::after,&::before{
+            background-color: currentColor !important;
+
+        }
+        
     }
 }
