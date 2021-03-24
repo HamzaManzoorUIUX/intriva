@@ -24,6 +24,9 @@
         height          : 100%;
         z-index         : 1;
     }
+    @media(max-width: 767px){
+        height: 95vh;
+    }
 }
 
 h1,
@@ -63,6 +66,7 @@ h6 {
 .bannerImg {
     overflow: hidden;
     position: relative;
+    background-color: #021F38;
 
     .neural-video {
         width     : 100%;

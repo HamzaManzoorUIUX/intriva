@@ -13,19 +13,19 @@ function Header(props) {
         const vid = parseInt(Math.random() * 3 + 1)
         // const {current}=refVideo
         if (vid === 1) {
-            return <video autoPlay ref={refVideo} loop muted className='headerHome-video pointer-event-none'>
+            return <video autoPlay ref={refVideo} loop muted className='d-none d-md-flex headerHome-video pointer-event-none'>
                 <source src={Londan} type='video/mp4' />
             </video>
         }
         else if (vid === 2) {
-            return <video autoPlay ref={refVideo} loop muted className='headerHome-video pointer-event-none'>
+            return <video autoPlay ref={refVideo} loop muted className='d-none d-md-flex headerHome-video pointer-event-none'>
                 <source src={Frankfurt} type='video/mp4' />
             </video>
 
 
         }
         else {
-            return <video autoPlay ref={refVideo} loop muted className='headerHome-video pointer-event-none'>
+            return <video autoPlay ref={refVideo} loop muted className='d-none d-md-flex headerHome-video pointer-event-none'>
                 <source src={Madrid} type='video/mp4' />
             </video>
         }
@@ -38,7 +38,7 @@ function Header(props) {
             }
             <div className="z-10 position-relative d-flex flex-column h-100 " >
                 <div className="px-3 py-3 bannerImg d-block d-md-none ">
-                    <video autoPlay muted loop className='neural-video pointer-event-none'>
+                    <video autoPlay muted loop className='d-none d-md-block neural-video pointer-event-none'>
                         <source src={Neurons} type='video/mp4' />
                     </video>
                     <img src={Logo} alt="logo" className='logoHome z-10 position-relative' />
@@ -56,7 +56,7 @@ function Header(props) {
                     </Fade>
                 </div>
                 <div className="px-3 py-2  align-items-center headerBlueBar bannerImg d-none d-md-flex mb-3">
-                    <video autoPlay muted loop className='neural-video pointer-event-none'>
+                    <video autoPlay muted loop className='neural-video d-none d-md-block pointer-event-none'>
                         <source src={Neurons} type='video/mp4' />
                     </video>
                     <img src={Logo} alt="logo" className='headerblueImg z-10 position-relative' />

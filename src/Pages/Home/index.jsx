@@ -89,7 +89,7 @@ console.log(currentPage);
             </div>
             <div className="homeBack-2">
                 <div className='container '>
-                    <div className="row pt-3 pt-xl-5">
+                    <div className="row pt-5 mt-md-3 mt-xl-5">
                         <div className="col-md-6 col-lg-5 col-xl-4 ">
                             <Fade cascade big>
                                 <h4>
