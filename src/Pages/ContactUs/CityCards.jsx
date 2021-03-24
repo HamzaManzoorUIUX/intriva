@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Londan from '../../assets/img/Londan.png'
 import Frankfurt from '../../assets/img/Frankfurt.png'
 import Madrid from '../../assets/img/Madrid.png'
@@ -28,140 +28,105 @@ function SamplePrevArrow(props) {
 }
 
 function CityCards(props) {
+    const [activeCard, setActiveCard] = useState(1)
     var settings = {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 1,
+        arrows: false,
+        slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
 
+
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                }
+            }
+        ]
     };
     return (
         <>
-            <div className="container-fluid d-none d-md-block">
-                <div className="row">
-                    <div className="col-md-4 px-0">
-                        <a href="https://goo.gl/maps/W1VvBnGENeF615c28" rel="noreferrer" target='_blank'>
-                            <div className="cityCard">
-                                <img src={Londan} alt="Londan" className='w-100' />
-                                <div className="content">
-                                    <div className="info">
-
-                                        <h1 >
-                                            LONDON
-                            </h1>
-                                        <div >
-                                            1234 Atlantic Street
-                                            7TH Floor
-                                            Stamford, yc 038362
-                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>  </div>
-                    <div className="col-md-4 px-0">
-                    <a href="https://goo.gl/maps/XazsXMj4C69s7rXs8" rel="noreferrer" target='_blank'>
-                        <div className="cityCard text-center">
-                            <img src={Frankfurt} alt="Frankfurt" className='w-100' />
-                            <div className="content">
-                                <div className="info">
-
-                                    <h1 className='text-uppercase'>
-                                        Frankfurt
-                            </h1>
-                                    <div>
-                                        1234 Atlantic Street
-                                        7TH Floor
-                                        Stamford, yc 038362
-                            </div>
-                                </div>
-                            </div>
-                        </div>
-               </a>
-                    </div>
-                    <div className="col-md-4 px-0">
-                        <a href="https://goo.gl/maps/4KFaHQazh3xURTdQ8" rel="noreferrer" target='_blank'>
-                        <div className="cityCard">
-                            <img src={Madrid} alt="Madrid" className='w-100' />
-                            <div className="content">
-                                <div className="info">
-
-                                    <h1 className='text-uppercase'>
-                                        Madrid
-                            </h1>
-                                    <div>
-                                        1234 Atlantic Street
-                                        7TH Floor
-                                        Stamford, yc 038362
-                            </div>
-                                </div>
-                            </div>
-                        </div>
-                   </a> </div>
-                </div>
-            </div>
-            <div className="d-block d-md-none">
+            <div className="mb-minus">
                 <Slider {...settings}>
                     <div className="px-0">
-                        <a href="https://goo.gl/maps/W1VvBnGENeF615c28" rel="noreferrer" target='_blank'>
-                        <div className="cityCard">
+                        <div className={`cityCard ${activeCard === 1 ? 'active' : ''}`} onClick={() => setActiveCard(1)}>
                             <img src={Londan} alt="Londan" className='w-100' />
                             <div className="content">
                                 <div className="info">
 
                                     <h1>
-                                        LONDON
+                                        UK
                             </h1>
-                                    <div>
-                                        1234 Atlantic Street
-                                        7TH Floor
-                                        Stamford, yc 038362
-                            </div>
+                                    <div className='address'>
+                                        <div>
+                                            Intriva Capital Advisors LLP
+                                            10 Golden Square
+                                            London W1F 9JA
+                                        </div>
+                                        <a href="https://goo.gl/maps/e2iyd1JCdWP7CQsp8" className='btn btn-light' rel="noreferrer" target='_blank'>
+                                            Map
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-               </a>     </div>
+                    </div>
                     <div className="px-0">
-                    <a href="https://goo.gl/maps/XazsXMj4C69s7rXs8" rel="noreferrer" target='_blank'>
-                        <div className="cityCard">
+                        <div className={`cityCard ${activeCard === 2 ? 'active' : ''}`} onClick={() => setActiveCard(2)}>
                             <img src={Frankfurt} alt="Frankfurt" className='w-100' />
                             <div className="content">
                                 <div className="info">
 
                                     <h1 className='text-uppercase'>
-                                        Frankfurt
+                                        GERMANY
                             </h1>
-                                    <div>
-                                        1234 Atlantic Street
-                                        7TH Floor
-                                        Stamford, yc 038362
-                            </div>
+                                    <div className='address'>
+                                        <div>
+                                            Intriva Capital Advisors GmbH
+                                            Goethestr. 16
+                                            60313 Frankfurt
+                                            (entrance Kleine Bockenheimer Str. 5)
+</div>
+                                        <a href="https://goo.gl/maps/HDS1ZC9bn5HycL2f6" className='btn btn-light' rel="noreferrer" target='_blank'>
+                                            Map
+                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-               </a>     </div>
+                    </div>
                     <div className="px-0">
-                    <a href="https://goo.gl/maps/4KFaHQazh3xURTdQ8" rel="noreferrer" target='_blank'>
-                        <div className="cityCard">
+                        <div className={`cityCard ${activeCard === 3 ? 'active' : ''}`} onClick={() => setActiveCard(3)}>
                             <img src={Madrid} alt="Madrid" className='w-100' />
                             <div className="content">
                                 <div className="info">
 
                                     <h1 className='text-uppercase'>
-                                        Madrid
+                                    SPAIN
                             </h1>
-                                    <div>
-                                        1234 Atlantic Street
-                                        7TH Floor
-                                        Stamford, yc 038362
+                                    <div className="address">
+
+                                        <div>
+                                        Calle Lagasca Nr. 84, 6 Izq.
+28001 Madrid
                             </div>
+                                        <a href="https://goo.gl/maps/XNC4Xzhub4Hzz51B9" className='btn btn-light' rel="noreferrer" target='_blank'>
+                                            Map
+</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-               </a>     </div>
+                    </div>
                 </Slider>
             </div>
         </>

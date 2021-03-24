@@ -42,7 +42,9 @@ function ContactUs(props) {
             </div> */}
             <StickyFooter/>
            </div>
+            <div className='position-md-fixed'>
             <Footer/>
+            </div>
         </div>
     );
 }
