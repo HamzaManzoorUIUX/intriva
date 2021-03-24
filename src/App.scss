@@ -24,7 +24,8 @@
         height          : 100%;
         z-index         : 1;
     }
-    @media(max-width: 767px){
+
+    @media(max-width: 767px) {
         height: 95vh;
     }
 }
@@ -64,8 +65,8 @@ h6 {
 }
 
 .bannerImg {
-    overflow: hidden;
-    position: relative;
+    overflow        : hidden;
+    position        : relative;
     background-color: #021F38;
 
     .neural-video {
@@ -227,11 +228,11 @@ h6 {
             }
 
             @media(max-width:767px) {
-                padding   : .5rem;
-                border    : 1px solid white;
+                padding      : .5rem;
+                border       : 1px solid white;
                 // margin    : .5rem 0;
-                text-align: center;
-                display   : block;
+                text-align   : center;
+                display      : block;
             }
         }
 
@@ -813,6 +814,8 @@ footer {
 
         @media(max-width:767px) {
             background-color: rgba($color: #ffffff, $alpha: .2) !important;
+            border-top      : 3px solid #E9B34E;
+            border-bottom   : 3px solid #E9B34E;
         }
 
         .info {
@@ -840,8 +843,9 @@ footer {
     }
 
     &.active {
-
         .content {
+            border-top      : 3px solid #E9B34E;
+            border-bottom   : 3px solid #E9B34E;
             background-color: rgba($color: #ffffff, $alpha: .2);
 
 
@@ -1096,6 +1100,7 @@ footer {
         margin-bottom: -50px;
     }
 }
-.pointer-event-none{
+
+.pointer-event-none {
     pointer-events: none;
 }
