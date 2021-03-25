@@ -16,7 +16,6 @@ function SampleNextArrow(props) {
     );
 }
 const NextFunction = ({ onClick, setActiveCard, currentSlide }) => {
-    console.log(currentSlide);
     if (currentSlide < 2) {
         onClick()
         setActiveCard(currentSlide === 2 ? 3 : currentSlide + 2)
@@ -26,7 +25,7 @@ const NextFunction = ({ onClick, setActiveCard, currentSlide }) => {
 const prevFunction = ({ onClick, setActiveCard, currentSlide }) => {
     if (currentSlide > 0) {
         onClick()
-        setActiveCard(currentSlide === 0 ? 1 : currentSlide - 2)
+        setActiveCard(currentSlide === 0 ? 1 : currentSlide)
     }
 
 }
@@ -68,7 +67,7 @@ function CityCards({ activeCard, setActiveCard }) {
     };
     return (
         <>
-            <div className="mb-minus">
+            <div className="">
                 <Slider {...settings}>
                     <div className="px-0">
                         <div className={`cityCard ${activeCard === 1 ? 'active' : ''}`} onClick={() => setActiveCard(1)}>
@@ -79,18 +78,24 @@ function CityCards({ activeCard, setActiveCard }) {
                                     <h3>
                                         LONDON
                             </h3>
-                                    <h4>
+                                    {/* <h4>
                                         UK
-                            </h4>
+                            </h4> */}
                                     <div className='address'>
                                         <div>
-                                            Intriva Capital Advisors LLP
-                                            10 Golden Square
-                                            London W1F 9JA
+                                            <div>
+                                                Intriva Capital Advisors LLP
+                                            </div>
+                                            <div>
+                                                10 Golden Square
+                                            </div>
+                                            <div>
+                                                London W1F 9JA
+                                            </div>
                                         </div>
-                                        {/* <a href="https://goo.gl/maps/e2iyd1JCdWP7CQsp8" className='btn btn-light' rel="noreferrer" target='_blank'>
+                                        <a href="https://goo.gl/maps/e2iyd1JCdWP7CQsp8" className='btn btn-light' rel="noreferrer" target='_blank'>
                                             Map
-                                        </a> */}
+                                        </a>
                                     </div>
 
                                 </div>
@@ -106,19 +111,28 @@ function CityCards({ activeCard, setActiveCard }) {
                                     <h3 className='text-uppercase'>
                                         Frankfurt
                             </h3>
-                                    <h4 className='text-uppercase'>
+                                    {/* <h4 className='text-uppercase'>
                                         GERMANY
-                            </h4>
+                            </h4> */}
                                     <div className='address'>
                                         <div>
-                                            Intriva Capital Advisors GmbH
-                                            Goethestr. 16
-                                            60313 Frankfurt
-                                            (entrance Kleine Bockenheimer Str. 5)
-</div>
-                                        {/* <a href="https://goo.gl/maps/HDS1ZC9bn5HycL2f6" className='btn btn-light' rel="noreferrer" target='_blank'>
+                                            <div>
+                                                Intriva Capital Advisors GmbH
+                                            </div>
+                                            <div>
+                                                Goethestr. 16
+                                            </div>
+                                            <div>
+                                                60313 Frankfurt
+                                            </div>
+                                            <div>
+                                                (entrance Kleine Bockenheimer Str. 5)
+                                            </div>
+
+                                        </div>
+                                        <a href="https://goo.gl/maps/HDS1ZC9bn5HycL2f6" className='btn btn-light' rel="noreferrer" target='_blank'>
                                             Map
-                                    </a> */}
+                                    </a>
                                     </div>
                                 </div>
                             </div>
@@ -133,18 +147,25 @@ function CityCards({ activeCard, setActiveCard }) {
                                     <h3 className='text-uppercase'>
                                         Madrid
                             </h3>
-                                    <h4 className='text-uppercase'>
+                                    {/* <h4 className='text-uppercase'>
                                         SPAIN
-                            </h4>
+                            </h4> */}
                                     <div className="address">
 
                                         <div>
-                                            Calle Lagasca Nr. 84, 6 Izq.
-                                            28001 Madrid
-                            </div>
-                                        {/* <a href="https://goo.gl/maps/XNC4Xzhub4Hzz51B9" className='btn btn-light' rel="noreferrer" target='_blank'>
+                                            <div>
+                                                Calle Lagasca
+                                            </div>
+                                            <div>
+                                                Nr. 84, 6 Izq.
+                                            </div>
+                                            <div>
+                                                28001 Madrid
+                                            </div>
+                                        </div>
+                                        <a href="https://goo.gl/maps/XNC4Xzhub4Hzz51B9" className='btn btn-light' rel="noreferrer" target='_blank'>
                                             Map
-</a> */}
+</a>
                                     </div>
                                 </div>
                             </div>

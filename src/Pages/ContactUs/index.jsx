@@ -38,9 +38,9 @@ function ContactUs(props) {
             
    <CityCards activeCard={activeCard} setActiveCard={setActiveCard} />
            
-            {/* <div className="mb-min"> */}
+            <div className="mb-minus">
              <MyMap activeCard={activeCard}/> 
-            {/* </div> */}
+            </div>
             <StickyFooter/>
            </div>
             <div className='position-md-fixed'>
