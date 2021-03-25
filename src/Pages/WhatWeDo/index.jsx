@@ -33,19 +33,19 @@ function WhatWeDo(props) {
                                      </p>
                             </Fade>
                             <Fade big>
-                                <div className="my-4 f-40 font-timeNew">
+                                <div className="mt-4 f-30 font-timeNew">
                                     Capital Preservation
                         </div>
                                 <div className=''>
                                 We have a rigorous focus on capital protection. We spend a considerable amount of time looking at how we can positively affect the distribution of returns on our investments. Often, we invest in companies that offer significant opportunities to de-risk the investment quickly, for example:
                     </div>
                             </Fade>
-                            <div className="col-md-8">
+                            <div className="">
 
                                 <Fade big>
                                     <div className='my-3'>
                                         <h4 className='text-primary text-uppercase '>
-                                            <span className="upperLine">
+                                            <span className="upperLine font-Roboto">
                                                 By deploying
                       </span>
                                         </h4>
@@ -58,7 +58,7 @@ function WhatWeDo(props) {
                                 <Fade big>
                                     <div className='my-3'>
                                         <h4 className='text-primary text-uppercase '>
-                                            <span className="upperLine">
+                                            <span className="upperLine font-Roboto">
                                                 investing
                       </span>
                                         </h4>
@@ -71,7 +71,7 @@ function WhatWeDo(props) {
                                 <Fade big>
                                     <div className='my-3'>
                                         <h4 className='text-primary text-uppercase '>
-                                            <span className="upperLine">
+                                            <span className="upperLine font-Roboto">
                                                 Through investing
                       </span>
                                         </h4>
