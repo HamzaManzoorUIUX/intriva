@@ -32,9 +32,9 @@ console.log(currentPage);
             <Header handlePageChange={handlePageChange} />
             <div className="homeBack">
                 <div className='container-fluid '>
-                    <div className="row py-5 mt-3">
+                    <div className="row  mt-3">
                         <Fade cascade big>
-                            <div className="col-md-6 d-none d-md-block pl-0 mt-1">
+                            <div className="col-md-6 d-none d-md-block pl-0 mt-1 pt-5">
                                 <DragScrollProvider>
                                     {({ onMouseDown, ref }) => (
                                         <div className="scrollable d-flex" ref={ref} onMouseDown={onMouseDown}>
@@ -46,7 +46,7 @@ console.log(currentPage);
                         </Fade>
                         <div className="col-md-6 col-lg-5 col-xl-4">
                             <Fade cascade big>
-                                <div>
+                                <div className='pt-5'>
                                     <h4 className='text-primary mb-0'>
                                         <span className="font-Roboto">
                                             Founded in 2017
@@ -89,10 +89,10 @@ console.log(currentPage);
             </div>
             <div className="homeBack-2">
                 <div className='container '>
-                    <div className="row pt-5 mt-md-3 mt-xl-5">
+                    <div className="row  mt-md-3 mt-xl-5">
                         <div className="col-md-6 col-lg-5 col-xl-4 ">
                             <Fade cascade big>
-                                <h4>
+                                <h4 className='pt-5'>
                                     Culture
                    </h4>
                                 <div className='max-text f-14'>
