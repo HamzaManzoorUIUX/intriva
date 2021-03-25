@@ -1129,9 +1129,13 @@ footer {
 }
 
 .mb-minus {
+    // margin-top: -6px;
     @media(max-width:767px) {
         margin-bottom: -50px;
     }
+}
+.mb-min-5{
+    margin-bottom: -6px;
 }
 
 .pointer-event-none {

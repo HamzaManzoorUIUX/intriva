@@ -67,7 +67,7 @@ function CityCards({ activeCard, setActiveCard }) {
     };
     return (
         <>
-            <div className="">
+            <div className="mb-min-5">
                 <Slider {...settings}>
                     <div className="px-0">
                         <div className={`cityCard ${activeCard === 1 ? 'active' : ''}`} onClick={() => setActiveCard(1)}>
