@@ -175,7 +175,7 @@ export const media = [
         "pdf":"../../assets/img/pdf/Intriva Capital acquires UK consumer credit company Lending Works_20200703.pdf",
         "date": "3rd July 2020",
         "detail": ` <div class='d-flex justify-content-end'>
-        <img src='../../assets/img/media/Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png' class='articalLogog' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png'/>
+        <img src='../../assets/img/media/Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png' class='articalLogog my-4' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png'/>
         </div> <h2 class="text-center">
         Intriva Capital acquires UK consumer credit company Lending Works
     </h2>
@@ -404,7 +404,7 @@ export const media = [
         "date": "16 December 2020",
         "detail": `
         <div class='d-flex justify-content-end'>
-        <img src='../../assets/img/media/Intriva Capital completes on the acquisition of UK consumer credit company Lending Works_20201216 - text for website.png' class='articalLogog' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png'/>
+        <img src='../../assets/img/media/Intriva Capital completes on the acquisition of UK consumer credit company Lending Works_20201216 - text for website.png' class='articalLogog mt-3 mb-4' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png'/>
         </div>
         <h2 class="text-center">
         Lending Works completes sale to Intriva Capital and establishes new institutional investment platform

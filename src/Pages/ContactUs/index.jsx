@@ -15,7 +15,7 @@ function ContactUs(props) {
             <MyNavBar title='Make Contact' />
            <div>
            <div className="contactHead">
-                <div className="content f-20">
+                <div className="content">
                     <div className="row">
                         <div className="col-6">
                             General enquiries:

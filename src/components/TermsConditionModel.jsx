@@ -11,7 +11,7 @@ function TermsConditionModel(props) {
         animation={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
+          <Modal.Title id="TermsModel">
           Terms of Use
           </Modal.Title>
         </Modal.Header>

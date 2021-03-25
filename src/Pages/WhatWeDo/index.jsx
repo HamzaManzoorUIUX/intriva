@@ -33,10 +33,10 @@ function WhatWeDo(props) {
                                      </p>
                             </Fade>
                             <Fade big>
-                                <div className="mt-4 f-30 font-timeNew">
+                                <h4 className=" mt-4 font-timeNew">
                                     Capital Preservation
-                        </div>
-                                <div className=''>
+                        </h4>
+                                <div className='font-weight-bold'>
                                 We have a rigorous focus on capital protection. We spend a considerable amount of time looking at how we can positively affect the distribution of returns on our investments. Often, we invest in companies that offer significant opportunities to de-risk the investment quickly, for example:
                     </div>
                             </Fade>
@@ -46,7 +46,7 @@ function WhatWeDo(props) {
                                     <div className='my-3'>
                                         <h4 className='text-primary text-uppercase '>
                                             <span className="upperLine font-Roboto">
-                                                By deploying
+                                            OPERATIONAL EXPERTISE
                       </span>
                                         </h4>
                                         <div>
@@ -59,7 +59,7 @@ function WhatWeDo(props) {
                                     <div className='my-3'>
                                         <h4 className='text-primary text-uppercase '>
                                             <span className="upperLine font-Roboto">
-                                                investing
+                                            ATTRACTIVE BASIS
                       </span>
                                         </h4>
                                         <div>
@@ -72,7 +72,7 @@ function WhatWeDo(props) {
                                     <div className='my-3'>
                                         <h4 className='text-primary text-uppercase '>
                                             <span className="upperLine font-Roboto">
-                                                Through investing
+                                            ASSET BACKED
                       </span>
                                         </h4>
                                         <div>
@@ -85,8 +85,8 @@ function WhatWeDo(props) {
                                 <Fade big>
                                     <div className='my-3'>
                                         <h4 className='text-primary text-uppercase'>
-                                            <span className="upperLine">
-                                                Asset-backed
+                                            <span className="upperLine font-Roboto">
+                                            DOWNSIDE PROTECTION
                       </span>
                                         </h4>
                                         <div>
@@ -99,9 +99,9 @@ function WhatWeDo(props) {
                             </div>
                             <Fade big>
                                 <div>
-                                    <h3 className="my-4 f-40 ">
+                                    <h4 className="mt-4 ">
                                         Operational Transformation And Driving Upside
-                        </h3>
+                        </h4>
                                     <p className=''>
                                     A key determinant of our returns and the attractiveness of an investment opportunity to us is the potential we identify to proactively transform the business or asset through strategic repositioning, operational improvement, high-returning capital investment and accretive buy-and-build strategies.
                         </p>
