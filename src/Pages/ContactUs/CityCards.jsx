@@ -16,17 +16,17 @@ function SampleNextArrow(props) {
     );
 }
 const NextFunction = ({ onClick, setActiveCard, currentSlide }) => {
-    if (currentSlide < 2) {
+    // if (currentSlide < 2) {
         onClick()
-        setActiveCard(currentSlide === 2 ? 3 : currentSlide + 2)
-    }
+        setActiveCard(currentSlide === 2 ? 1 : currentSlide + 2)
+    // }
 
 }
 const prevFunction = ({ onClick, setActiveCard, currentSlide }) => {
-    if (currentSlide > 0) {
+    // if (currentSlide > 0) {
         onClick()
-        setActiveCard(currentSlide === 0 ? 1 : currentSlide)
-    }
+        setActiveCard(currentSlide === 0 ? 3 : currentSlide)
+    // }
 
 }
 function SamplePrevArrow(props) {
@@ -44,7 +44,7 @@ function SamplePrevArrow(props) {
 function CityCards({ activeCard, setActiveCard }) {
     var settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         arrows: false,
         slidesToShow: 3,
