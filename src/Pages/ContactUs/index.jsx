@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MyNavBar from '../../components/MyNavBar';
 import path from '../../assets/img/Subtraction 1.png'
 
-// import MyMap from './MyMap'
+import MyMap from './MyMap'
 import Footer from '../../components/Footer'
 import CityCards from './CityCards';
 import StickyFooter from '../../components/StickyFooter';
 
 
 function ContactUs(props) {
+    const [activeCard, setActiveCard] = useState(1)
     return (
         <div>
             <MyNavBar title='Make Contact' />
@@ -35,11 +36,11 @@ function ContactUs(props) {
                 <img src={path} className='path-img' alt="path" />
             </div>
             
-   <CityCards/>
+   <CityCards activeCard={activeCard} setActiveCard={setActiveCard} />
            
-            {/* <div className="mb-min">
-             <MyMap isMarkerShown/> 
-            </div> */}
+            {/* <div className="mb-min"> */}
+             <MyMap activeCard={activeCard}/> 
+            {/* </div> */}
             <StickyFooter/>
            </div>
             <div className='position-md-fixed'>

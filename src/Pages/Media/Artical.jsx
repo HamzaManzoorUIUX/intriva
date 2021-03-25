@@ -25,7 +25,11 @@ function Artical(props) {
         else
             return null
     })
-
+// const smoothScroll=()=>{
+//     for(var i=0;i<window.innerHeight;i++){
+//         window.scrollTo(0,i)
+//     }
+// }
     return (
         <div>
 
@@ -49,13 +53,13 @@ function Artical(props) {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="scrollDownBtn" onClick={()=>window.scrollTo(0,window.innerHeight)}>
+                                <a href='#hamza' className="scrollDownBtn" >
                                     <CgScrollV />
-                                </div>
+                                </a>
                             </div>
                             <div className="articalContent">
                                 <MyNavBar tab={1} artical={true} />
-                                <div className="container pt-5">
+                                <div className="container pt-5" id='hamza'>
                                     {/* <div className="d-flex pb-3 align-items-center justify-content-between"> */}
                                         <div className='w-50 d-inline-block'>
                                             {data.date}

@@ -5,13 +5,13 @@ import { BiMinusCircle, BiPlusCircle } from "react-icons/bi";
 function TeamCard({ data, modelOpen, setModelOpen,  setDetail }) {
     // const [details,setdetails]=useState(false)
     return (
-        <div className='col-md-4 my-3'>
+        <div className='col-md-12 col-lg-4 my-3'>
             <div className={`team-card ${modelOpen === data.id ?'active':''}`} onClick={() => { setModelOpen(modelOpen!==data.id?data.id:null); setDetail(data.detail) }}>
                 <img src={data.img} alt="team" className='team-card-img' />
                 <div className='team-card-content'>
-                    <h5 className='team-card-heading'>
+                    <h6 className='team-card-heading'>
                         {data.heading}
-                    </h5>
+                    </h6>
                     <div className="team-card-text">
                         {data.role}
                     </div>

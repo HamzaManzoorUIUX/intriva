@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Londan from '../../assets/img/Londan.png'
 import Frankfurt from '../../assets/img/Frankfurt.png'
 import Madrid from '../../assets/img/Madrid.png'
@@ -8,27 +8,41 @@ import "slick-carousel/slick/slick-theme.css";
 import { BiArrowFromLeft, BiArrowFromRight } from 'react-icons/bi';
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, style } = props;
     return (
         <BiArrowFromLeft className={className}
             style={style}
-            onClick={onClick} />
+            onClick={() => NextFunction(props)} />
     );
 }
+const NextFunction = ({ onClick, setActiveCard, currentSlide }) => {
+    console.log(currentSlide);
+    if (currentSlide < 2) {
+        onClick()
+        setActiveCard(currentSlide === 2 ? 3 : currentSlide + 2)
+    }
 
+}
+const prevFunction = ({ onClick, setActiveCard, currentSlide }) => {
+    if (currentSlide > 0) {
+        onClick()
+        setActiveCard(currentSlide === 0 ? 1 : currentSlide - 2)
+    }
+
+}
 function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, style } = props;
+
     return (
         <BiArrowFromRight
             className={className}
             style={style}
-            onClick={onClick}
+            onClick={() => prevFunction(props)}
         />
     );
 }
 
-function CityCards(props) {
-    const [activeCard, setActiveCard] = useState(1)
+function CityCards({ activeCard, setActiveCard }) {
     var settings = {
         dots: false,
         infinite: false,
@@ -37,8 +51,8 @@ function CityCards(props) {
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+        nextArrow: <SampleNextArrow activeCard={activeCard} setActiveCard={setActiveCard} />,
+        prevArrow: <SamplePrevArrow activeCard={activeCard} setActiveCard={setActiveCard} />,
         responsive: [
 
 
@@ -62,18 +76,21 @@ function CityCards(props) {
                             <div className="content">
                                 <div className="info">
 
-                                    <h1>
+                                    <h3>
+                                        LONDON
+                            </h3>
+                                    <h4>
                                         UK
-                            </h1>
+                            </h4>
                                     <div className='address'>
                                         <div>
                                             Intriva Capital Advisors LLP
                                             10 Golden Square
                                             London W1F 9JA
                                         </div>
-                                        <a href="https://goo.gl/maps/e2iyd1JCdWP7CQsp8" className='btn btn-light' rel="noreferrer" target='_blank'>
+                                        {/* <a href="https://goo.gl/maps/e2iyd1JCdWP7CQsp8" className='btn btn-light' rel="noreferrer" target='_blank'>
                                             Map
-                                        </a>
+                                        </a> */}
                                     </div>
 
                                 </div>
@@ -86,9 +103,12 @@ function CityCards(props) {
                             <div className="content">
                                 <div className="info">
 
-                                    <h1 className='text-uppercase'>
+                                    <h3 className='text-uppercase'>
+                                        Frankfurt
+                            </h3>
+                                    <h4 className='text-uppercase'>
                                         GERMANY
-                            </h1>
+                            </h4>
                                     <div className='address'>
                                         <div>
                                             Intriva Capital Advisors GmbH
@@ -96,9 +116,9 @@ function CityCards(props) {
                                             60313 Frankfurt
                                             (entrance Kleine Bockenheimer Str. 5)
 </div>
-                                        <a href="https://goo.gl/maps/HDS1ZC9bn5HycL2f6" className='btn btn-light' rel="noreferrer" target='_blank'>
+                                        {/* <a href="https://goo.gl/maps/HDS1ZC9bn5HycL2f6" className='btn btn-light' rel="noreferrer" target='_blank'>
                                             Map
-                                    </a>
+                                    </a> */}
                                     </div>
                                 </div>
                             </div>
@@ -110,18 +130,21 @@ function CityCards(props) {
                             <div className="content">
                                 <div className="info">
 
-                                    <h1 className='text-uppercase'>
-                                    SPAIN
-                            </h1>
+                                    <h3 className='text-uppercase'>
+                                        Madrid
+                            </h3>
+                                    <h4 className='text-uppercase'>
+                                        SPAIN
+                            </h4>
                                     <div className="address">
 
                                         <div>
-                                        Calle Lagasca Nr. 84, 6 Izq.
-28001 Madrid
+                                            Calle Lagasca Nr. 84, 6 Izq.
+                                            28001 Madrid
                             </div>
-                                        <a href="https://goo.gl/maps/XNC4Xzhub4Hzz51B9" className='btn btn-light' rel="noreferrer" target='_blank'>
+                                        {/* <a href="https://goo.gl/maps/XNC4Xzhub4Hzz51B9" className='btn btn-light' rel="noreferrer" target='_blank'>
                                             Map
-</a>
+</a> */}
                                     </div>
                                 </div>
                             </div>

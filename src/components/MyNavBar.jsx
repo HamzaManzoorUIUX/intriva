@@ -34,7 +34,7 @@ const menuDefault=()=>{
         <>
             <div className={` ${props.tab !== undefined && props.position!==undefined?'fixed-top':'fixed-top'} py-2 bg-transparent`}>
                 <div className=" position-relative container">
-                    <div className="myNavBar">
+                    <div className="myNavBar position-relative z-20">
                      <div className='d-flex align-items-center flex-wrap'>
                      <Link to='/' className={`d-md-block w-100 ${scrollCheck ? 'd-none' : ''}`}>
                             <img src={Logo} className='myNavBar-logo' alt="logo" />
@@ -86,7 +86,7 @@ const menuDefault=()=>{
                     </div>
                     {
                         props.title !== undefined ?
-                            <div className={`text-uppercase f-20 pl-3 d-none d-md-flex align-items-baseline text-md-right font-timeNew navBorder smoothAnimation ${scrollCheck||(props.number!==1&&props.number!==undefined) ? 'position-md-absolute top-50 ' : ''} ${props.artical?'navArtical':'navTitle'}`}>
+                            <div className={`text-uppercase f-20 z-10 pl-3 d-none d-md-flex align-items-baseline text-md-right font-timeNew navBorder smoothAnimation ${scrollCheck||(props.number!==1&&props.number!==undefined) ? 'position-md-absolute top-50 ' : ''} ${props.artical?'navArtical':'navTitle'}`}>
                             <img src={Logo} className='myNavBar-logo hidden' alt="logo" />
                               
                                 {

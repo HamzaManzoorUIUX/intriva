@@ -13,10 +13,10 @@ function Footer(props) {
                     &aspn;
 </div>
                 <div className="text-center text-light">
-                    Intriva.com (c) 2020
+                    Intriva.com &copy; 2020
             </div>
                <div className="d-flex">
-               <div className='text-white curser' onClick={() => setModalShow(true)}>
+               <div className='text-white curser makeAnker' onClick={() => setModalShow(true)}>
                     DISCLAIMER
                     </div>
                 <a href='https://icx.efrontcloud.com/IntrivaJSY' target='_blank' rel="noreferrer" className='ml-4 d-none d-md-block text-white curser text-uppercase' >
