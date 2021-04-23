@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect,  useState } from 'react';
 import Frankfurt from "../../assets/videos/Frankfurt Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
 import Londan from "../../assets/videos/London Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
 import Neurons from "../../assets/videos/Stock Video of Neurons in brain. Loop. 3D animation of neural network. at Adobe Stock - Adobe Stock.MP4";
@@ -8,34 +8,41 @@ import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
 function Header(props) {
-    const refVideo = useRef()
+    const [active, setActive] = useState(0)
     const videos = (e) => {
-        const vid = parseInt(Math.random() * 3 + 1)
-        // const {current}=refVideo
-        if (vid === 1) {
-            return <video autoPlay ref={refVideo} loop muted className='d-none d-md-flex headerHome-video pointer-event-none'>
-                <source src={Londan} type='video/mp4' />
-            </video>
-        }
-        else if (vid === 2) {
-            return <video autoPlay ref={refVideo} loop muted className='d-none d-md-flex headerHome-video pointer-event-none'>
-                <source src={Frankfurt} type='video/mp4' />
-            </video>
-
-
-        }
-        else {
-            return <video autoPlay ref={refVideo} loop muted className='d-none d-md-flex headerHome-video pointer-event-none'>
-                <source src={Madrid} type='video/mp4' />
-            </video>
-        }
+        let a = parseInt(Math.random() * 3)
+        setActive(a !== active ? a : a >= 2 ? a-- : a++)
     }
+    const pauseAllVideos = () => {
+        const allvideos = document.querySelectorAll('video.headerHome-video')
+        // const currentVideo = document.querySelector('video.active')
+        for (let i = 0; i < allvideos.length; i++) {
+            if (allvideos[i].classList.contains('active')) {
+                allvideos[i].play()
+            }
+            else {
+                allvideos[i].pause()
+            }
+        }
 
+    }
+    useEffect(() => {
+      
+        pauseAllVideos()
+
+    }, [active])
     return (
         <div className='headerHome pt-4 z-50'>
-            {
-                videos()
-            }
+
+            <video onEnded={videos} muted className={`headerHome-video pointer-event-none  ${active === 0 ? 'd-flex active' : 'd-none'}`}>
+                <source src={Londan} type='video/mp4' />
+            </video>
+            <video onEnded={videos} muted className={`headerHome-video pointer-event-none  ${active === 1 ? 'd-flex active' : 'd-none'}`}>
+                <source src={Frankfurt} type='video/mp4' />
+            </video>
+            <video onEnded={videos} muted className={`headerHome-video pointer-event-none  ${active === 2 ? 'd-flex active' : 'd-none'}`}>
+                <source src={Madrid} type='video/mp4' />
+            </video>
             <div className="z-10 position-relative d-flex flex-column h-100 " >
                 <div className="px-3 py-3 bannerImg d-block d-md-none ">
                     <video autoPlay muted loop className='d-none d-md-block neural-video pointer-event-none'>
@@ -128,7 +135,7 @@ function Header(props) {
                     </ul>
 
                 </div>
-    
+
 
             </div>
 
