@@ -60,7 +60,7 @@ function Header(props) {
                 </h1>
                     </Fade>
                     <Fade right big>
-                        <h3 className="header-text font-Roboto" >
+                        <h3 className="header-text font-Roboto text-uppercase" >
                         Timely investment decisions, flexible solutions, and strategic support.
                 </h3>
                     </Fade>

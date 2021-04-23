@@ -118,7 +118,7 @@ h6 {
 }
 
 .header-text {
-    font-size  : 47px;
+    font-size  : 37px;
     text-align : end;
     font-weight: 300;
     color      : white;
@@ -318,9 +318,9 @@ font-weight: 400;
 .btn-myRound {
     border-radius  : 50%;
     position       : relative;
-    height         : 60px;
-    min-width      : 60px;
-    max-width      : 60px;
+    height         : 45px;
+    min-width      : 45px;
+    max-width      : 45px;
     width          : 100%;
     display        : flex;
     justify-content: center;
@@ -356,7 +356,7 @@ font-weight: 400;
     list-style-type : none;
     position        : absolute;
     top             : 64px;
-    right           : 28.5px;
+    right           : 21.5px;
     padding-top     : .5rem;
     padding-bottom  : .5rem;
     padding-left    : 0px;
@@ -1122,7 +1122,7 @@ footer {
 }
 
 .hamburger-box {
-    transform: scale(0.8);
+    transform: scale(0.6);
 
     .hamburger-inner {
         background-color: currentColor !important;
@@ -1163,8 +1163,9 @@ footer {
     z-index: 10;
     color: white;
     font-size: 20px;
+    margin-bottom: 0px;
     li{
-        max-width: 280px;
+        max-width: 300px;
         width: 100%;
         text-align: center;
     }
