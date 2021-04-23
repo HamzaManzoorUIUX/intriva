@@ -8,7 +8,6 @@ import Fade from 'react-reveal/Fade';
 import ReactPageScroller from "react-page-scroller";
 import PreLoader from "../../components/PreLoader";
 import DragScrollProvider from 'drag-scroll-provider'
-import TeamData from "../WhoWeAre/TeamData.json";
 import StickyFooter from '../../components/StickyFooter';
 
 function Home(props) {
@@ -32,7 +31,7 @@ console.log(currentPage);
             <Header handlePageChange={handlePageChange} />
             <div className="homeBack">
                 <div className='container-fluid '>
-                    <div className="row  mt-3">
+                    <div className="row  mt-5 pt-md-3">
                         <Fade cascade big>
                             <div className="col-md-6 d-none d-md-block pl-0 mt-1 pt-5">
                                 <DragScrollProvider>
@@ -47,13 +46,23 @@ console.log(currentPage);
                         <div className="col-md-6 col-lg-5 col-xl-4">
                             <Fade cascade big>
                                 <div className='pt-5'>
-                                    <h4 className='text-primary mb-0'>
+                                    <h5 className=''>
                                         <span className="font-Roboto">
-                                            Founded in 2017
+                                        Intriva is an alternative investment firm focused on value creation in mid-market businesses throughout Western Europe.
+                      </span>
+                                    </h5>
+                    
+                                </div>
+                            </Fade>
+                            <Fade cascade big>
+                                <div className='pt-2'>
+                                    <h4 className='text-primary mb-0'>
+                                        <span className="upperLine font-Roboto">
+                                        STRATEGIC PARTNERS
                       </span>
                                     </h4>
                                     <div className='max-text f-14'>
-                                    Founded in 2017, Intriva is an independent alternative asset management firm investing in mid-market companies and real estate throughout Western Europe. 
+                                    We work alongside management teams to enhance the strategic, operational, and financial trajectory of the assets in which we invest.  We apply a relentless approach to asset management to resolve complexity, drive growth and maximise value.
                   </div>
                                 </div>
                             </Fade>
@@ -61,11 +70,11 @@ console.log(currentPage);
                                 <div>
                                     <h4 className='text-primary mb-0'>
                                         <span className="upperLine font-Roboto">
-                                            Intriva provides
+                                        VALUE CREATION
                       </span>
                                     </h4>
                                     <div className='max-text f-14'>
-                                    Intriva employs {TeamData.length} people, including 11 investment professionals, in its London headquarters and affiliated offices in Frankfurt and Madrid.
+                                    We are hands-on investors that provide flexible solutions to deliver alpha with structured downside protection. Our team is composed of seasoned investment professionals who have gained their experience investing in and managing complex investments over multiple market cycles.
                   </div>
                                 </div>
                             </Fade>
@@ -73,11 +82,11 @@ console.log(currentPage);
                                 <div>
                                     <h4 className='text-primary  mb-0'>
                                         <span className="upperLine font-Roboto">
-                                            Intriva invests
+                                        LOCAL PRESENCE
                       </span>
                                     </h4>
                                     <div className='max-text f-14'>
-                                    Intriva provides an attractive risk adjusted return profile to our investors, and bespoke capitalsolutions to our partners throughout Western Europe.
+                                    Our hands-on approach means that having a local presence is important, with professionals based in London, Frankfurt and Madrid.
                   </div>
                                 </div>
                             </Fade>
@@ -89,18 +98,21 @@ console.log(currentPage);
             </div>
             <div className="homeBack-2">
                 <div className='container '>
-                    <div className="row  mt-md-3 mt-xl-5">
+                    <div className="row  mt-md-5 pt-md-3">
                         <div className="col-md-6 col-lg-5 col-xl-4 ">
                             <Fade cascade big>
                                 <h4 className='pt-5'>
-                                    Culture
+                                High-Performance Culture
                    </h4>
                                 <div className='max-text f-14'>
                                     <p>
-                                    We take pride in our collaborative culture, which harnesses camaraderie and the balance of skills and experience which our team members collectively bring to bear. 
+                                    We take pride in our collaborative and high-performance culture, which harnesses camaraderie and the balance of skills and experience which our team members collectively bring to bear. 
                        </p>
                                     <p>
-                                    As a young firm, we are entrepreneurial and hungry to deliver exceptional returns for our investors. We are creative about our investments and how they are structured.  We work hard and pursue opportunities with tenacity and thoroughness.   
+                                    We are committed to delivering alpha for our investors. We are creative about our investments and how they are structured. Together, we work hard and pursue opportunities with tenacity and thoroughness.   
+                       </p>
+                       <p>
+                       Our aim is to be recognised as a hands-on investor that provides flexible and highly-structured solutions to drive significant value backed by downside protection.
                        </p>
                                 </div>
                             </Fade>

@@ -1163,6 +1163,11 @@ footer {
     z-index: 10;
     color: white;
     font-size: 20px;
+    li{
+        max-width: 280px;
+        width: 100%;
+        text-align: center;
+    }
     @media(max-width:767px){
         // flex-direction: column;
 display: none;

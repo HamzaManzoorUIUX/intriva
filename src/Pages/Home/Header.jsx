@@ -55,13 +55,13 @@ function Header(props) {
                 </div>
                 <div className='p-2'>
                     <Fade left big>
-                        <h1 className="header-heading font-Roboto">
+                        <h1 className="header-heading font-Roboto text-uppercase">
                             we provide
                 </h1>
                     </Fade>
                     <Fade right big>
                         <h3 className="header-text font-Roboto" >
-                            opportunistic capital, timely investing decisions and differentiated solutions
+                        Timely investment decisions, flexible solutions, and strategic support.
                 </h3>
                     </Fade>
                 </div>
@@ -141,7 +141,7 @@ function Header(props) {
 
 
             </div>
-            <ul className='bottomfixedList'>
+            <ul className='bottomfixedList px-3'>
                 <li>
                     &nbsp;
     </li>
