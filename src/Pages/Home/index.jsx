@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import MyNavBar from '../../components/MyNavBar';
-import sectionOne from '../../assets/img/Group 1431.png'
-import sectionTwo from '../../assets/img/Group 1432.png'
+import sectionOne from '../../assets/img/Group 1423.png'
+import sectionTwo from '../../assets/img/Group 1422.png'
 import Footer from '../../components/Footer';
 import Fade from 'react-reveal/Fade';
 import ReactPageScroller from "react-page-scroller";

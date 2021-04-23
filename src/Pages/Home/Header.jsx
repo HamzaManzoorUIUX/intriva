@@ -1,4 +1,4 @@
-import React, { useEffect,  useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Frankfurt from "../../assets/videos/Frankfurt Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
 import Londan from "../../assets/videos/London Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
 import Neurons from "../../assets/videos/Stock Video of Neurons in brain. Loop. 3D animation of neural network. at Adobe Stock - Adobe Stock.MP4";
@@ -6,12 +6,15 @@ import Madrid from "../../assets/videos/9,570 BEST Madrid STOCK VIDEOS & FOOTAGE
 import Logo from "../../assets/img/logo.png";
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
+import TermsConditionModel from '../../components/TermsConditionModel';
 
 function Header(props) {
-    const [active, setActive] = useState(0)
+    const [modalShow, setModalShow] = useState(false)
+
+    const [active, setActive] = useState(parseInt(Math.random() * 3))
     const videos = (e) => {
         let a = parseInt(Math.random() * 3)
-        setActive(a !== active ? a : a >= 2 ? a-- : a++)
+        setActive(a === active ? parseInt(Math.random() * 3) : a)
     }
     const pauseAllVideos = () => {
         const allvideos = document.querySelectorAll('video.headerHome-video')
@@ -27,7 +30,7 @@ function Header(props) {
 
     }
     useEffect(() => {
-      
+
         pauseAllVideos()
 
     }, [active])
@@ -70,7 +73,7 @@ function Header(props) {
                 </div>
                 <div className='h-75 d-flex align-items-md-center'>
 
-                    <ul className="homeList pt-md-5 mb-5 mb-md-0">
+                    <ul className="homeList mb-5 mb-md-0">
                         <li className="homeList-item">
                             <Fade right big>
                                 <div onClick={() => props.handlePageChange(1)} className='homeList-a'>
@@ -138,6 +141,25 @@ function Header(props) {
 
 
             </div>
+            <ul className='bottomfixedList'>
+                <li>
+                    &nbsp;
+    </li>
+                <li>
+                    Intriva.com © 2021
+    </li>
+                <li>
+                    <div className="d-flex">
+                        <div className='text-white curser makeAnker' onClick={() => setModalShow(true)}>
+                            DISCLAIMER
+                    </div>
+                        <a href='https://icx.efrontcloud.com/IntrivaJSY' target='_blank' rel="noreferrer" className='ml-4 d-none d-md-block text-white curser text-uppercase' >
+                            For investors
+                    </a>
+                    </div>
+                </li>
+            </ul>
+            <TermsConditionModel show={modalShow} onHide={() => setModalShow(false)} />
 
         </div>
     );

@@ -155,6 +155,8 @@ h6 {
     margin-bottom  : 3rem;
     display        : flex;
     justify-content: space-around;
+    font-family: Roboto,-apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
 
     .homeList-item {
 
@@ -171,9 +173,9 @@ h6 {
                 &:hover {
                     &::before {
                         content         : '';
-                        height          : 5px;
+                        height          : 1px;
                         width           : 100%;
-                        bottom          : 0px;
+                        bottom          : -2px;
                         left            : 0px;
                         background-color: white;
                         position        : absolute;
@@ -189,7 +191,7 @@ h6 {
                 line-height   : 1;
                 text-transform: uppercase;
                 margin-right  : .25rem;
-                font-weight   : 200;
+                font-weight   : 300;
 
 
                 @media(max-width: 1200px) {
@@ -214,7 +216,7 @@ h6 {
                 text-transform: uppercase;
                 font-size     : 56px;
                 color         : white;
-
+font-weight: 400;
 
 
                 @media(max-width: 1200px) {
@@ -472,7 +474,7 @@ h6 {
 }
 
 .homeBack {
-    background-image: url('./assets/img/Group 14331.png');
+    background-image: url('./assets/img/Mask Group 22.png');
     background-size : cover;
     padding-top     : 70px;
     height          : 100%;
@@ -487,7 +489,7 @@ h6 {
 }
 
 .homeBack-2 {
-    background-image: url('./assets/img/homepage-2.png');
+    background-image: url('./assets/img/Mask Group 22-2.png');
     background-size : cover;
     padding-top     : 70px;
     height          : 100%;
@@ -1149,7 +1151,23 @@ footer {
 .pointer-event-none {
     pointer-events: none;
 }
-
+.bottomfixedList{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+    color: white;
+    font-size: 20px;
+    @media(max-width:767px){
+        // flex-direction: column;
+display: none;
+    }
+}
 .makeAnker {
     &:hover {
         text-decoration: underline;
