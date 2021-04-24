@@ -45,7 +45,7 @@ console.log(currentPage);
                         </Fade>
                         <div className="col-md-6 col-lg-5 col-xl-4">
                             <Fade cascade big>
-                                <div className='pt-5'>
+                                <div className='pt-md-5'>
                                     <h5 className=''>
                                         <span className="font-Roboto">
                                         Intriva is an alternative investment firm focused on value creation in mid-market businesses throughout Western Europe.

@@ -482,6 +482,7 @@ font-weight: 400;
     display         : flex;
     justify-content : space-between;
     flex-direction  : column;
+    overflow: hidden;
 
     @media(max-width:500px) {
         background-image: url('./assets/img/Group\ 1435.png');
