@@ -21,7 +21,9 @@ function ContactUs(props) {
                             General enquiries:
                         </div>
                         <div className="col-6">
+                            <a href="mailto:info@intriva.com">
                             info@intriva.com
+                            </a>
                         </div>
                     </div>
                     <div className="row">
@@ -29,7 +31,9 @@ function ContactUs(props) {
                             Media enquiries:
                         </div>
                         <div className="col-6">
+                            <a href="mailto:media@intriva.com">
                             media@intriva.com
+                            </a>
                         </div>
                     </div>
                 </div>

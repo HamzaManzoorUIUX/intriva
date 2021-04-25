@@ -651,10 +651,11 @@ footer {
 }
 
 .whatwedoBack {
-    background-image: url('./assets/img/whatwedoBack.jpg');
+    background-image: url('./assets/img/Mask Group 202.png');
     background-size : cover;
     padding-top     : 130px;
     position        : relative;
+
 
     @media(max-width:767px) {
         background-image: url('./assets/img/Group 1433.png');
@@ -816,13 +817,16 @@ footer {
     }
 
     .content {
-        text-align      : center;
+        // text-align      : center;
         max-width       : 500px;
         width           : 100%;
-        padding         : 1rem;
+        padding         : 1.5rem 2rem;
         border-radius   : 12px;
         background-color: rgba($color: #ffffff, $alpha: .8);
         font-size: 20px;
+        a{
+            color: black;
+        }
         @media(max-width:767px) {
             font-size: 14px;
             max-width: 85%;
@@ -1178,5 +1182,18 @@ display: none;
 .makeAnker {
     &:hover {
         text-decoration: underline;
+    }
+}
+.font-35{
+    font-size: 22px;
+    @media(max-width: 767px){
+        font-size: 18px;
+    }
+}
+.absolute-md-center{
+    @media(min-width: 991px){
+        top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
     }
 }

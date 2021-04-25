@@ -2,12 +2,13 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import MyNavBar from '../../components/MyNavBar';
 import ScrollToTopOnMount from '../../components/ScrollToTop';
-import Mask6 from "../../assets/img/abc.png";
+import whatweDo1 from "../../assets/img/whatweDo1.png";
 import Mask from "../../assets/img/def.png";
 import Fade from 'react-reveal/Fade';
 import StickyFooter from '../../components/StickyFooter';
 // import PreLoader from '../../components/PreLoader';
-
+import DragScrollProvider from 'drag-scroll-provider'
+import whatweDo3 from "../../assets/img/whatweDo3.png";
 function WhatWeDo(props) {
     return (
         <div>
@@ -15,106 +16,73 @@ function WhatWeDo(props) {
             {/* <PreLoader/> */}
             <MyNavBar title={'What we do'} />
             <div className="whatwedoBack">
-                <div className="container-fluid p-3 z-10 position-relative">
+                <div className="  z-10 position-relative">
+                    <div>
+                    <img src={whatweDo3}  className='d-none d-lg-block' alt="whatweDo3" width='100%'/>
+                    <div className="bg-white position-absolute h-100 w-100" style={{opacity:0.8,zIndex:5,top:0,left:0}}></div>
+                    </div>
+                    <div className="container py-3 position-lg-absolute z-10 absolute-md-center position-relative" style={{filter:"opacity(0.8)"}}>
+                        <Fade big>
+                                <div className=' font-35 text-center' style={{fontFamily:'Roboto'}}>
+                                We provide time sensitive and creative capital solutions, using our experience as hands-on investors across market cycles to enhance the strategic, operational, and financial direction of the assets in which we invest. We focus on unlocking upside while protecting against downside.
+                                     </div>
+                            </Fade>
+                    </div>
+                </div>
+                <div className="container-fluid px-3 pt-md pb-3 z-10 position-relative">
                     <div className="row">
-                        <div className="col-md-5 d-none d-md-block">
-                            <Fade big>
-                                <img src={Mask6} alt="Mask6" className='w-100 my-3' />
-                            </Fade>
-                            <Fade big>
-                                <img src={Mask} alt="Mask" className='w-100 my-3' />
-                            </Fade>
+                        <div className="col-md-5 pl-0 mt-md-4 d-none d-md-block">
+                        <DragScrollProvider>
+                                    {({ onMouseDown, ref }) => (
+                                        <div className="scrollable d-flex" ref={ref} onMouseDown={onMouseDown}>
+                                            <img src={whatweDo1} alt="whatweDo1" className='sectionImg' />
+                                        </div>
+                                    )}
+                                </DragScrollProvider>
                         </div>
                         <div className="col-md-7">
                          <div className="max-text">
-                         <Fade big>
-                                <p className='mt-3 '>
-                                Intriva invests in real estate, equity, credit and other financial assets across Western Europe. As a value investor, we only deploy capital when there is both a margin of safety and significant upside. 
-                                     </p>
-                            </Fade>
+         
                             <Fade big>
-                                <h4 className=" mt-4 font-timeNew">
-                                    Capital Preservation
+                                <h4 className="mt-3 mt-md-4 font-timeNew">
+                                Sourcing
                         </h4>
-                                <div className='font-weight-bold'>
-                                We have a rigorous focus on capital protection. We spend a considerable amount of time looking at how we can positively affect the distribution of returns on our investments. Often, we invest in companies that offer significant opportunities to de-risk the investment quickly, for example:
-                    </div>
+                                <p className=''>
+                                We seek market-leading investments that may be transformed through greater strategic and operational focus. We employ a proactive and theme-driven approach to sourcing investment opportunities, based on a firm culture which favours data-driven, independent, and evidence-based thinking. As a result, we typically originate investment opportunities outside the traditional sources of private equity deal flow. Further, we bolster these efforts with proprietary technology we have developed in order to streamline this process.
+                    </p>
+                    <p>
+                    We are patient in sourcing new investments and approach any transaction with thorough due diligence from the start of our analysis. We invest significant time during due diligence to identify weaknesses in various downside scenario’s and seek to prepare strategies should those events ever occur.  By the time any transaction completes, we have strong conviction coupled with a clearly defined path to exit and realisation.
+
+                    </p>
+                                <h4 className="mt-3 mt-md-4 font-timeNew">
+                                Operational transformation driving upside
+                        </h4>
+                    <p>
+                    We are motivated by proactively working in partnership with management teams on strategic repositioning, operational improvements and accretive buy and build strategies. Our objective is to leave businesses in a stronger position for the future, which in turn enables us to deliver alpha to our investors.
+
+                    </p>
                             </Fade>
-                            <div className="">
-
-                                <Fade big>
-                                    <div className='my-3'>
-                                        <h4 className='text-primary text-uppercase '>
-                                            <span className="upperLine font-Roboto">
-                                            OPERATIONAL EXPERTISE
-                      </span>
-                                        </h4>
-                                        <div>
-                                    By deploying our extensive operating expertise to bring about early operational wins
-                                </div>
-
-                                    </div>
-                                </Fade>
-                                <Fade big>
-                                    <div className='my-3'>
-                                        <h4 className='text-primary text-uppercase '>
-                                            <span className="upperLine font-Roboto">
-                                            ATTRACTIVE BASIS
-                      </span>
-                                        </h4>
-                                        <div>
-                                        By investing at low entry multiples and/or with value accretive buy-and-build plans
-                                          </div>
-
-                                    </div>
-                                </Fade>
-                                <Fade big>
-                                    <div className='my-3'>
-                                        <h4 className='text-primary text-uppercase '>
-                                            <span className="upperLine font-Roboto">
-                                            ASSET BACKED
-                      </span>
-                                        </h4>
-                                        <div>
-                                            
-                                    Through investing in companies with high tangible asset backing, including with long-term visible cash flow streams 
-                                </div>
-
-                                    </div>
-                                </Fade>
-                                <Fade big>
-                                    <div className='my-3'>
-                                        <h4 className='text-primary text-uppercase'>
-                                            <span className="upperLine font-Roboto">
-                                            DOWNSIDE PROTECTION
-                      </span>
-                                        </h4>
-                                        <div>
-                                        By investing in asset-backed opportunities at a discount to intrinsic value with a strong focus on downside protection and upside participation
-                                            
-                                </div>
-
-                                    </div>
-                                </Fade>
-                            </div>
-                            <Fade big>
+                       </div>
+                         </div>
+                    </div>
+                </div>
+                <div className="container-fluid px-3 pt-md pb-3 z-10 position-relative">
+                <div className="row">
+                    <div className="col-md-7">
+                    <Fade big>
                                 <div>
                                     <h4 className="mt-4 ">
-                                        Operational Transformation And Driving Upside
+                                            Environmental, Social and Corporate Governance
                         </h4>
                                     <p className=''>
-                                    A key determinant of our returns and the attractiveness of an investment opportunity to us is the potential we identify to proactively transform the business or asset through strategic repositioning, operational improvement, high-returning capital investment and accretive buy-and-build strategies.
-                        </p>
-                                    <p className=''>
-                                    The resources dedicated to each investment together with the experience of our team allows us to identify and execute value creation opportunities. 
-
+                                        We are committed to driving sustainable value and have integrated Environmental, Social and Corporate Governance into our approach, with an in-depth ESG policy. We are signatories of Principals for Responsible Investment (PRI). 
                         </p>
                                 </div>
                             </Fade>
-                        
-                         </div>
-                         </div>
                     </div>
+                </div>
+                        
+                     
                 </div>
                 <StickyFooter />
             </div>

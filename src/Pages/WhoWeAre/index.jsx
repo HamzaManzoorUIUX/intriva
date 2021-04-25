@@ -22,10 +22,13 @@ function WhoWeAre(props) {
                 <Fade big>
                 <section className='px-3 px-md-5 py-5'>
                     <p>
-                    As a young firm, we are entrepreneurial and hungry to deliver exceptional returns for our investors. We are creative about our investments and how they are structured.  We work hard and pursue opportunities with tenacity and thoroughness.   
+                    We are flexible investors who concentrate on businesses where there is an opportunity to work alongside management teams to drive performance.
             </p>
                     <p>
-                    We are managers of people’s savings and take our responsibilities seriously, striving for the highest standards in everything we do. We push ourselves to find the best opportunities, engaging in critical thinking and seeking and sharing insights to reach the best decisions.
+                    Our hands-on approach means that having a local presence where we invest is important, which is why we have offices in London, Frankfurt and Madrid, and a diverse international team. 
+            </p>
+            <p>
+            We are managers of people’s savings and take our responsibilities seriously, striving for the highest standards in everything we do. We push ourselves to find the best opportunities, engaging in critical thinking and seeking and sharing insights to reach the best decisions.
             </p>
                 </section>
                 </Fade>
