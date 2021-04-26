@@ -9,10 +9,10 @@ function Footer(props) {
 
         <footer className='container-fluid z-7000 py-2'>
             <div className="d-flex justify-content-between align items center">
-                <div className='d-none d-md-block'>
+                <div className='d-none d-md-block' style={{width:'300px'}}>
                     &aspn;
 </div>
-                <div className="text-center text-light">
+                <div className="text-center text-light" style={{maxWidth:'300px'}}>
                     Intriva.com &copy; 2020
             </div>
                <div className="d-flex">

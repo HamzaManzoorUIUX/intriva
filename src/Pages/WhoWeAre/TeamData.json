@@ -44,14 +44,14 @@
     {
         "id":7 ,
         "heading": "Raphael Söhngen",
-        "role":"Principal",
+        "role":"Managing Director",
         "detail": "Raphael joined Intriva in June 2018 as a Principal within the investment team and has over 13 years’ experience in distressed asset backed investing. Prior to joining Intriva, Raphael was a Vice President at HPS Investment Partners, which he joined in 2017 and where he focused on investments in European lease and loan portfolios backed by assets and receivables. Prior to this Raphael served 10 years at Fortress Investment Group most recently as Vice President in the Private Equity business where he focused on investments across Germany, Italy and the UK in distressed and performing real estate assets, real estate backed loans, public and private real estate backed companies and closed-end real estate funds. Responsibilities included the screening, underwriting and execution of investment opportunities as well as post-acquisition management, restructuring and disposal of existing investments. Raphael began his career as Analyst at Archon Group Germany, focusing on the asset management and work-out of commercial and industrial assets of real estate and NPL-portfolios.Raphael received his Master in Business Administration from Ludwig-Maximilian University in Munich with majors in strategic management, international markets & location research as well as risk and insurance. Raphael speaks both German and English.",
         "img": "../../assets/img/team/Söhngen, Raphael.jpg"
     },
     {
         "id": 8,
         "heading": "Andrea Rumignani",
-        "role":"Associate",
+        "role":"Principal",
         "detail": "Andrea joined Intriva in April 2018. Prior to joining, Andrea worked for nearly four years as an Associate at Apollo and a member of the European Principal Finance Fund team focusing on distressed real estate and corporate special situations. Before being an investment professional, he was an analyst at the restructuring boutique Houlihan Lokey and at the M&A advisory desk of JP Morgan for over three years.Andrea received his Msc in Energy Trade and Finance at Cass Business School in London and a BA from Bocconi University Milan. Andrea is fluent in Italian, English and German.",
         "img": "../../assets/img/team/Rumignani, Andrea.jpg"
     },
@@ -96,6 +96,13 @@
         "role":"Team Assistant",
         "detail": "Cara supports the Intriva team.  Prior to joining Intriva, Cara worked at ",
         "img": "../../assets/img/team/Brazier, Cara.jpg"
+    },
+    {
+        "id": 16,
+        "heading": "Felix Mesch",
+        "role":"Associate",
+        "detail": "Prior to joining, Felix worked for nearly four years as an Associate at Moelis & Company in the European Restructuring Practice with a focus on company and creditor side assignments across a number of sectors and jurisdictions. Felix is fluent in English and German.",
+        "img": "../../assets/img/team/avatar.png"
     }
    
 ]
