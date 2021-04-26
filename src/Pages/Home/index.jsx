@@ -16,7 +16,6 @@ function Home(props) {
     const handlePageChange = number => {
         setcurrentPage(number)
     };
-console.log(currentPage);
     const handleBeforePageChange = number => {
         number=1
     };

@@ -4,8 +4,7 @@ import { media } from "../Media/media";
 import { CgScrollV } from "react-icons/cg";
 import Footer from '../../components/Footer';
 import { FaFilePdf } from 'react-icons/fa'
-// import Pdf from "react-to-pdf";
-// import ReactPageScroller from "react-page-scroller";
+import StickyFooter from '../../components/StickyFooter';
 import parse from "html-react-parser"; 
 function Artical(props) {
     const { id } = props.match.params
@@ -75,8 +74,10 @@ function Artical(props) {
                                             parse(data.detail)
                                         }
                                     </div>
+                                    <StickyFooter/>
                                 </div>
                                 <div className=" w-100">
+
                                     <Footer />
                                 </div>
                             </div>

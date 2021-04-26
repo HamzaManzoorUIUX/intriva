@@ -3,7 +3,7 @@ import Footer from '../../components/Footer';
 import MyNavBar from '../../components/MyNavBar';
 import ScrollToTopOnMount from '../../components/ScrollToTop';
 import whatweDo1 from "../../assets/img/whatweDo1.png";
-import Mask from "../../assets/img/def.png";
+import whatweDo2 from "../../assets/img/whatweDo2.png";
 import Fade from 'react-reveal/Fade';
 import StickyFooter from '../../components/StickyFooter';
 // import PreLoader from '../../components/PreLoader';
@@ -16,12 +16,12 @@ function WhatWeDo(props) {
             {/* <PreLoader/> */}
             <MyNavBar title={'What we do'} />
             <div className="whatwedoBack">
-                <div className="  z-10 position-relative">
+                <div className="  z-10 position-relative w-100">
                     <div>
                     <img src={whatweDo3}  className='d-none d-lg-block' alt="whatweDo3" width='100%'/>
                     <div className="bg-white position-absolute h-100 w-100" style={{opacity:0.8,zIndex:5,top:0,left:0}}></div>
                     </div>
-                    <div className="container py-3 position-lg-absolute z-10 absolute-md-center position-relative" style={{filter:"opacity(0.8)"}}>
+                    <div className="container py-3 z-10 absolute-md-center" style={{filter:"opacity(0.8)"}}>
                         <Fade big>
                                 <div className=' font-35 text-center' style={{fontFamily:'Roboto'}}>
                                 We provide time sensitive and creative capital solutions, using our experience as hands-on investors across market cycles to enhance the strategic, operational, and financial direction of the assets in which we invest. We focus on unlocking upside while protecting against downside.
@@ -66,9 +66,11 @@ function WhatWeDo(props) {
                          </div>
                     </div>
                 </div>
-                <div className="container-fluid px-3 pt-md pb-3 z-10 position-relative">
+                <div className="container-fluid px-3 pt-md-5 pb-md-5 pb-3 z-10 position-relative">
                 <div className="row">
                     <div className="col-md-7">
+                        <div className="max-text-l">
+
                     <Fade big>
                                 <div>
                                     <h4 className="mt-4 ">
@@ -79,7 +81,17 @@ function WhatWeDo(props) {
                         </p>
                                 </div>
                             </Fade>
+                        </div>
                     </div>
+                    <div className="col-md-5 text-right pr-0 d-none d-md-block pt-1">
+                        <DragScrollProvider>
+                                    {({ onMouseDown, ref }) => (
+                                        <div className="scrollable-2" ref={ref} onMouseDown={onMouseDown}>
+                                            <img src={whatweDo2} alt="whatweDo2" className='sectionImg' />
+                                        </div>
+                                    )}
+                                </DragScrollProvider>
+                        </div>
                 </div>
                         
                      

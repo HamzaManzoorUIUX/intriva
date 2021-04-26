@@ -12,17 +12,32 @@ function StickyFooter(props) {
         <img src={ScreenSide} onClick={handleShow} className={`ScreenSide ${props.home!==undefined?'active':''} ${props.currentPage===2?'mt-fotPic':''}`} alt='img' />
         <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
-          <Modal.Title>Value Able Links</Modal.Title>
+          <Modal.Title>PRI and LinkedIn Links</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
+        <Modal.Body>
+         <div className='card p-2 mb-3'>
+         <h3>
+          Environmental, Social and Corporate Governance
+          </h3>
+          <p>
+          We are committed to driving sustainable value and have integrated Environmental, Social and Corporate Governance into our approach, with an in-depth ESG policy. We are signatories of Principals for Responsible Investment (PRI).
+          </p>
           <a href=" https://www.unpri.org" target='_blank' className='btn btn-dark'>
-              PRI
+          Click here to visit the PRI Website
           </a>
+         </div>
+         <div className='card p-2 my-3'>
+           <h3>
+           LinkedIn
+           </h3>
+           <p>
+           Please visit us and follow us on social media.
+           </p>
           <a href=" https://www.linkedin.com/company/intriva-capital/mycompany/" target='_blank' className='btn btn-primary'>
-              LinkedIn
+           Click here to visit our LinkedIn page
           </a>
-        </Modal.Footer>
+         </div>
+        </Modal.Body>
       </Modal>
 
 </>

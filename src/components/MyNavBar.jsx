@@ -86,12 +86,14 @@ const menuDefault=()=>{
                     </div>
                     {
                         props.title !== undefined ?
-                            <div className={`text-uppercase f-20 z-10 pl-3 d-none d-md-flex align-items-baseline text-md-right font-timeNew navBorder smoothAnimation ${scrollCheck||(props.number!==1&&props.number!==undefined) ? 'position-md-absolute top-50 ' : ''} ${props.artical?'navArtical':'navTitle'}`}>
-                            <img src={Logo} className='myNavBar-logo hidden' alt="logo" />
+                            <div className={`text-uppercase f-20 z-10 pl-3 d-none d-md-flex align-items-end text-md-right font-timeNew navBorder smoothAnimation ${scrollCheck||(props.number!==1&&props.number!==undefined) ? 'position-md-absolute top-50 myNavBar-logo' : ''} ${props.artical?'navArtical':'navTitle'}`}>
+                            <div className='hidden' style={{width:'260px',height:'30px'}}/>
                               
+                                <span>
                                 {
                                     props.title
                                 }
+                                </span>
                             </div>
                             :
                             <></>
