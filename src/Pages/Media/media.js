@@ -625,17 +625,7 @@ export const media = [
         "pdf":"../../assets/img/pdf/Intriva Capital - Costa del Sol hotel project financing_20210318.pdf",
         "title": "PEI: Ex-Apollo execs make headway with special sits fundraise – exclusive",
         "date": "20 April 2020",
-        "detail": `
-        <h2 class="text-center">
-        To be able to copy & paste content to share with others please contact us at subscriptions@peimedia.com to upgrade your subscription to the appropriate licence
-        </h2>
-    <h5 class='text-center'>
-    To be able to copy & paste content to share with others please contact us at subscriptions@peimedia.com to upgrade your subscription to the appropriate licence
-    <a href="https://www.privateequityinternational.com/ex-apollo-execs-make-headway-with-special-sits-fundraise-exclusive/" target='_blank'>Click here</a>
-    </h5>
-
-  
-        `,
+       "link":"https://www.privateequityinternational.com/ex-apollo-execs-make-headway-with-special-sits-fundraise-exclusive/",
         "img": '../../assets/img/media/1.png'
     },
     

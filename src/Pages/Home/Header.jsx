@@ -25,6 +25,8 @@ function Header(props) {
             }
             else {
                 allvideos[i].pause()
+                allvideos[i].currentTime = 0;
+
             }
         }
 
