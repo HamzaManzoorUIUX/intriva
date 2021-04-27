@@ -13,8 +13,8 @@ function Header(props) {
 
     const [active, setActive] = useState(parseInt(Math.random() * 3))
     const videos = (e) => {
-        let a = parseInt(Math.random() * 3)
-        setActive(a === active ? parseInt(Math.random() * 3) : a)
+        
+        setActive(genrateRandom())
     }
     const pauseAllVideos = () => {
         const allvideos = document.querySelectorAll('video.headerHome-video')
@@ -29,6 +29,17 @@ function Header(props) {
         }
 
     }
+    const genrateRandom=()=>{
+        for(let i=0;i<10;i++){
+            var a=randomData()
+            if(a!==active){
+                return a;
+            }
+        }
+    }
+    const randomData=()=>{
+        return parseInt(Math.random() * 3)
+    }
     useEffect(() => {
 
         pauseAllVideos()
@@ -37,7 +48,7 @@ function Header(props) {
     return (
         <div className='headerHome pt-4 z-50'>
 
-            <video onEnded={videos} muted className={`headerHome-video pointer-event-none  ${active === 0 ? 'd-flex active' : 'd-none'}`}>
+            <video onEnded={videos} onContextMenu="return false;" muted className={`headerHome-video pointer-event-none  ${active === 0 ? 'd-flex active' : 'd-none'}`}>
                 <source src={Londan} type='video/mp4' />
             </video>
             <video onEnded={videos} muted className={`headerHome-video pointer-event-none  ${active === 1 ? 'd-flex active' : 'd-none'}`}>
@@ -61,7 +72,7 @@ function Header(props) {
                     </Fade>
                     <Fade right big>
                         <h3 className="header-text font-Roboto text-uppercase" >
-                        Timely investment decisions, flexible solutions, and strategic support.
+                        Timely investment decisions, flexible solutions, and strategic support
                 </h3>
                     </Fade>
                 </div>

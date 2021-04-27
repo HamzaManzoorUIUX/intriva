@@ -60,7 +60,7 @@ function Home(props) {
                                         STRATEGIC PARTNERS
                       </span>
                                     </h4>
-                                    <div className='max-text f-14'>
+                                    <div className='max-text f-20'>
                                     We work alongside management teams to enhance the strategic, operational, and financial trajectory of the assets in which we invest.  We apply a relentless approach to asset management to resolve complexity, drive growth and maximise value.
                   </div>
                                 </div>
@@ -72,7 +72,7 @@ function Home(props) {
                                         VALUE CREATION
                       </span>
                                     </h4>
-                                    <div className='max-text f-14'>
+                                    <div className='max-text f-20'>
                                     We are hands-on investors that provide flexible solutions to deliver alpha with structured downside protection. Our team is composed of seasoned investment professionals who have gained their experience investing in and managing complex investments over multiple market cycles.
                   </div>
                                 </div>
@@ -84,7 +84,7 @@ function Home(props) {
                                         LOCAL PRESENCE
                       </span>
                                     </h4>
-                                    <div className='max-text f-14'>
+                                    <div className='max-text f-20'>
                                     Our hands-on approach means that having a local presence is important, with professionals based in London, Frankfurt and Madrid.
                   </div>
                                 </div>
@@ -100,10 +100,10 @@ function Home(props) {
                     <div className="row  mt-md-5 pt-md-3">
                         <div className="col-md-6 col-lg-5 col-xl-4 ">
                             <Fade cascade big>
-                                <h4 className='pt-5'>
+                                <h3 className='pt-5 pt-md-0'>
                                 High-Performance Culture
-                   </h4>
-                                <div className='max-text f-14'>
+                   </h3>
+                                <div className='max-text f-20'>
                                     <p>
                                     We take pride in our collaborative and high-performance culture, which harnesses camaraderie and the balance of skills and experience which our team members collectively bring to bear. 
                        </p>

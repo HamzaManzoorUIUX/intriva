@@ -16,6 +16,7 @@ html {
         left      : 0;
         height    : 100%;
         object-fit: cover;
+        pointer-events: none;
     }
 
     &::before {
@@ -286,7 +287,7 @@ font-weight: 400;
 .myNavBar-logo {
     height: 55px;
 
-    @media(max-width:767PX) {
+    @media(max-width:767px) {
         height: 35px;
     }
 
@@ -1219,3 +1220,9 @@ display: none;
     position: relative;
 }
 
+.myNavBar-logo-height{
+    height: 70px;
+    @media(max-width:767px) {
+        height: 35px;
+    }
+}
