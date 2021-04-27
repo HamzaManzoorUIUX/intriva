@@ -1,6 +1,7 @@
 import { Modal } from 'react-bootstrap';
 import React,{useState} from 'react';
-import ScreenSide from "../assets/img/Screen Shot 2021-03-10 at 02.34.28.png";
+import LinkedIn from "../assets/img/LinkedIn.png";
+import PRI from "../assets/img/UN+PRI+logo+copy.png";
 
 function StickyFooter(props) {
     const [show, setShow] = useState(false);
@@ -8,8 +9,10 @@ function StickyFooter(props) {
     return (
 <>
 <div className={`ScreenSide ${props.home!==undefined?'active':''} ${props.currentPage===2?'mt-fotPic':''}`}>
-        <img src={ScreenSide} onClick={()=>setShow(true)}  alt='img' />
-        <img src={ScreenSide} onClick={()=>setShow(true)}  alt='img' />
+        <div className="d-flex px-2 h-100 align-items-center " style={{backgroundColor:"#161E26",borderTopRightRadius:'20px'}}>
+        <img src={PRI} onClick={()=>setShow(true)} className="curser" height="30px" alt='img' />
+        <img src={LinkedIn} onClick={()=>setShow(true)} className="curser"  height="30px" alt='img' />
+        </div>
 </div>
         <Modal show={show} onHide={()=>setShow(false)} centered>
         <Modal.Header closeButton>

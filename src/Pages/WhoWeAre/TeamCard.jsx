@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fade } from 'react-reveal';
 import { BiMinusCircle, BiPlusCircle } from "react-icons/bi";
+import { FaLinkedin } from "react-icons/fa";
 
 function TeamCard({ data, modelOpen, setModelOpen,  setDetail }) {
     // const [details,setdetails]=useState(false)
@@ -13,7 +14,9 @@ function TeamCard({ data, modelOpen, setModelOpen,  setDetail }) {
                         {data.heading}
                     </h6>
                     <div className="team-card-text">
-                        {data.role}
+                        {data.role} <a href={data.linkedIn} target="_blank" rel="noreferrer" className="f-20" style={{color:"#0e76a8"}}>
+                        <FaLinkedin/>
+                        </a>
                     </div>
                 </div>
                 <div className="f-30 curser ml-auto" >
