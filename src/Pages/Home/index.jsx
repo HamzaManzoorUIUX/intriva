@@ -30,7 +30,7 @@ function Home(props) {
             <Header handlePageChange={handlePageChange} />
             <div className="homeBack">
                 <div className='container-fluid '>
-                    <div className="row  mt-5 pt-md-3">
+                    <div className="row mt-2  mt-md-5 pt-md-3">
                         <Fade cascade big>
                             <div className="col-md-6 d-none d-md-block pl-0 mt-1 pt-5">
                                 <DragScrollProvider>
@@ -45,7 +45,7 @@ function Home(props) {
                         <div className="col-md-6 col-lg-5 col-xl-4">
                             <Fade cascade big>
                                 <div className='pt-md-5'>
-                                    <h5 className=''>
+                                    <h5 className='mb-0 mb-lg-2 f-20-r'>
                                         <span className="font-Roboto">
                                         Intriva is an alternative investment firm focused on value creation in mid-market businesses throughout Western Europe.
                       </span>
@@ -60,7 +60,7 @@ function Home(props) {
                                         STRATEGIC PARTNERS
                       </span>
                                     </h4>
-                                    <div className='max-text f-20'>
+                                    <div className='max-text f-20-r'>
                                     We work alongside management teams to enhance the strategic, operational, and financial trajectory of the assets in which we invest.  We apply a relentless approach to asset management to resolve complexity, drive growth and maximise value.
                   </div>
                                 </div>
@@ -72,7 +72,7 @@ function Home(props) {
                                         VALUE CREATION
                       </span>
                                     </h4>
-                                    <div className='max-text f-20'>
+                                    <div className='max-text f-20-r'>
                                     We are hands-on investors that provide flexible solutions to deliver alpha with structured downside protection. Our team is composed of seasoned investment professionals who have gained their experience investing in and managing complex investments over multiple market cycles.
                   </div>
                                 </div>
@@ -84,7 +84,7 @@ function Home(props) {
                                         LOCAL PRESENCE
                       </span>
                                     </h4>
-                                    <div className='max-text f-20'>
+                                    <div className='max-text f-20-r'>
                                     Our hands-on approach means that having a local presence is important, with professionals based in London, Frankfurt and Madrid.
                   </div>
                                 </div>
@@ -103,7 +103,7 @@ function Home(props) {
                                 <h3 className='pt-5 pt-md-0'>
                                 High-Performance Culture
                    </h3>
-                                <div className='max-text f-20'>
+                                <div className='max-text f-20-r'>
                                     <p>
                                     We take pride in our collaborative and high-performance culture, which harnesses camaraderie and the balance of skills and experience which our team members collectively bring to bear. 
                        </p>
