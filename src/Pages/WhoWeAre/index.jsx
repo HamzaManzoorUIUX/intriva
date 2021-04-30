@@ -20,7 +20,7 @@ function WhoWeAre(props) {
                 <div className="container">
                     
                 <Fade big>
-                <section className='px-3 px-md-5 py-5'>
+                <section className='px-3 px-md-3 py-5 f-20-r'>
                     <p>
                     We are flexible investors who concentrate on businesses where there is an opportunity to work alongside management teams to drive performance.
             </p>

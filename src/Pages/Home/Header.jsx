@@ -68,7 +68,7 @@ function Header(props) {
                 </div>
                 <div className='p-2'>
                     <Fade left big>
-                        <h1 className="header-heading font-Roboto text-uppercase">
+                        <h1 className="header-heading text-timeNewRoman text-uppercase">
                             we provide
                 </h1>
                     </Fade>
