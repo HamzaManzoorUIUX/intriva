@@ -483,7 +483,6 @@ font-weight: 400;
 .homeBack {
     background-image: url('./assets/img/Mask Group 22.png');
     background-size : cover;
-    padding-top     : 70px;
     height          : 100%;
     position        : relative;
     display         : flex;
@@ -499,7 +498,6 @@ font-weight: 400;
 .homeBack-2 {
     background-image: url('./assets/img/Mask Group 22-2.png');
     background-size : cover;
-    padding-top     : 70px;
     height          : 100%;
     position        : relative;
     display         : flex;
@@ -562,7 +560,9 @@ footer {
     top      : 50%;
     transform: translateY(-50%);
 }
-
+.pt-7{
+    padding-top: 80px;
+}
 .teamIndicater {
     width           : 60px;
     height          : 60px;
