@@ -11,7 +11,7 @@ function StickyFooter(props) {
 <>
 <div className={`ScreenSide ${props.home!==undefined?'active':''} ${props.currentPage===2?'mt-fotPic':''}`}>
         <div className="d-flex px-2 h-100 align-items-center " style={{backgroundColor:"#161E26",borderTopRightRadius:'20px'}}>
-        <img src={PRI} onClick={()=>setShow(true)} className="curser" height="30px" alt='img' />
+        <img src={PRI} onClick={()=>setShow(true)} className="curser mr-2" height="30px" alt='img' />
         <img src={LinkedIn} onClick={()=>setShow2(true)} className="curser"  height="30px" alt='img' />
         </div>
 </div>

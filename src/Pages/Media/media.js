@@ -15,7 +15,6 @@ export const media = [
     The financing confirms the strength and potential of the project, which will see the hotel positioned as a
         luxury 200-bedroom resort
     </h5>
-    <img src='../../assets/img/media/Intriva Capital - Costa del Sol hotel project financing_20210318.jpg' class='w-100' alt='../../assets/img/media/Intriva Capital - Costa del Sol hotel project financing_20210318'/>
     <p class='my-3'>
         <b>London, 18 March 2021</b> — Intriva Capital (“<b>Intriva</b>”), the independent alternative asset manager,
         today announced that it has secured credit facilities, including a EUR 20 million tranche provided by the
@@ -98,7 +97,7 @@ export const media = [
     },
     {
         "id": "6",
-        "catagory": "CASE STUUDY",
+        "catagory": "Case Study",
         "title": "RealDeals: Organic Growth: Intriva Capital ",
         "pdf":"../../assets/img/pdf/Real Deals Article_20210311.pdf",
         "date": "11 March 2021",
@@ -119,7 +118,6 @@ export const media = [
             by Jennifer Forrest
         </i>
     </div>
-    <img src="../../../public/assets/img/media/Real Deals Article_20210311.jpg" class="w-100"
         alt="Real Deals Article_20210311">
     <div><i>
             Often an overlooked aspect of value creation, organic growth is essential for materially improving
@@ -234,7 +232,6 @@ export const media = [
        <h5 class="text-center">
         Partnership will also see Intriva provide significant new funding to support expansion
        </h5>
-       <img src='../../assets/img/media/Intriva Capital acquires stake in MoneyPlus Group_20210224.jpg' class='w-100' alt='Intriva Capital acquires stake in MoneyPlus Group_20210224.jpg'/>
     <p class='mt-3'>
         <b>London, 24 February 2021</b> — Intriva Capital (“Intriva”), an independent alternative asset manager, today announced that it had acquired a significant stake and supported a management buy-out in MoneyPlus Group (“MoneyPlus”), one of the UK’s largest providers of consumer debt advice. Intriva will provide additional funding to further enhance the depth, breadth and value of services for MoneyPlus’ customers in a total investment program of £60 million.
     <br/><br/>
@@ -404,7 +401,6 @@ export const media = [
     <h5 class="text-center">
         Investment supports accelerated growth in Node Living Europe’s curated build-to-rent platform
     </h5>
-    <img src="../../assets/img/media/Intriva Capital agrees joint venture with Node to support European expansion plans_20200922.jpg" alt="Intriva Capital agrees joint venture with Node to support European expansion plans_20200922.jpg" class="w-100" />
     <p class="mt-3">
         <b>London, 22nd September 2020</b> — Intriva Capital (“Intriva”), an independent alternative investment manager
         focused on special opportunities across Western Europe, today announces that it has entered into a joint venture
@@ -617,7 +613,7 @@ export const media = [
             +44 (0)20 3435 7469 / +44 (0) 78 8466 7775
         </div>
     </div>`,
-        "img": '../../assets/img/media/1.png'
+        "img": '../../assets/img/media/Sample.png'
     },
     {
         "id": "0",
@@ -626,7 +622,7 @@ export const media = [
         "title": "PEI: Ex-Apollo execs make headway with special sits fundraise – exclusive",
         "date": "20 April 2020",
        "link":"https://www.privateequityinternational.com/ex-apollo-execs-make-headway-with-special-sits-fundraise-exclusive/",
-        "img": '../../assets/img/media/1.png'
+        "img": '../../assets/img/media/Sample.png'
     },
     
 ]

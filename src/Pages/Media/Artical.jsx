@@ -64,7 +64,7 @@ function Artical(props) {
                                             {data.date}
                                         </div>
                                             <div className='pr-5 text-right  py-3 w-50 d-inline-flex align-items-center justify-content-end sticky-top' style={{zIndex:10000,height:'95px'}}>
-                                            <a href={data.pdf} className='btn btn-primary text-light mt-1 mr-5'>
+                                            <a href={data.pdf} target="_blank" rel="noreferrer"  className='btn btn-primary text-light mt-1 mr-5'>
                                                 <FaFilePdf />
                                             </a>
                                             </div>

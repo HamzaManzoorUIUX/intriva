@@ -105,7 +105,7 @@ function CityCards({ activeCard, setActiveCard }) {
                     <div className="px-0">
                         <div className={`cityCard ${activeCard === 2 ? 'active' : ''}`} onClick={() => setActiveCard(2)}>
                             <img src={Frankfurt} alt="Frankfurt" className='w-100' />
-                            <div className="content" style={{backgroundColor:'rgba(256,256,256, .3)'}}>
+                            <div className="content">
                                 <div className="info">
 
                                     <h3 className='text-uppercase'>

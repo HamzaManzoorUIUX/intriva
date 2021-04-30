@@ -95,9 +95,9 @@ function Home(props) {
                 </div>
               
             </div>
-            <div className="homeBack-2">
+            <div className="homeBack-2 pt-1">
                 <div className='container '>
-                    <div className="row pt-7 mt-md-5 pt-md-3">
+                    <div className="row pt-7 ">
                         <div className="col-md-6 col-lg-5">
                             <Fade cascade big>
                                 <h3 className=' pt-md-0'>
