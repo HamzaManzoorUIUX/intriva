@@ -8,35 +8,36 @@ import "slick-carousel/slick/slick-theme.css";
 import { BiArrowFromLeft, BiArrowFromRight } from 'react-icons/bi';
 
 function SampleNextArrow(props) {
-    const { className, style } = props;
+    const { className, style,onClick } = props;
     return (
         <BiArrowFromLeft className={className}
             style={style}
-            onClick={() => NextFunction(props)} />
+            onClick={onClick}
+             />
     );
 }
-const NextFunction = ({ onClick, setActiveCard, currentSlide }) => {
-    // if (currentSlide < 2) {
-        onClick()
-        setActiveCard(currentSlide === 2 ? 1 : currentSlide + 2)
-    // }
+// const NextFunction = ({ onClick, setActiveCard, currentSlide }) => {
+//     // if (currentSlide < 2) {
+//         onClick()
+//         setActiveCard(currentSlide === 2 ? 1 : currentSlide + 2)
+//     // }
 
-}
-const prevFunction = ({ onClick, setActiveCard, currentSlide }) => {
-    // if (currentSlide > 0) {
-        onClick()
-        setActiveCard(currentSlide === 0 ? 3 : currentSlide)
-    // }
+// }
+// const prevFunction = ({ onClick, setActiveCard, currentSlide }) => {
+//     // if (currentSlide > 0) {
+//         onClick()
+//         setActiveCard(currentSlide === 0 ? 3 : currentSlide)
+//     // }
 
-}
+// }
 function SamplePrevArrow(props) {
-    const { className, style } = props;
+    const { className, style,onClick } = props;
 
     return (
         <BiArrowFromRight
             className={className}
             style={style}
-            onClick={() => prevFunction(props)}
+            onClick={onClick}
         />
     );
 }
@@ -50,8 +51,12 @@ function CityCards({ activeCard, setActiveCard }) {
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
-        nextArrow: <SampleNextArrow activeCard={activeCard} setActiveCard={setActiveCard} />,
-        prevArrow: <SamplePrevArrow activeCard={activeCard} setActiveCard={setActiveCard} />,
+        nextArrow: <SampleNextArrow  />,
+        prevArrow: <SamplePrevArrow  />,
+        // afterChange: () =>console.log('after'),
+        beforeChange: (current, next) =>{
+            setActiveCard(next)
+        },
         responsive: [
 
 
@@ -68,7 +73,7 @@ function CityCards({ activeCard, setActiveCard }) {
     return (
         <>
             <div className="mb-min-5">
-                <Slider {...settings}>
+                <Slider ref={(slider)=>slider?slider.slickGoTo(activeCard):""} {...settings}>
                     <div className="px-0">
                         <div className={`cityCard ${activeCard === 1 ? 'active' : ''}`} onClick={() => setActiveCard(1)}>
                             <img src={Londan} alt="Londan" className='w-100' />

@@ -8,6 +8,13 @@ html {
     overflow        : hidden;
     position        : relative;
     background-color: white;
+    @media(max-width:767px){
+    background-image: url('./assets/img/charles-postiaux-Q6UehpkBSnQ-unsplash.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
 
     .headerHome-video {
         width     : 100%;
@@ -17,6 +24,9 @@ html {
         height    : 100%;
         object-fit: cover;
         pointer-events: none;
+        @media(max-width:768px){
+            display: none !important;
+        }
     }
 
     &::before {
@@ -82,6 +92,11 @@ h6 {
         height    : 100%;
         object-fit: cover;
     }
+@media(max-width:767px){
+    background-image: url('./assets/img/banner.png');
+    background-position: center;
+    background-size: cover;
+}
 }
 
 .logoHome {
@@ -1249,5 +1264,27 @@ display: none;
     }
     @media (max-width:767px) {
         font-size: 14px;
+    }
+}
+.cityNav{
+    padding: 1rem .5rem;
+    display: flex;
+    margin-bottom: 0px;
+    list-style-type: none;
+    justify-content: space-between;
+    border: 1px solid black;
+    position: relative;
+    z-index: 5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    li{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid black;
+        &:last-child{
+            border-right: none;
+        }
     }
 }

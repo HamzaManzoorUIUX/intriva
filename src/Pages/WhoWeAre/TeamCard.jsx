@@ -28,11 +28,11 @@ function TeamCard({ data, modelOpen, setModelOpen,  setDetail }) {
                     }
                 </div>
             </div>
-            <Fade>
             <div className={`cardDetails ${modelOpen === data.id ? 'show' : 'hide'}`}>
+            <Fade>
                 {data.detail}
-            </div>
             </Fade>
+            </div>
         </div>
     );
 }

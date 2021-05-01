@@ -19,7 +19,7 @@ function WhatWeDo(props) {
                 <div className="  z-10 position-relative w-100">
                     <div>
                     <img src={whatweDo3}  className='d-none d-lg-block' alt="whatweDo3" width='100%'/>
-                    <div className="bg-white position-absolute h-100 w-100" style={{opacity:0.8,zIndex:5,top:0,left:0}}></div>
+                    <div className="bg-white position-absolute h-100 w-100 d-none d-md-block" style={{opacity:0.8,zIndex:5,top:0,left:0}}></div>
                     </div>
                     <div className="container py-3 z-10 absolute-md-center" style={{filter:"opacity(0.8)"}}>
                         <Fade big>

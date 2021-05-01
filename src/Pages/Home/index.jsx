@@ -44,7 +44,8 @@ function Home(props) {
                         </Fade>
                         <div className="col-md-6 col-lg-5 col-xl-4">
                             <Fade cascade big>
-                                <div className='pt-7 pt-md-5'>
+                                <div className='pt-md-5'>
+                        <div className='w-100' style={{height:'80px'}}></div>
                                     <h5 className='mb-0 mb-lg-2 f-20-r'>
                                         <span className="font-Roboto">
                                         Intriva is an alternative investment firm focused on value creation in mid-market businesses throughout Western Europe.
@@ -97,7 +98,8 @@ function Home(props) {
             </div>
             <div className="homeBack-2 pt-1">
                 <div className='container '>
-                    <div className="row pt-7 ">
+                    <div className="row ">
+                        <div className='w-100' style={{height:'80px'}}></div>
                         <div className="col-md-6 col-lg-5">
                             <Fade cascade big>
                                 <h3 className=' pt-md-0'>

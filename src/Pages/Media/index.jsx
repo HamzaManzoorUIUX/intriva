@@ -1,12 +1,14 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import MyNavBar from '../../components/MyNavBar';
+import ScrollToTopOnMount from '../../components/ScrollToTop';
 import StickyFooter from '../../components/StickyFooter';
 import Card from './Card';
 import { media } from "./media";
 function Media(props) {
     return (
         <div>
+            <ScrollToTopOnMount/>
             <MyNavBar title='In the Media'/>
             <div className="position-relative pt-5">
                 <div className="container pt-5 mt-md-5">

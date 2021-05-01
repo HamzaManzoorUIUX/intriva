@@ -6,12 +6,14 @@ import MyMap from './MyMap'
 import Footer from '../../components/Footer'
 import CityCards from './CityCards';
 import StickyFooter from '../../components/StickyFooter';
+import ScrollToTopOnMount from '../../components/ScrollToTop';
 
 
 function ContactUs(props) {
-    const [activeCard, setActiveCard] = useState(1)
+    const [activeCard, setActiveCard] = useState(0)
     return (
         <div>
+            <ScrollToTopOnMount/>
             <MyNavBar title='Make Contact' />
            <div>
            <div className="contactHead">
@@ -39,7 +41,17 @@ function ContactUs(props) {
                 </div>
                 <img src={path} className='path-img' alt="path" />
             </div>
-            
+            <ul className='cityNav'>
+                <li onClick={()=>{setActiveCard(0)}}>
+                    London
+                </li>
+                <li onClick={()=>{setActiveCard(1)}}>
+                Frankfurt
+                </li>
+                <li onClick={()=>{setActiveCard(2)}}>
+                Madrid
+                </li>
+            </ul>
    <CityCards activeCard={activeCard} setActiveCard={setActiveCard} />
            
             <div className="mb-minus">

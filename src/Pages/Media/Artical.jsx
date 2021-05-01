@@ -6,6 +6,7 @@ import Footer from '../../components/Footer';
 import { FaFilePdf } from 'react-icons/fa'
 import StickyFooter from '../../components/StickyFooter';
 import parse from "html-react-parser"; 
+import ScrollToTopOnMount from '../../components/ScrollToTop';
 function Artical(props) {
     const { id } = props.match.params
     // const [currentPage, setcurrentPage] = useState(0)
@@ -31,7 +32,7 @@ function Artical(props) {
 // }
     return (
         <div>
-
+<ScrollToTopOnMount/>
                 {
                     data === undefined ?
                         <h1 className='text-center pt-5'>
