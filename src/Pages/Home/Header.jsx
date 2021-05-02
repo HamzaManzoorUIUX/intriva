@@ -7,13 +7,14 @@ import Logo from "../../assets/img/logo.png";
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import TermsConditionModel from '../../components/TermsConditionModel';
+import ScrollToTopOnMount from '../../components/ScrollToTop';
 
 function Header(props) {
     const [modalShow, setModalShow] = useState(false)
 
     const [active, setActive] = useState(parseInt(Math.random() * 3))
     const videos = (e) => {
-        
+
         setActive(genrateRandom())
     }
     const pauseAllVideos = () => {
@@ -31,15 +32,15 @@ function Header(props) {
         }
 
     }
-    const genrateRandom=()=>{
-        for(let i=0;i<10;i++){
-            var a=randomData()
-            if(a!==active){
+    const genrateRandom = () => {
+        for (let i = 0; i < 10; i++) {
+            var a = randomData()
+            if (a !== active) {
                 return a;
             }
         }
     }
-    const randomData=()=>{
+    const randomData = () => {
         return parseInt(Math.random() * 3)
     }
     useEffect(() => {
@@ -49,7 +50,7 @@ function Header(props) {
     }, [active])
     return (
         <div className='headerHome pt-4 z-50'>
-
+            <ScrollToTopOnMount />
             <video onEnded={videos} onContextMenu="return false;" muted className={`headerHome-video pointer-event-none  ${active === 0 ? 'd-flex active' : 'd-none'}`}>
                 <source src={Londan} type='video/mp4' />
             </video>
@@ -74,7 +75,7 @@ function Header(props) {
                     </Fade>
                     <Fade right big>
                         <h3 className="header-text font-Roboto text-uppercase" >
-                        Timely investment decisions, flexible solutions, and strategic support
+                            Timely investment decisions, flexible solutions, and strategic support
                 </h3>
                     </Fade>
                 </div>
