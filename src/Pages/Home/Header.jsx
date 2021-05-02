@@ -51,7 +51,7 @@ function Header(props) {
     return (
         <div className='headerHome pt-4 z-50'>
             <ScrollToTopOnMount />
-            <video onEnded={videos} onContextMenu="return false;" muted className={`headerHome-video pointer-event-none  ${active === 0 ? 'd-flex active' : 'd-none'}`}>
+            <video onEnded={videos}  muted className={`headerHome-video pointer-event-none  ${active === 0 ? 'd-flex active' : 'd-none'}`}>
                 <source src={Londan} type='video/mp4' />
             </video>
             <video onEnded={videos} muted className={`headerHome-video pointer-event-none  ${active === 1 ? 'd-flex active' : 'd-none'}`}>
