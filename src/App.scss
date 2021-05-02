@@ -504,7 +504,7 @@ h6 {
 .homeBack {
     background-image: url('./assets/img/Mask Group 22.png');
     background-size : cover;
-    height          : 100%;
+        height          : 100vh;
     position        : relative;
     display         : flex;
     justify-content : space-between;
@@ -512,7 +512,6 @@ h6 {
     overflow        : hidden;
 
     @media(max-width:767px) {
-        height          : 95%;
         background-image: url('./assets/img/homebackMob.png');
     }
 }
@@ -520,14 +519,13 @@ h6 {
 .homeBack-2 {
     background-image: url('./assets/img/Mask Group 22-2.png');
     background-size : cover;
-    height          : 100%;
+        height          : 100vh;
     position        : relative;
     display         : flex;
     justify-content : space-between;
     flex-direction  : column;
 
     @media(max-width:767px) {
-        height          : 95%;
         background-image   : url('./assets/img/homebackMob2.png');
         background-position: center;
     }
