@@ -613,7 +613,7 @@ export const media = [
             +44 (0)20 3435 7469 / +44 (0) 78 8466 7775
         </div>
     </div>`,
-        "img": '../../assets/img/media/Sample.png'
+        "img": '../../assets/img/media/1.png'
     },
     {
         "id": "0",
