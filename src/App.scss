@@ -8,6 +8,7 @@ html {
     overflow        : hidden;
     position        : relative;
     background-color: white;
+    max-width: -webkit-fill-available;
 
     @media(max-width:767px) {
         background-image     : url('./assets/img/charles-postiaux-Q6UehpkBSnQ-unsplash.png');
@@ -43,7 +44,7 @@ html {
     }
 
     @media(max-width: 767px) {
-        height: 95vh;
+    height          : 100%;
     }
 }
 
