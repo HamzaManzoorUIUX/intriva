@@ -20,6 +20,7 @@ function Home(props) {
         number=1
     };
     return (<>
+        <div className="h-100vh overflow-hidden">
         <PreLoader />
         <MyNavBar tab={1} title={'ABOUT INTRIVA'} position={'fixed'} number={currentPage} />
         <ReactPageScroller
@@ -134,6 +135,7 @@ function Home(props) {
 
         </ReactPageScroller>
         <StickyFooter home={true} currentPage={currentPage}/>
+        </div>
     </>
     );
 }
