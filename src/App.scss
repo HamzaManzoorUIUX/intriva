@@ -8,7 +8,7 @@ html {
     overflow        : hidden;
     position        : relative;
     background-color: white;
-    max-width: -webkit-fill-available;
+    max-width       : -webkit-fill-available;
 
     @media(max-width:767px) {
         background-image     : url('./assets/img/charles-postiaux-Q6UehpkBSnQ-unsplash.png');
@@ -44,7 +44,7 @@ html {
     }
 
     @media(max-width: 767px) {
-    height          : 100%;
+        height: 100%;
     }
 }
 
@@ -83,9 +83,9 @@ h6 {
 }
 
 .bannerImg {
-    overflow        : hidden;
-    position        : relative;
-    background-image: url('./assets/videos/Stock\ Video\ of\ Neurons\ in\ brain.\ Loop.\ 3D\ animation\ of\ neural\ network.\ at\ Adobe\ Stock\ -\ Adobe\ Stock.gif');
+    overflow           : hidden;
+    position           : relative;
+    background-image   : url('./assets/videos/Stock\ Video\ of\ Neurons\ in\ brain.\ Loop.\ 3D\ animation\ of\ neural\ network.\ at\ Adobe\ Stock\ -\ Adobe\ Stock.gif');
     background-position: center;
     background-size    : cover;
 
@@ -98,7 +98,7 @@ h6 {
         object-fit: cover;
     }
 
-    
+
 }
 
 .logoHome {
@@ -503,7 +503,7 @@ h6 {
 .homeBack {
     background-image: url('./assets/img/Mask Group 22.png');
     background-size : cover;
-        height          : 100%;
+    height          : 100%;
     position        : relative;
     display         : flex;
     flex-direction  : column;
@@ -517,7 +517,7 @@ h6 {
 .homeBack-2 {
     background-image: url('./assets/img/Mask Group 22-2.png');
     background-size : cover;
-        height          : 100%;
+    height          : 100%;
     position        : relative;
     display         : flex;
     justify-content : space-between;
@@ -609,11 +609,13 @@ footer {
     display         : flex;
     padding         : .5rem 1rem;
     align-items     : center;
-    text-decoration: none;
-    &:hover{
-    text-decoration: none;
+    text-decoration : none;
 
-}
+    &:hover {
+        text-decoration: none;
+
+    }
+
     &.active {
         border: 2px solid #E9B34E;
 
@@ -719,7 +721,7 @@ footer {
 .articalBack {
     width                : 100%;
     height               : 100vh;
-    max-height: -webkit-fill-available;
+    max-height           : -webkit-fill-available;
     background-size      : cover !important;
     background-repeat    : no-repeat !important;
     display              : flex;
@@ -728,10 +730,11 @@ footer {
     position             : relative;
     background-attachment: fixed !important;
     background-position  : center !important;
+    object-fit           : cover;
 
-    // @media(max-width:767px) {
-    //     height: 75vh;
-    // }
+    @media(max-width:767px) {
+        background-size: 140% 100% !important;
+    }
 
     // @media(max-width:500px) {
     //     height: 50vh;
@@ -746,9 +749,10 @@ footer {
         height          : 100%;
         background-color: rgba($color: #ffffff, $alpha: .4);
         z-index         : 1;
+
         @media(max-width:767px) {
             background-color: rgba($color: #ffffff, $alpha: .2);
-            
+
         }
     }
 
@@ -1322,19 +1326,24 @@ footer {
         }
     }
 }
-.h-md-95px{
-    @media(min-width:767px){
+
+.h-md-95px {
+    @media(min-width:767px) {
         height: 95px;
     }
 }
-.modal-backdrop,.modal{
-z-index: 6700;
+
+.modal-backdrop,
+.modal {
+    z-index: 6700;
 }
-.homepageMain{
+
+.homepageMain {
+
     // position: fixed;
     // height: 100%;
-    &>div:not(.ScreenSide){
-        max-height: -webkit-fill-available !important;
+    &>div:not(.ScreenSide) {
+        max-height         : -webkit-fill-available !important;
         // @media(max-width: 767px){
         //     height: 98vh !important;
         // }

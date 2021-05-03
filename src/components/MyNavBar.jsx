@@ -36,7 +36,7 @@ const menuDefault=()=>{
                 <div className=" position-relative container">
                     <div className="myNavBar position-relative z-20">
                      <div className='d-flex align-items-center flex-wrap'>
-                     {props.tab?<span onClick={()=>props.setcurrentPage?props.setcurrentPage(0):''} className={`d-md-block w-100 ${scrollCheck ? 'd-none' : ''}`}>
+                     {props.tab?<span onClick={()=>props.setcurrentPage?props.setcurrentPage(0):''} className={`d-md-block curser w-100 ${scrollCheck ? 'd-none' : ''}`}>
                             <img src={Logo} className='myNavBar-logo' alt="logo" />
                         </span>:
                      <Link to='/' className={`d-md-block w-100 ${scrollCheck ? 'd-none' : ''}`}>
