@@ -96,7 +96,7 @@ export const media = [
         "img": '../../assets/img/media/Intriva Capital - Costa del Sol hotel project financing_20210318.jpg'
     },
     {
-        "id": "6",
+        "id": "2",
         "catagory": "Case Study",
         "title": "RealDeals: Organic Growth: Intriva Capital ",
         "pdf":"../../assets/img/pdf/Real Deals Article_20210311.pdf",
@@ -220,7 +220,7 @@ export const media = [
         , "img": '../../assets/img/media/Real Deals Article_20210311.jpg'
     },
     {
-        "id": "2",
+        "id": "3",
         "catagory": "Press Release",
         "pdf":"../../assets/img/pdf/Intriva Capital acquires stake in MoneyPlus Group_20210224.pdf",
         "title": "Intriva Capital acquires stake in MoneyPlus Group",
@@ -295,7 +295,7 @@ export const media = [
 
     
     {
-        "id": "5",
+        "id": "4",
         "catagory": "Press Release",
         "title": "Lending Works completes sale to Intriva Capital and establishes new institutional investment platform",
         "pdf":"../../assets/img/pdf/Intriva Capital completes on the acquisition of UK consumer credit company Lending Works_20201216.pdf",
@@ -389,7 +389,7 @@ export const media = [
         , "img": '../../assets/img/media/1.png'
     },
     {
-        "id": "4",
+        "id": "5",
         "catagory": "Press Release",
         "title": "Intriva Capital agrees joint venture with Node to support European expansion plans",
         "pdf":"../../assets/img/pdf/Intriva Capital agrees joint venture with Node to support European expansion plans_20200922.pdf",
@@ -503,7 +503,7 @@ export const media = [
         , "img": '../../assets/img/media/Intriva Capital agrees joint venture with Node to support European expansion plans_20200922.jpg'
     },
     {
-        "id": "3",
+        "id": "6",
         "catagory": "Press Release",
         "title": "Intriva Capital acquires UK consumer credit company Lending Works",
         "pdf":"../../assets/img/pdf/Intriva Capital acquires UK consumer credit company Lending Works_20200703.pdf",
@@ -616,7 +616,7 @@ export const media = [
         "img": '../../assets/img/media/1.png'
     },
     {
-        "id": "0",
+        "id": "7",
         "catagory": "External Press",
         "pdf":"../../assets/img/pdf/Intriva Capital - Costa del Sol hotel project financing_20210318.pdf",
         "title": "PEI: Ex-Apollo execs make headway with special sits fundraise – exclusive",

@@ -721,16 +721,36 @@ footer {
     width                : 100%;
     height               : 100vh;
     max-height           : -webkit-fill-available;
-    background-size      : cover !important;
-    background-repeat    : no-repeat !important;
+    background-size      : cover ;
+    background-repeat    : no-repeat ;
     display              : flex;
     justify-content      : center;
     align-items          : center;
     position             : relative;
-    background-attachment: fixed !important;
-    background-position  : center !important;
+    background-attachment: fixed ;
+    background-position  : center ;
     object-fit           : cover;
-
+    &.backimg1{
+        background-image: url('./assets/img/media/Intriva Capital - Costa del Sol hotel project financing_20210318.jpg');
+}
+    &.backimg2{
+        background-image: url('./assets/img/media/Real Deals Article_20210311.jpg');
+}
+    &.backimg3{
+        background-image: url('./assets/img/media/Intriva Capital acquires stake in MoneyPlus Group_20210224.jpg');
+}
+    &.backimg4{
+        background-image: url('./assets/img/media/1.png');
+}
+    &.backimg5{
+        background-image: url('./assets/img/media/Intriva Capital agrees joint venture with Node to support European expansion plans_20200922.jpg');
+}
+    &.backimg6{
+        background-image: url('./assets/img/media/1.png');
+}
+    &.backimg7{
+        background-image: url('./assets/img/media/7.png');
+}
     @media(max-width:767px) {
         background-size: 200vw 100vh !important;
         
