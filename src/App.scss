@@ -611,7 +611,11 @@ footer {
     display         : flex;
     padding         : .5rem 1rem;
     align-items     : center;
+    text-decoration: none;
+    &:hover{
+    text-decoration: none;
 
+}
     &.active {
         border: 2px solid #E9B34E;
 
@@ -1319,4 +1323,7 @@ footer {
     @media(min-width:767px){
         height: 95px;
     }
+}
+.modal-backdrop,.modal{
+z-index: 6700;
 }

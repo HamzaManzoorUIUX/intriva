@@ -68,6 +68,14 @@
         "linkedIn":"https://www.linkedin.com/in/andrea-rumignani-8563503/"
     },
     {
+        "id": 16,
+        "heading": "Felix Mesch",
+        "role":"Associate",
+        "detail": "Prior to joining, Felix worked for nearly four years as an Associate at Moelis & Company in the European Restructuring Practice with a focus on company and creditor side assignments across a number of sectors and jurisdictions. Felix is fluent in English and German.",
+        "img": "../../assets/img/team/Felix Mesch.png",
+        "linkedIn":"https://www.linkedin.com/in/felixmesch/"
+    },
+    {
         "id": 9,
         "heading": "Ash Phakey",
         "role":"Associate",
@@ -115,14 +123,6 @@
         "detail": "Cara is responsible for the day to day running of the office, as well as being Team Assistant. Prior to Intriva Capital, Cara was an Executive PA at ESO Capital.",
         "img": "../../assets/img/team/Brazier, Cara.jpg"
         ,"linkedIn":"https://www.linkedin.com/in/cara-brazier-1b6922125/"
-    },
-    {
-        "id": 16,
-        "heading": "Felix Mesch",
-        "role":"Associate",
-        "detail": "Prior to joining, Felix worked for nearly four years as an Associate at Moelis & Company in the European Restructuring Practice with a focus on company and creditor side assignments across a number of sectors and jurisdictions. Felix is fluent in English and German.",
-        "img": "../../assets/img/team/Felix Mesch.png",
-        "linkedIn":"https://www.linkedin.com/in/felixmesch/"
     }
    
 ]

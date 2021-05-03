@@ -302,7 +302,7 @@ export const media = [
         "date": "16 December 2020",
         "detail": `
         <div class='d-flex justify-content-end'>
-        <img src='../../assets/img/media/Intriva Capital completes on the acquisition of UK consumer credit company Lending Works_20201216 - text for website.png' class='articalLogog mt-3 mb-4' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png'/>
+        <img src='../../assets/img/media/Intriva Capital completes on the acquisition of UK consumer credit company Lending Works_20201216 - text for website.png' class='articalLogog mt-3 mb-4' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.jpeg'/>
         </div>
         <h2 class="text-center">
         Lending Works completes sale to Intriva Capital and establishes new institutional investment platform
@@ -509,7 +509,7 @@ export const media = [
         "pdf":"../../assets/img/pdf/Intriva Capital acquires UK consumer credit company Lending Works_20200703.pdf",
         "date": "3 July 2020",
         "detail": ` <div class='d-flex justify-content-end'>
-        <img src='../../assets/img/media/Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png' class='articalLogog my-4' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.png'/>
+        <img src='../../assets/img/media/Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.jpeg' class='articalLogog my-4' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.jpeg'/>
         </div> <h2 class="text-center">
         Intriva Capital acquires UK consumer credit company Lending Works
     </h2>
@@ -622,7 +622,7 @@ export const media = [
         "title": "PEI: Ex-Apollo execs make headway with special sits fundraise – exclusive",
         "date": "20 April 2020",
        "link":"https://www.privateequityinternational.com/ex-apollo-execs-make-headway-with-special-sits-fundraise-exclusive/",
-        "img": '../../assets/img/media/1.png'
+        "img": '../../assets/img/media/7.png'
     },
     
 ]

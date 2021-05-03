@@ -8,10 +8,10 @@ function TermsConditionModel(props) {
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-        animation={false}
+        animation={false} id="TermsModel"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="TermsModel">
+          <Modal.Title>
           Terms of Use
           </Modal.Title>
         </Modal.Header>
