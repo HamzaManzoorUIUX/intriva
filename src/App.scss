@@ -1331,10 +1331,10 @@ footer {
 z-index: 6700;
 }
 .homepageMain{
-    position: fixed;
-    height: 100%;
+    // position: fixed;
+    // height: 100%;
     &>div:not(.ScreenSide){
-        height: 100%;
+        max-height: -webkit-fill-available !important;
         // @media(max-width: 767px){
         //     height: 98vh !important;
         // }
