@@ -29,10 +29,11 @@ const menuDefault=()=>{
             window.removeEventListener('scroll', onScroll);
         };
     });
+    console.log(props.position);
     return (
         props.number!==0?
         <>
-            <div className={` ${props.tab !== undefined && props.position===undefined?'fixed-top':props.position==='fixed'?'fixed-top':props.position} py-2 bg-transparent`}>
+            <div className={` ${props.tab !== undefined && props.position===undefined?'fixed-top':props.position==='fixed'?'fixed-top':props.position==='position-relative'?'position-relative':'fixed-top'} py-2 bg-transparent`}>
                 <div className=" position-relative container">
                     <div className="myNavBar position-relative z-20">
                      <div className='d-flex align-items-center flex-wrap'>
