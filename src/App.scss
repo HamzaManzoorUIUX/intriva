@@ -97,7 +97,7 @@ h6 {
     }
 
     @media(max-width:767px) {
-        background-image   : url('./assets/img/banner.png');
+    background-image: url('./assets/videos/Stock\ Video\ of\ Neurons\ in\ brain.\ Loop.\ 3D\ animation\ of\ neural\ network.\ at\ Adobe\ Stock\ -\ Adobe\ Stock.gif');
         background-position: center;
         background-size    : cover;
     }
@@ -1341,4 +1341,7 @@ z-index: 6700;
         //     height: 98vh !important;
         // }
     }
+}
+.neuronsVideo{
+    background-image: url('./assets/videos/Stock\ Video\ of\ Neurons\ in\ brain.\ Loop.\ 3D\ animation\ of\ neural\ network.\ at\ Adobe\ Stock\ -\ Adobe\ Stock.gif');
 }

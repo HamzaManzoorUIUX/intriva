@@ -55,7 +55,7 @@ function Header(props) {
     return (
         <div className='headerHome pt-4 z-50'>
             <ScrollToTopOnMount />
-           {width>991?<> <video onEnded={videos} muted className={`headerHome-video pointer-event-none  ${active === 0 ? 'd-flex active' : 'd-none'}`}>
+           {width>767?<> <video onEnded={videos} muted className={`headerHome-video pointer-event-none  ${active === 0 ? 'd-flex active' : 'd-none'}`}>
                 <source src={Londan} type='video/mp4' />
             </video>
             <video onEnded={videos} muted className={`headerHome-video pointer-event-none  ${active === 1 ? 'd-flex active' : 'd-none'}`}>
@@ -66,11 +66,7 @@ function Header(props) {
             </video></>:<></>}
             <div className="z-10 position-relative d-flex flex-column h-100 " >
                 <div className="px-3 py-3 bannerImg d-block d-md-none ">
-                   {width>991?
-                    <video autoPlay muted loop className='d-none d-md-block neural-video pointer-event-none'>
-                        <source src={Neurons} type='video/mp4' />
-                    </video>:<></>
-                    }
+                  
                     <img src={Logo} alt="logo" className='logoHome z-10 position-relative' />
                 </div>
                 <div className='p-2'>
@@ -85,10 +81,14 @@ function Header(props) {
                 </h3>
                     </Fade>
                 </div>
-                <div className="px-3 py-2  align-items-center headerBlueBar bannerImg d-none d-md-flex mb-3">
+                <div className="px-3 py-2 align-items-center headerBlueBar bannerImg d-none d-md-flex mb-3">
+                {width>767?
                     <video autoPlay muted loop className='neural-video d-none d-md-block pointer-event-none'>
-                        <source src={Neurons} type='video/mp4' />
-                    </video>
+                    <source src={Neurons} type='video/mp4' />
+                </video>
+                    :<></>
+                    }
+                   
                     <img src={Logo} alt="logo" className='headerblueImg z-10 position-relative' />
                 </div>
                 <div className='h-75 d-flex align-items-md-center'>
