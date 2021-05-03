@@ -30,7 +30,7 @@ function Home(props) {
         >
             <Header handlePageChange={handlePageChange} />
             <div className="homeBack">
-        <MyNavBar tab={1} title={'ABOUT INTRIVA'} position={'position-relative'} number={currentPage} />
+        <MyNavBar tab={1} title={'ABOUT INTRIVA'} setcurrentPage={setcurrentPage} position={'position-relative'} number={currentPage} />
                 <div className='container-fluid '>
         <div className='w-100' style={{height:'30px'}}></div>
                     <div className="row homecontent">
@@ -100,7 +100,7 @@ function Home(props) {
             </div>
             <div className="homeBack-2 pt-1">
         <div>
-        <MyNavBar tab={1} title={'ABOUT INTRIVA'} position={'position-relative'} number={currentPage} />
+        <MyNavBar tab={1} title={'ABOUT INTRIVA'} setcurrentPage={setcurrentPage} position={'position-relative'} number={currentPage} />
 
 <div className='container '>
 <div className='w-100' style={{height:'30px'}}></div>

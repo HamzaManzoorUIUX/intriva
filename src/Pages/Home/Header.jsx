@@ -53,7 +53,7 @@ function Header(props) {
 
     }, [active])
     return (
-        <div className='headerHome pt-4 z-50'>
+        <div className='headerHome pt-4 z-50' id='headerHome'>
             <ScrollToTopOnMount />
            {width>767?<> <video onEnded={videos} muted className={`headerHome-video pointer-event-none  ${active === 0 ? 'd-flex active' : 'd-none'}`}>
                 <source src={Londan} type='video/mp4' />
@@ -82,6 +82,12 @@ function Header(props) {
                     </Fade>
                 </div>
                 <div className="px-3 py-2 align-items-center headerBlueBar bannerImg d-none d-md-flex mb-3">
+                {width>767?
+                    <video autoPlay muted loop className='neural-video d-none d-md-block pointer-event-none'>
+                    <source src={Neurons} type='video/mp4' />
+                </video>
+                    :<></>
+                    }
                     <img src={Logo} alt="logo" className='headerblueImg z-10 position-relative' />
                 </div>
                 <div className='h-75 d-flex align-items-md-center'>

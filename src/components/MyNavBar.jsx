@@ -25,11 +25,10 @@ const menuDefault=()=>{
       
         window.addEventListener('scroll', onScroll, { passive: true });
 
-        return () => {
-            window.removeEventListener('scroll', onScroll);
-        };
+        // return () => {
+        //     window.removeEventListener('scroll', onScroll);
+        // };
     });
-    console.log(props.position);
     return (
         props.number!==0?
         <>
@@ -37,9 +36,12 @@ const menuDefault=()=>{
                 <div className=" position-relative container">
                     <div className="myNavBar position-relative z-20">
                      <div className='d-flex align-items-center flex-wrap'>
+                     {props.tab?<span onClick={()=>props.setcurrentPage?props.setcurrentPage(0):''} className={`d-md-block w-100 ${scrollCheck ? 'd-none' : ''}`}>
+                            <img src={Logo} className='myNavBar-logo' alt="logo" />
+                        </span>:
                      <Link to='/' className={`d-md-block w-100 ${scrollCheck ? 'd-none' : ''}`}>
                             <img src={Logo} className='myNavBar-logo' alt="logo" />
-                        </Link>
+                        </Link>}
                         {
                             props.title !== undefined ?
                                 <div className="f-20 d-block font-timeNew d-md-none navBorder pr-3">
