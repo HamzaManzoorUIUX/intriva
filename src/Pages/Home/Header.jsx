@@ -18,6 +18,9 @@ function Header(props) {
         setActive(genrateRandom())
     }
     const pauseAllVideos = () => {
+        const { innerWidth: width } = window;
+      if(width>767){
+
         const allvideos = document.querySelectorAll('video.headerHome-video')
         // const currentVideo = document.querySelector('video.active')
         for (let i = 0; i < allvideos.length; i++) {
@@ -30,6 +33,7 @@ function Header(props) {
 
             }
         }
+    }  
 
     }
     const genrateRandom = () => {
