@@ -22,7 +22,7 @@ function Home(props) {
     return (<>
         <div className="h-100vh overflow-hidden">
         <PreLoader />
-        <MyNavBar tab={1} title={'ABOUT INTRIVA'} position={'fixed'} number={currentPage} />
+        {/* <MyNavBar tab={1} title={'ABOUT INTRIVA'} position={'fixed'} number={currentPage} /> */}
         <ReactPageScroller
             pageOnChange={handlePageChange}
             onBeforePageScroll={handleBeforePageChange}
@@ -30,10 +30,12 @@ function Home(props) {
         >
             <Header handlePageChange={handlePageChange} />
             <div className="homeBack">
+        <MyNavBar tab={1} title={'ABOUT INTRIVA'} position={'position-relative'} number={currentPage} />
                 <div className='container-fluid '>
-                    <div className="row mt-2  mt-md-5 pt-md-3">
+        <div className='w-100' style={{height:'30px'}}></div>
+                    <div className="row homecontent">
                         <Fade cascade big>
-                            <div className="col-md-6 d-none d-md-block pl-0 mt-1 pt-5">
+                            <div className="col-md-6 d-none d-md-block pl-0 mt-1">
                                 <DragScrollProvider>
                                     {({ onMouseDown, ref }) => (
                                         <div className="scrollable d-flex" ref={ref} onMouseDown={onMouseDown}>
@@ -45,8 +47,7 @@ function Home(props) {
                         </Fade>
                         <div className="col-md-6 col-lg-5 col-xl-4">
                             <Fade cascade big>
-                                <div className='pt-md-5'>
-                        <div className='w-100' style={{height:'80px'}}></div>
+                                <div className='pt-0'>
                                     <h5 className='mb-0 mb-lg-2 f-20-r'>
                                         <span className="font-Roboto">
                                         Intriva is an alternative investment firm focused on value creation in mid-market businesses throughout Western Europe.
@@ -98,39 +99,44 @@ function Home(props) {
               
             </div>
             <div className="homeBack-2 pt-1">
-                <div className='container '>
-                    <div className="row ">
-                        <div className='w-100' style={{height:'80px'}}></div>
-                        <div className="col-md-6 col-lg-5">
-                            <Fade cascade big>
-                                <h3 className=' pt-md-0'>
-                                High-Performance Culture
-                   </h3>
-                                <div className='max-text f-20-r'>
-                                    <p>
-                                    We take pride in our collaborative and high-performance culture, which harnesses camaraderie and the balance of skills and experience which our team members collectively bring to bear. 
-                       </p>
-                                    <p>
-                                    We are committed to delivering alpha for our investors. We are creative about our investments and how they are structured. Together, we work hard and pursue opportunities with tenacity and thoroughness.   
-                       </p>
-                       <p>
-                       Our aim is to be recognised as a hands-on investor that provides flexible and highly-structured solutions to drive significant value backed by downside protection.
-                       </p>
-                                </div>
-                            </Fade>
-                        </div>
-                        <div className="col-md-6 col-lg-7 text-right pr-0 d-none d-md-block pt-1">
-                        <DragScrollProvider>
-                                    {({ onMouseDown, ref }) => (
-                                        <div className="scrollable-2" ref={ref} onMouseDown={onMouseDown}>
-                                            <img src={sectionTwo} alt="sectionTwo" className='sectionImg' />
-                                        </div>
-                                    )}
-                                </DragScrollProvider>
-                        </div>
-                    </div>
+        <div>
+        <MyNavBar tab={1} title={'ABOUT INTRIVA'} position={'position-relative'} number={currentPage} />
+
+<div className='container '>
+<div className='w-100' style={{height:'30px'}}></div>
+    <div className="row homecontent">
+        <div className="col-md-6 col-lg-5">
+            <Fade cascade big>
+                <h3 className=' pt-md-0'>
+                High-Performance Culture
+   </h3>
+                <div className='max-text f-20-r'>
+                    <p>
+                    We take pride in our collaborative and high-performance culture, which harnesses camaraderie and the balance of skills and experience which our team members collectively bring to bear. 
+       </p>
+                    <p>
+                    We are committed to delivering alpha for our investors. We are creative about our investments and how they are structured. Together, we work hard and pursue opportunities with tenacity and thoroughness.   
+       </p>
+       <p>
+       Our aim is to be recognised as a hands-on investor that provides flexible and highly-structured solutions to drive significant value backed by downside protection.
+       </p>
                 </div>
-                <Footer />
+            </Fade>
+        </div>
+        <div className="col-md-6 col-lg-7 text-right pr-0 d-none d-md-block pt-1">
+        <DragScrollProvider>
+                    {({ onMouseDown, ref }) => (
+                        <div className="scrollable-2" ref={ref} onMouseDown={onMouseDown}>
+                            <img src={sectionTwo} alt="sectionTwo" className='sectionImg' />
+                        </div>
+                    )}
+                </DragScrollProvider>
+        </div>
+    </div>
+</div>
+
+        </div>
+           <Footer />
             </div>
 
         </ReactPageScroller>
