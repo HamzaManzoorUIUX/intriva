@@ -59,6 +59,7 @@ function Artical(props) {
                             </div>
                             <div className="articalContent">
                                 <MyNavBar tab={1} artical={true} />
+                                <div>
                                 <div className="container pt-5" id='hamza'>
                                     {/* <div className="d-flex pb-3 align-items-center justify-content-between"> */}
                                         <div className='w-50 d-inline-block'>
@@ -70,10 +71,11 @@ function Artical(props) {
                                             </a>
                                             </div>
                                     {/* </div> */}
-                                    <div className='pt-3 pb-5'>
+                                    <div className='pt-3 pb-5 pl-md-0 pl--30'>
                                         {
                                             parse(data.detail)
                                         }
+                                    </div>
                                     </div>
                                     <StickyFooter/>
                                 </div>
