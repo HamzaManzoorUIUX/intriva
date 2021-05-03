@@ -41,6 +41,7 @@ function Artical(props) {
                         <div >
                         
                             <div className={`articalBack`} style={{ background: data.img !== undefined ? `url('${data.img}')` : 'white' }}>
+                              {/* <img src={data.img} alt="abc"/> */}
                                 <div className='content'>
                                     <h1 className="text-center">
                                         {data.title}
