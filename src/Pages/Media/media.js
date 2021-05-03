@@ -622,7 +622,7 @@ export const media = [
         "title": "PEI: Ex-Apollo execs make headway with special sits fundraise – exclusive",
         "date": "20 April 2020",
        "link":"https://www.privateequityinternational.com/ex-apollo-execs-make-headway-with-special-sits-fundraise-exclusive/",
-        "img": '../../assets/img/media/Sample.png'
+        "img": '../../assets/img/media/1.png'
     },
     
 ]

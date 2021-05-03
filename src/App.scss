@@ -726,13 +726,13 @@ footer {
     background-attachment: fixed !important;
     background-position  : center !important;
 
-    @media(max-width:767px) {
-        height: 75vh;
-    }
+    // @media(max-width:767px) {
+    //     height: 75vh;
+    // }
 
-    @media(max-width:500px) {
-        height: 50vh;
-    }
+    // @media(max-width:500px) {
+    //     height: 50vh;
+    // }
 
     &::before {
         content         : '';
@@ -1313,5 +1313,10 @@ footer {
         &:last-child {
             border-right: none;
         }
+    }
+}
+.h-md-95px{
+    @media(min-width:767px){
+        height: 95px;
     }
 }

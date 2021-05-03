@@ -7,6 +7,7 @@ function TeamCard({ data, modelOpen, setModelOpen,  setDetail }) {
     // const [details,setdetails]=useState(false)
     return (
         <div className='col-md-12 col-lg-4 pt-5' id={`team${data.id}`}>
+            <div className="pt-3 pt-md-0">
             <a href={`#team${data.id}`} className={`team-card ${modelOpen === data.id ?'active':''}`} onClick={() => { setModelOpen(modelOpen!==data.id?data.id:null); setDetail(data.detail) }} >
                 <img src={data.img} alt="team" className='team-card-img' />
                 <div className='team-card-content'>
@@ -28,6 +29,7 @@ function TeamCard({ data, modelOpen, setModelOpen,  setDetail }) {
                     }
                 </div>
             </a>
+            </div>
             <div className={`cardDetails ${modelOpen === data.id ? 'show' : 'hide'}`}>
             <Fade>
                 {data.detail}
