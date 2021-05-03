@@ -1331,9 +1331,12 @@ footer {
 z-index: 6700;
 }
 .homepageMain{
+    position: fixed;
+    height: 100%;
     &>div:not(.ScreenSide){
-        @media(max-width: 767px){
-            height: 98vh !important;
-        }
+        height: 100%;
+        // @media(max-width: 767px){
+        //     height: 98vh !important;
+        // }
     }
 }
