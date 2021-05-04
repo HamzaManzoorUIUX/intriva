@@ -750,11 +750,11 @@ footer {
 
 .articalBackImg {
     display: none;
-    @media(max-width: 767px) {
-        height     : 100%;
+    @media(max-width: 991px) {
+        width     : 100%;
         object-fit: cover;
         z-index   : 1;
-        position  : absolute;
+        // position  : absolute;
         display: block;
     }
 
@@ -776,7 +776,7 @@ footer {
     position               : relative;
 overflow: hidden;
     @media(max-width:991px) {
-        height               : 812px;
+        height               : auto;
 
     }
  
@@ -807,7 +807,7 @@ overflow: hidden;
         align-items    : center;
         flex-direction : column;
         
-        @media(max-width:767px) {
+        @media(max-width:991px) {
             position       : absolute;
             h1 {
                 font-size: 1.5rem;
@@ -819,26 +819,26 @@ overflow: hidden;
         }
     }
 }
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-    .foo {                           
-        height: 1024px;                         
-    }                       
-}   
+// @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+//     .foo {                           
+//         height: 1024px;                         
+//     }                       
+// }   
                                             
-/* iPad with landscape orientation. */                       
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {                         
-    .foo {                           
-        height: 768px;                         
-    }                       
-}
+// /* iPad with landscape orientation. */                       
+// @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {                         
+//     .foo {                           
+//         height: 768px;                         
+//     }                       
+// }
                                                
-/* iPhone 5 
-You can also target devices with aspect ratio. */                      
- @media screen and (device-aspect-ratio: 40/71) {                              
-    .foo {                           
-        height: 500px;                         
-    }                       
-}
+// /* iPhone 5 
+// You can also target devices with aspect ratio. */                      
+//  @media screen and (device-aspect-ratio: 40/71) {                              
+//     .foo {                           
+//         height: 500px;                         
+//     }                       
+// }
 .scrollDownBtn {
     position       : absolute;
     font-size      : 30px;
