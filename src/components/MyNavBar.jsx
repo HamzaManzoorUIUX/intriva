@@ -44,7 +44,7 @@ const menuDefault=()=>{
                         </Link>}
                         {
                             props.title !== undefined ?
-                                <div className="f-20 d-block font-timeNew d-md-none navBorder pr-3">
+                                <div className="f-20 d-block text-uppercase font-timeNew d-md-none navBorder pr-3">
                                     {
                                         props.title
                                     }
@@ -89,7 +89,7 @@ const menuDefault=()=>{
                     </div>
                     {
                         props.title !== undefined ?
-                            <div className={`f-20 z-10 pl-3 d-none d-md-flex align-items-end text-md-right font-timeNew navBorder smoothAnimation ${scrollCheck||(props.number!==1&&props.number!==undefined) ? 'position-md-absolute top-50 myNavBar-logo-height' : ''} ${props.artical?'navArtical':'navTitle'}`}>
+                            <div className={`f-20 z-10 pl-3 text-uppercase d-none d-md-flex align-items-end text-md-right font-timeNew navBorder smoothAnimation ${scrollCheck||(props.number!==1&&props.number!==undefined) ? 'position-md-absolute top-50 myNavBar-logo-height' : ''} ${props.artical?'navArtical':'navTitle'}`}>
                             <div className='hidden' style={{width:'260px',height:'30px'}}/>
                               
                                 <span>
