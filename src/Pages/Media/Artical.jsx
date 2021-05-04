@@ -66,7 +66,7 @@ function Artical(props) {
                                         <div className='w-50 d-inline-block'>
                                             {data.date}
                                         </div>
-                                            <div className='pr-5 text-right  pt-2 py-md-3 w-50 d-inline-flex align-items-center justify-content-end sticky-top h-md-95px' style={{zIndex:10000}}>
+                                            <div className='pr-5 text-right  pt-2 py-md-3 w-50 d-inline-flex align-items-center justify-content-end sticky-top h-md-95px' style={{zIndex:6020}}>
                                             <a href={data.pdf} target="_blank" rel="noreferrer"  className='btn btn-primary text-light mt-1 mr-5'>
                                                 <FaFilePdf />
                                             </a>
