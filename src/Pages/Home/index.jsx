@@ -9,6 +9,7 @@ import ReactPageScroller from "react-page-scroller";
 import PreLoader from "../../components/PreLoader";
 import DragScrollProvider from 'drag-scroll-provider'
 import StickyFooter from '../../components/StickyFooter';
+import CookiesAlert from '../../components/CookiesAlert';
 
 function Home(props) {
     const { section } = props.match.params
@@ -141,6 +142,7 @@ function Home(props) {
 
         </ReactPageScroller>
         <StickyFooter home={true} currentPage={currentPage}/>
+        <CookiesAlert/>
         </div>
     </>
     );

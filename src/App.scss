@@ -1410,10 +1410,26 @@ overflow: hidden;
 
     // position: fixed;
     // height: 100%;
-    &>div:not(.ScreenSide) {
+    &>div:not(.ScreenSide):not(.cookiesAlert) {
         max-height         : -webkit-fill-available !important;
         // @media(max-width: 767px){
         //     height: 98vh !important;
         // }
     }
+}
+.cookiesAlert{
+    position: fixed;
+    bottom: 0px;
+    z-index: 6999;
+    margin-bottom: 0px;
+width: 100%;
+left: 0px;
+background-color: #000000;
+color:white;
+border-color: black;
+button{
+    span{
+        color: white;
+    }
+}
 }
