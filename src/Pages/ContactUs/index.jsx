@@ -41,7 +41,7 @@ function ContactUs(props) {
                 </div>
                 <img src={path} className='path-img' alt="path" />
             </div>
-            <ul className='cityNav'>
+            <ul className='cityNav d-md-none'>
                 <li onClick={()=>{setActiveCard(0)}}>
                     London
                 </li>
