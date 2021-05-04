@@ -718,18 +718,6 @@ footer {
     position   : relative;
 }
 .articalBack {
-    width                : 100%;
-    height               : 100vh;
-    max-height           : -webkit-fill-available;
-    background-size      : cover ;
-    background-repeat    : no-repeat ;
-    display              : flex;
-    justify-content      : center;
-    align-items          : center;
-    position             : relative;
-    background-attachment: fixed ;
-    background-position  : center ;
-    object-fit           : cover;
     &.backimg1{
         background-image: url('./assets/img/media/Intriva Capital - Costa del Sol hotel project financing_20210318.jpg');
 }
@@ -751,6 +739,21 @@ footer {
     &.backimg7{
         background-image: url('./assets/img/media/7.png');
 }
+}
+.articalBack {
+    width                : 100%;
+    height               : 100vh;
+    max-height           : -webkit-fill-available;
+    background-size      : cover ;
+    background-repeat    : no-repeat ;
+    display              : flex;
+    justify-content      : center;
+    align-items          : center;
+    position             : relative;
+    background-attachment: fixed ;
+    background-position  : center ;
+    object-fit           : cover;
+
     @media(max-width:767px) {
         background-size: 200vw 100vh !important;
         
