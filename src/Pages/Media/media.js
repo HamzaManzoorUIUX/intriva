@@ -8,7 +8,7 @@ export const media = [
         "title": "Intriva Capital secures debt financing for refurbishment of iconic hotel on Spain’s Costa del Sol",
         "date": "18 March 2021",
         "detail": `
-        <h2 class="text-center">
+        <h2 class="text-center d-none d-md-block">
         Intriva Capital secures debt financing for refurbishment of iconic hotel on Spain’s Costa del Sol
         </h2>
     <h5 class='text-center'>
@@ -103,7 +103,7 @@ export const media = [
         "date": "11 March 2021",
         "detail": `
         <a href="https://realdeals.eu.com/article/organic-growth-aksia-group-anacap-intriva-capital-and-golding-capital-partners"
-        class="text-primary">
+        class="text-primary  d-none d-md-block">
         <h4>
             Organic Growth: Intriva Capital
         </h4>
@@ -226,7 +226,7 @@ export const media = [
         "title": "Intriva Capital acquires stake in MoneyPlus Group",
         "date": "24 February 2021",
         "detail": `
-        <h2 class="text-center">
+        <h2 class="text-center d-none d-md-block">
         Intriva Capital acquires stake in MoneyPlus Group
        </h2>
        <h5 class="text-center">
@@ -304,7 +304,7 @@ export const media = [
         <div class='d-flex justify-content-end'>
         <img src='../../assets/img/media/Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.jpeg' class='articalLogog my-4' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.jpeg'/>
         </div>
-        <h2 class="text-center">
+        <h2 class="text-center d-none d-md-block">
         Lending Works completes sale to Intriva Capital and establishes new institutional investment platform
     </h2>
     <h5 class="text-center">
@@ -395,7 +395,7 @@ export const media = [
         "pdf":"../../assets/img/pdf/Intriva Capital agrees joint venture with Node to support European expansion plans_20200922.pdf",
         "date": "22 September 2020",
         "detail": `
-        <h2 class="text-center">
+        <h2 class="text-center d-none d-md-block">
         Intriva Capital agrees joint venture with Node to support European expansion plans
     </h2>
     <h5 class="text-center">
@@ -510,7 +510,7 @@ export const media = [
         "date": "3 July 2020",
         "detail": ` <div class='d-flex justify-content-end'>
         <img src='../../assets/img/media/Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.jpeg' class='articalLogog my-4' alt='Intriva Capital acquires UK consumer credit company Lending Works_20200703 - LOGO.jpeg'/>
-        </div> <h2 class="text-center">
+        </div> <h2 class="text-center d-none d-md-block">
         Intriva Capital acquires UK consumer credit company Lending Works
     </h2>
     <p>
