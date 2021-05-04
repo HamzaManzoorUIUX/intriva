@@ -75,7 +75,7 @@ function CityCards({ activeCard, setActiveCard }) {
             <div className="mb-min-5">
                 <Slider ref={(slider)=>slider?slider.slickGoTo(activeCard):""} {...settings}>
                     <div className="px-0">
-                        <div className={`cityCard ${activeCard === 1 ? 'active' : ''}`} onClick={() => setActiveCard(1)}>
+                        <div className={`cityCard ${activeCard === 0 ? 'active' : ''}`} onClick={() => setActiveCard(0)}>
                             <img src={Londan} alt="Londan" className='w-100' />
                             <div className="content">
                                 <div className="info">
@@ -108,7 +108,7 @@ function CityCards({ activeCard, setActiveCard }) {
                         </div>
                     </div>
                     <div className="px-0">
-                        <div className={`cityCard ${activeCard === 2 ? 'active' : ''}`} onClick={() => setActiveCard(2)}>
+                        <div className={`cityCard ${activeCard === 1 ? 'active' : ''}`} onClick={() => setActiveCard(1)}>
                             <img src={Frankfurt} alt="Frankfurt" className='w-100' />
                             <div className="content">
                                 <div className="info">
@@ -144,7 +144,7 @@ function CityCards({ activeCard, setActiveCard }) {
                         </div>
                     </div>
                     <div className="px-0">
-                        <div className={`cityCard ${activeCard === 3 ? 'active' : ''}`} onClick={() => setActiveCard(3)}>
+                        <div className={`cityCard ${activeCard === 2 ? 'active' : ''}`} onClick={() => setActiveCard(2)}>
                             <img src={Madrid} alt="Madrid" className='w-100' />
                             <div className="content">
                                 <div className="info">
