@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Frankfurt from "../../assets/videos/Frankfurt Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
-import Londan from "../../assets/videos/London Skyline stock video footage in HD and 4K - Adobe Stock.MP4";
-import Neurons from "../../assets/videos/Stock Video of Neurons in brain. Loop. 3D animation of neural network. at Adobe Stock - Adobe Stock.MP4";
-import Madrid from "../../assets/videos/9,570 BEST Madrid STOCK VIDEOS & FOOTAGE - Adobe Stock.MP4";
+import Frankfurt from "../../assets/videos/Frankfurt.mov";
+import Londan from "../../assets/videos/London.mov";
+import Neurons from "../../assets/videos/neurons.mov";
+import Madrid from "../../assets/videos/Madrid.mov";
 import Logo from "../../assets/img/logo.png";
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';

@@ -29,7 +29,7 @@ function WhatWeDo(props) {
                             </Fade>
                     </div>
                 </div>
-                <div className="container-fluid px-3 pt-md pb-3 z-10 position-relative">
+                <div className="container-fluid px-3 pt-md pb-md-3 z-10 position-relative">
                     <div className="row">
                         <div className="col-md-5 pl-0 mt-md-4 d-none d-md-block">
                         <DragScrollProvider>
@@ -73,7 +73,7 @@ function WhatWeDo(props) {
 
                     <Fade big>
                                 <div>
-                                    <h4 className="mt-4 ">
+                                    <h4 className="mt-md-4 ">
                                             Environmental, Social and Corporate Governance
                         </h4>
                                     <p className=''>
