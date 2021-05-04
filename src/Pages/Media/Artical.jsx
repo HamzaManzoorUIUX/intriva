@@ -59,7 +59,7 @@ function Artical(props) {
                                 </a>
                             </div>
                             <div className="articalContent">
-                                <MyNavBar tab={1} artical={true} />
+                                <MyNavBar artical={true} />
                                 <div>
                                 <div className="container pt-5" id='hamza'>
                                     {/* <div className="d-flex pb-3 align-items-center justify-content-between"> */}
