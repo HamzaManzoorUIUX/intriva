@@ -755,6 +755,7 @@ footer {
     object-fit           : cover;
 
     @media(max-width:767px) {
+    height               : calc(100vh - 50px);
         background-size: 200vw 100vh !important;
         
     }
