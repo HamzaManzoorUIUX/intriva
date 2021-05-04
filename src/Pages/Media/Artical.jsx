@@ -63,7 +63,7 @@ function Artical(props) {
                                 <div>
                                 <div className="container pt-5" id='hamza'>
                                     {/* <div className="d-flex pb-3 align-items-center justify-content-between"> */}
-                                        <div className='w-50 d-inline-block'>
+                                        <div className='w-50 d-none d-md-inline-block'>
                                             {data.date}
                                         </div>
                                             <div className='pr-5 text-right  pt-2 py-md-3 w-50 d-inline-flex align-items-center justify-content-end sticky-top h-md-95px' style={{zIndex:6020}}>
