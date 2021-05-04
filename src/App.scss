@@ -757,14 +757,7 @@ footer {
         position  : absolute;
         display: block;
     }
-    @media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        height: 812px;
-        display: block;
 
-     }
 }
 
 .articalBack {
@@ -783,21 +776,10 @@ footer {
     position               : relative;
 overflow: hidden;
     @media(max-width:991px) {
-        // background-attachment: scroll !important;
-        height               : calc(100vh - 50px);
-        // min-height        : 700px;
-        // background-size: 200vw 100vh !important;
+        height               : 812px;
 
     }
-    @media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        height: 812px;
-     }
-    // @media(max-width:500px) {
-    //     height: 50vh;
-    // }
+ 
 
     &::before {
         content         : '';
