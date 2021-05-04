@@ -761,9 +761,9 @@ footer {
 
 .articalBack {
     width                  : 100%;
-    min-height             : 100vh;
-    height                 : 100%;
-    max-height             : 100vh;
+    // min-height             : 100vh;
+    height                 : 100vh;
+    // max-height             : 100vh;
     background-repeat      : no-repeat !important;
     background-attachment  : fixed !important;
     background-position    : center !important;
@@ -777,13 +777,13 @@ footer {
     position               : relative;
     object-fit             : cover;
 
-    @media(max-width:767px) {
-        // background-attachment: scroll !important;
-        // height               : calc(100vh - 50px);
-        min-height        : 95vh;
-        // background-size: 200vw 100vh !important;
+    // @media(max-width:767px) {
+    //     // background-attachment: scroll !important;
+    //     // height               : calc(100vh - 50px);
+    //     min-height        : 95vh;
+    //     // background-size: 200vw 100vh !important;
 
-    }
+    // }
 
     // @media(max-width:500px) {
     //     height: 50vh;
@@ -827,7 +827,26 @@ footer {
         }
     }
 }
-
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .foo {                           
+        height: 1024px;                         
+    }                       
+}   
+                                            
+/* iPad with landscape orientation. */                       
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {                         
+    .foo {                           
+        height: 768px;                         
+    }                       
+}
+                                               
+/* iPhone 5 
+You can also target devices with aspect ratio. */                      
+ @media screen and (device-aspect-ratio: 40/71) {                              
+    .foo {                           
+        height: 500px;                         
+    }                       
+}
 .scrollDownBtn {
     position       : absolute;
     font-size      : 30px;
