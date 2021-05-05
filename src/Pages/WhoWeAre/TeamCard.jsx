@@ -30,7 +30,7 @@ function TeamCard({ data, modelOpen, setModelOpen,  setDetail }) {
                           <BiPlusCircle />
                   }
               </div>
-          </div>:  <a href={`#team${data.id}`} className={`team-card ${modelOpen === data.id ?'active':''}`} onClick={() => { setModelOpen(modelOpen!==data.id?data.id:null); setDetail(data.detail) }} >
+          </div>:  <div  className={`team-card ${modelOpen === data.id ?'active':''}`} onClick={(e) => { setModelOpen(modelOpen!==data.id?data.id:null); setDetail(data.detail); }} >
                 <img src={data.img} alt="team" className='team-card-img' />
                 <div className='team-card-content'>
                     <h6 className='team-card-heading'>
@@ -50,7 +50,7 @@ function TeamCard({ data, modelOpen, setModelOpen,  setDetail }) {
                             <BiPlusCircle />
                     }
                 </div>
-            </a>
+            </div>
           }
             </div>
             <div className={`cardDetails ${modelOpen === data.id ? 'show' : 'hide'}`}>
