@@ -13,7 +13,7 @@ function Footer(props) {
                     &aspn;
 </div>
                 <div className="text-center text-light" style={{maxWidth:'300px'}}>
-                    Intriva.com &copy; 2020
+                    Intriva.com &copy; 2021
             </div>
                <div className="d-flex">
                <div className='text-white curser makeAnker' onClick={() => setModalShow(true)}>

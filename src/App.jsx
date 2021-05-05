@@ -1,5 +1,5 @@
 import './App.scss';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './Pages/Home';
 import ErrorPage from './Pages/ErrorPage';
@@ -11,7 +11,7 @@ import ContactUs from './Pages/ContactUs';
 
 function App() {
   return (
-   <HashRouter>
+   <BrowserRouter>
    <Switch>
      <Route exact path='/' component={Home} />
      <Route exact path='/aboutintriva/:section' component={Home} />
@@ -22,7 +22,7 @@ function App() {
      <Route exact path='/contact-us' component={ContactUs} />
      <Route  path='*' component={ErrorPage} />
    </Switch>
-   </HashRouter>
+   </BrowserRouter>
   );
 }
 

@@ -165,7 +165,7 @@ function Header(props) {
                     &nbsp;
     </li>
                 <li>
-                    Intriva.com © 2021
+                    Intriva.com &copy; 2021
     </li>
                 <li>
                     <div className="d-flex">
