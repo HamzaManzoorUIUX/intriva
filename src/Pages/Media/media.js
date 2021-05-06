@@ -118,7 +118,6 @@ export const media = [
             by Jennifer Forrest
         </i>
     </div>
-        alt="Real Deals Article_20210311">
     <div><i>
             Often an overlooked aspect of value creation, organic growth is essential for materially improving
             companies’ professionalism, geographical reach and product and service offering. Real Deals presents
