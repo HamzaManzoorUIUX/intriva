@@ -1,13 +1,13 @@
 import React from 'react';
 import { Fade } from 'react-reveal';
 import { BiMinusCircle, BiPlusCircle } from "react-icons/bi";
-import { FaLinkedin } from "react-icons/fa";
+import linkedInIcon from "../../assets/img/linkedInIcon.png";
 
 function TeamCard({ data, modelOpen, setModelOpen, setDetail }) {
     const { innerWidth: width } = window;
     // const [details,setdetails]=useState(false)
     const toggleCard = (e) => {
-        if(e.target.tagName!=='a'&&e.target.tagName!=='path'&&e.target.tagName!=='svg')
+        if(e.target.tagName!=='a'&&!e.target.classList.contains('linkedIn'))
         {
             setModelOpen(modelOpen !== data.id ? data.id : null);
             setDetail(data.detail);
@@ -25,7 +25,7 @@ function TeamCard({ data, modelOpen, setModelOpen, setDetail }) {
                             </h6>
                             <div className="team-card-text">
                                 {data.role} <a href={data.linkedIn} target="_blank" rel="noreferrer" className="f-20 linkedIn" style={{ color: "#0e76a8" }}>
-                                    <FaLinkedin />
+                                <img src={linkedInIcon}  className='linkedIn' width='20px' alt="linkedIn"/>
                                 </a>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ function TeamCard({ data, modelOpen, setModelOpen, setDetail }) {
                             </h6>
                             <div className="team-card-text">
                                 {data.role} <a href={data.linkedIn} target="_blank" rel="noreferrer" className="f-20 linkedIn" style={{ color: "#0e76a8" }}>
-                                    <FaLinkedin />
+                                    <img src={linkedInIcon} className='linkedIn' width='20px' alt="linkedIn"/>
                                 </a>
                             </div>
                         </div>
