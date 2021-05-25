@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Frankfurt from "../../assets/videos/Frankfurt.mov";
-import Londan from "../../assets/videos/London.mov";
-import Neurons from "../../assets/videos/neurons.mov";
-import Madrid from "../../assets/videos/Madrid.mov";
+import Frankfurt from "../../assets/videos/Frankfurt.webm";
+import Londan from "../../assets/videos/London.webm";
+import Neurons from "../../assets/videos/neurons.webm";
+import Madrid from "../../assets/videos/Madrid.webm";
 import Logo from "../../assets/img/logo.png";
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
